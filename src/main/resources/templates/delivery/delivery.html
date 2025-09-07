@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{delivery.title})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delivery</title>
+</head>
+<body>
+<section layout:fragment="webcontent">
+    <div class="blurPadding" sec:authorize="hasAnyRole('BOSS', 'DRIVER')">
+        <h2 th:text="#{delivery.title}">Delivery</h2>
+        <form sec:authorize="hasRole('BOSS')" method="get" role="form" id="reassignmentForm" th:action="@{/delivery/settings}">
+            <button type="submit" class="ui button blue" th:text="#{delivery.settingsButton}" href="settings.html">Settings</button>
+        </form>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th scope="col" th:text="#{delivery.customer}">Customer</th>
+                <th scope="col" th:text="#{delivery.phone}">Telephone Number</th>
+                <th scope="col" th:text="#{delivery.address}">Address</th>
+                <th scope="col" th:text="#{delivery.order}">Order</th>
+                <th scope="col" th:text="#{delivery.price}">Price</th>
+                <th scope="col" th:text="#{delivery.timeLeft}">Time left</th>
+                <th scope="col" th:text="#{delivery.interaction}">Interaktion</th>
+            </tr>
+            </thead>
+            <tbody>
+            <th:block th:each="delivery : ${deliveries}">
+                <th:block th:if="${delivery.isViewable()}">
+                    <tr>
+                        <form th:action="@{/delivery}" method="get">
+                            <td th:text="${delivery.getCustomerName()}"></td>
+                            <td th:text="${delivery.getCustomerTelephoneNumber()}"></td>
+                            <td th:text="${delivery.getCustomerAddress()}"></td>
+                            <td>
+                                <ul>
+                                    <th:block th:each="orderLine : ${delivery.getOrderLines()}">
+                                        <li th:text="${orderLine}">OrderLine</li>
+                                    </th:block>
+                                </ul>
+                            </td>
+                            <td th:text="${delivery.getDeliveryPrice()}"></td>
+                            <td th:title="#{delivery.maxTimeHover}" th:text="${delivery.getTimeLeft()} + ' ' + m"></td>
+                        </form>
+                        <td>
+                            <form th:if="${delivery.getDeliveryState()} == 'INDELIVERY'" th:action="@{/delivery/complete/} + ${delivery.getDeliveryId()}" method="post">
+                                <button class="ui button blue" type="submit" th:text="#{delivery.deliveredButton}">Delivered</button>
+                            </form>
+                            <div th:if="${delivery.getDeliveryState()} == 'READYDELIVER'">
+                                <div class = "ui basic button blue" th:text="#{delivery.deliveredButton}">Delivered</div>
+                            </div>
+                        </td>
+                    </tr>
+                </th:block>
+            </th:block>
+            <tr th:if="${#lists.isEmpty(deliveries)}">
+                <td class="center aligned" colspan="42" th:text="#{main.empty}">empty</td>
+            </tr>
+            </tbody>
+        </table>
+        <div>
+            <div class="inline" style="float: left;">
+                <form th:action="@{/delivery}" method="get">
+                    <button class="ui button" type="submit" th:text="#{delivery.refresh}"> Refresh</button>
+                </form>
+            </div>
+            <div style="float: right;" id="driveSection" class="inline">
+                <th:block th:if="${waitingTime} != null" sec:authorize="hasRole('DRIVER')">
+                    <form th:action="@{/delivery/drive}" method="post">
+                        <button id="driveButton" class="ui button blue" type="submit" th:text="#{delivery.drive}">Drive</button>
+                        <label th:title="#{delivery.timeEstimateHover}" for="driveButton" th:text="${waitingTime}">WaitingTimeLabel</label>
+                    </form>
+                </th:block>
+                <th:block th:unless="${waitingTime} != null" id="driveSection" sec:authorize="hasRole('DRIVER')">
+                    <p th:text="#{delivery.noOrders}">NoOrders</p>
+                </th:block>
+                <th:block sec:authorize="hasRole('BOSS')">
+                    <p>Rework Coming soon...</p>
+                </th:block>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

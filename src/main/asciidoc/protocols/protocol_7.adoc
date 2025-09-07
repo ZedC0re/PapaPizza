@@ -1,0 +1,62 @@
+= Protokoll Gruppe 19
+
+Treffen am 22.11.2021
+
+Ort:      Discord +
+Beginn:   18:30 Uhr +
+Ende:     20:30 Uhr
+
+__Schriftführer:__ Tom Erik Günther
+
+*Nächstes Treffen:* +
+29.11.2021, 18:30 Uhr, Discord
+
+__Teilnehmer:__
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+
+== Bemerkungen
+- Jedem Gruppenmitglied ist ein Package zugewiesen, an welchem er arbeiten soll
+- In dieser Woche sollte zu jedem Package die Grundfunktionalität erarbeitet werden
+
+
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|17     |Confirmation Modal - Bug     |fertig        |Florian
+|18     |Ensure functionality without JS      |fertig      |Florian
+|19     |Basic Functionality       |fertig      |Alle
+|20     |Presentation Prep   |begonnen |Florian
+|21		|EmployeeManagement crucial&polish | fertig | Florian
+|===
+
+
+== Aktueller Stand
+- Entwicklerdokumentation fertig, muss in regelmäßigen Abständen aktualisiert werden
+- Delivery Komponente (Tom) nachgereicht
+- Kitchen Komponente (Christian) durch Git-Probleme noch nicht nachgereicht, branch ist verloren gegangen, Frist verlängert
+
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|19  |Basic functionality     |Grundfunktionalität muss Komponentenübergreifend garantiert sein,
+                               Interaktion zwischen Komponenten wird bearbeitet, Komponenten müssen gemerged werden
+                                |alle                |in Arbeit
+|20	|Presentation	|Eine Präsentation in Form einer Powerpoint soll mit Vorträgen erarbeitet werden |alle |noch nicht begonnen
+|===

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{blanklayout.html(title=#{inventory.editPizzaPreset.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="content">
+  <div class="blurPadding">
+
+  <!--if product id exists-->
+  <div th:if="${productFound}">
+    <form method="post" role="form" class="ui form" id="form" th:action="@{/inventory/editPizzaPreset/} + ${pizzaPresetID}" th:object="${form}">
+
+      <h3 class="ui dividing header" th:text="#{inventory.editPizzaPreset.title}">Edit Pizza Preset</h3>
+
+      <div class="ui negative message" th:if="${#fields.hasErrors('*')}">
+        <p th:text="#{inventory.addPizzaPreset.formErr}">Some inputs are not correct.</p>
+      </div>
+
+      <div class="field">
+        <label for="name" th:text="#{inventory.table.productname}">Productname</label>
+        <input id="name" name="name" th:field="*{name}" th:errorclass="fieldError" type="text"
+               th:placeholder="#{inventory.table.productname}" placeholder="name" required="required"/><br/>
+        <div class="ui negative message" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">
+          <p>name may not be empty</p>
+        </div>
+        <div class="ui negative message" th:if="${productAlrExists}">
+          <p th:text="#{inventory.editProduct.productExists}">Product with this name does already exist</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="price" th:text="#{inventory.table.productprice}">price</label>
+        <input id="price" name="price" th:field="*{price}" th:errorclass="fieldError" type="text" pattern="[0-9]+((\.|,)[0-9][0-9]?)?"
+               th:placeholder="#{inventory.table.productprice}" placeholder="price" required="required" /><br/>
+        <div class="ui negative message" th:if="${#fields.hasErrors('price')}" th:errors="*{price}">
+          <p>your product must contain a price</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="topping" th:text="#{inventory.table.producttopping}">Toppings</label>
+        <div class="grid-container" id="topping" >
+          <div class="grid-item" th:each="topping, stat : *{Toppings}" >
+            <table>
+              <tr>
+                <th class = "gridspacing">
+                  <div th:text="${topping.key.name}"></div>
+                </th>
+                <th>
+                  <input class = "gridCheckBox" type="checkbox" name="topping" th:field = "*{toppings[__${topping.key.id}__]}" th:value = "${topping.value}"  th:checked = "${topping.value}" tabindex="0" >
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!--noJS Modal-->
+      <a class = "ui button" th:href="@{'#modal1'}" th:text="#{main.edit}">Edit</a>
+
+      <div th:id="@{'modal1'}" class = "overlayModal">
+        <div class = "popupModal" >
+          <a class="closeModal" href="#">&times;</a> <!-- change to button (in content div) or th-text-->
+          <div class = "contentModal">
+            <h2 th:text="#{inventory.modal.edit}">Are you sure you want to edit this product?</h2>
+            <button type="submit" form="form" class="ui button red" th:text="#{main.confirm}">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!--if product id doesnt exist-->
+  <h1 class="ui header negative message" th:unless="${productFound}" th:text="#{inventory.editProduct.nonExisting}">
+    This product doesn't exist
+  </h1>
+  </div>
+</section>
+</body>
+</html>

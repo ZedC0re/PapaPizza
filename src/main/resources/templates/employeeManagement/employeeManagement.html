@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{emplMgmt.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="webcontent">
+    <div class="blurPadding">
+        <h2 th:text="#{emplMgmt.title}">Employees</h2>
+
+        <div sec:authorize="hasAnyRole('BOSS')">
+
+            <form method="get" th:action="@{/newEmployeeBtn}">
+                <button type="submit" class="ui button blue" th:text="#{emplMgmt.newEmplBtn}">new Employee</button>
+            </form>
+
+            <!--search-->
+            <p>
+            <form class="ui form" method="get" th:action="@{/employeeManagement/}">
+                <div class="ui icon input">
+                    <input class="prompt" type="text" name="search" th:value="${search}" th:placeholder="#{main.search}"/>
+                    <i class="search icon"></i>
+                </div>
+
+                <button class="ui button" style="display:inline-block;" type="submit"
+                        th:text="#{main.search}"></button>
+            </form>
+            <p>
+
+            <div th:if="${emplModifyRes != null}" class="resultDiv">
+                <p class="ui negative message" th:if="${emplModifyRes} == 'lastbossDel'"
+                   th:text="#{emplMgmt.del.lastboss}"></p>
+                <p class="ui negative message" th:if="${emplModifyRes} == 'lastbossEdit'"
+                   th:text="#{emplMgmt.edit.lastboss}"></p>
+                <p class="ui negative message" th:if="${emplModifyRes} == 'delOrderBeingWorkedOn'"
+                   th:text="#{emplMgmt.del.orderBeingWorkedOn}"></p>
+                <p class="ui positive message" th:if="${emplModifyRes} == 'delSuccess'"
+                   th:text="#{emplMgmt.del.success}"></p>
+            </div>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{emplMgmt.table.hempl}">Employee</th>
+                    <th th:text="#{emplMgmt.table.huser}">Username</th>
+                    <th th:text="#{emplMgmt.table.hrole}">Role</th>
+                    <th th:text="#{emplMgmt.table.hedit}">Edit</th>
+                    <th th:text="#{emplMgmt.table.hdel}">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="emp : ${employees}">
+                    <td th:text="${emp.lastname} + ' ' +  ${emp.firstname}">Employee</td>
+                    <td th:text="${emp.getUsername()}">Username</td>
+                    <td th:text="${emp.role}">Role</td>
+                    <td>
+                        <form method="get" th:action="@{emplMgmt/edit/} + ${emp.id}">
+                            <button class="ui button" type="submit" th:text="#{emplMgmt.table.cedit}"> Edit</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" th:action="@{/emplMgmt/del/} + ${emp.id}">
+                            <a class="ui button" th:href="@{'#confirmDelModal'} + ${emp.id}"
+                               th:text="#{main.delete}"></a>
+                            <div th:id="@{'confirmDelModal'} + ${emp.id}" class="overlayModal">
+                                <div class="popupModal">
+                                    <a class="closeModal" href="#">&times;</a>
+                                    <div class="contentModal">
+                                        <h2 th:text="#{emplyMgmt.modal.del}">Are you sure you want to delete this
+                                            employee?</h2>
+                                        <button class="ui button red" type="submit" th:text="#{emplMgmt.table.cdel}">
+                                            Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                <tr th:if="${#lists.isEmpty(employees)}">
+                    <td class="center aligned" colspan="42" th:text="#{main.empty}">empty</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+</body>
+</html>

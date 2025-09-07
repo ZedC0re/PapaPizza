@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{order.title})}">
+<head>
+</head>
+<body>
+
+<section layout:fragment="webcontent">
+
+    <div class="blurPadding">
+        <h2 th:text="#{order.label.orders}">Orders</h2>
+
+        <div th:if="${orderCreated != null}">
+            <div class="ui positive message" th:text="#{order.create.timeEstimate} + ${timeEstimate} + ' min'"></div>
+            <div class="ui positive message" th:text="#{order.create.success}"></div>
+            <form method="get" th:action="@{/downloadInvoice}">
+                <input type="hidden" name="orderId" th:value="${orderCreated.id}"/>
+                <button class="ui button" type="submit" th:text="#{order.download.invoice}"></button>
+            </form>
+            <br>
+        </div>
+
+        <form sec:authorize="hasAnyRole('BOSS','CASHIER')" method="get" role="form" id="newOrderForm" th:action="@{/customerVerification}">
+            <button type="submit" class="ui button" th:text="#{order.newBtn}"></button>
+        </form>
+
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th th:text="#{order.table.lastname}">lastname</th>
+                <th th:text="#{order.table.firstname}">firstname</th>
+                <th th:text="#{order.table.phoneNr}">phoneNr</th>
+                <th th:text="#{order.table.details}">details</th>
+                <th th:text="#{order.table.state}">state</th>
+                <th th:text="#{order.table.deliveryType}">deliveryType</th>
+                <th th:text="#{order.table.total}">total</th>
+
+                <th sec:authorize="hasAnyRole('BOSS','CASHIER')" th:text="#{order.cancel}">Cancel</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="order : ${orders}" th:if="${order.deliveryType != 'RETURN_ORDER'}">
+                <td th:text="${order.lastname}">lastname</td>
+                <td th:text="${order.firstname}">firstname</td>
+                <td th:text="${order.phone}">phone</td>
+                <td>
+                    <form method="get" th:action="@{analytics/detail/} + ${order.orderId}">
+                        <button class="ui button" type="submit" th:text="#{main.details}">Details</button>
+                    </form>
+                </td>
+                <td th:text="${order.orderState}">orderState</td>
+                <td>
+                    <span th:if="${order.orderState == 'READYPICKUP'}">
+
+                        <form role="form" id="form2" method="post" th:action="@{/order/complete/} + ${order.orderId}">
+                            <a sec:authorize="hasAnyRole('BOSS','CASHIER')" class = "ui blue button" th:href="@{'#modal2'+ ${order.orderId}}" th:text="#{order.table.completeButton}">delete</a>
+                            <div th:id="@{'modal2'+ ${order.orderId}}" class = "overlayModal">
+                                <div class = "popupModal" >
+                                    <a class="closeModal" href="#">&times;</a> <!-- change to button (in content div) or th-text-->
+                                    <div class = "contentModal">
+                                        <h2 th:text="#{order.confirmModalComplete.title}">confirmModalComplete</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.confirm}">confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </span>
+                    <span th:unless="${order.orderState == 'READYPICKUP'}">
+                        <label th:text="${order.deliveryType}">deliveryType</label>
+                    </span>
+                </td>
+                <td th:text="${order.total}">total</td>
+
+                <td sec:authorize="hasAnyRole('BOSS','CASHIER')">
+                    <span th:if="${order.orderState == 'OPEN'}">
+
+                        <form role="form" id="form" method="post" th:action="@{/order/cancel/} + ${order.orderId}">
+                            <a sec:authorize="hasAnyRole('BOSS','CASHIER')" class = "ui blue button" th:href="@{'#modal1'+ ${order.orderId}}" th:text="#{order.table.cancelButton}">cancel</a>
+                            <div th:id="@{'modal1'+ ${order.orderId}}" class = "overlayModal">
+                                <div class = "popupModal" >
+                                    <a class="closeModal" href="#">&times;</a> <!-- change to button (in content div) or th-text-->
+                                    <div class = "contentModal">
+                                        <h2 th:text="#{order.confirmModalCancel.title}">confirmModalComplete</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.confirm}">confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </span>
+
+                    <span th:if="${order.orderState == 'INVALID'}">
+
+                        <form method="post" th:action="@{/order/edit/} + ${order.orderId}">
+                            <button class="ui blue button" th:text="#{order.table.editButton}">edit</button>
+                        </form>
+                    </span>
+
+                    <span th:unless="${order.orderState == 'OPEN' || order.orderState == 'INVALID'}" th:text="#{order.table.notAvailable}">N/A</span>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(orders)}">
+                <td class="center aligned" colspan="42" th:text="#{main.empty}">empty</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!--- invalid-cleanup --->
+        <form role="form" id="form3" method="post" th:action="@{/order/cleanup/}">
+            <a sec:authorize="hasAnyRole('BOSS','CASHIER')" class = "ui button" th:href="@{'#modal3'}" th:text="#{order.cleanup}">cleanup</a>
+            <div th:id="@{'modal3'}" class = "overlayModal">
+                <div class = "popupModal" >
+                    <a class="closeModal" href="#">&times;</a> <!-- change to button (in content div) or th-text-->
+                    <div class = "contentModal">
+                        <h2 th:text="#{order.cleanupModal.title}">cleanupModal</h2>
+                        <button class="ui button red" type="submit" th:text="#{main.confirm}">confirm</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</section>
+
+</body>
+</html>

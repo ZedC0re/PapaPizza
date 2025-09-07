@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{blanklayout.html(title=#{inventory.editTopping.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="blurPadding">
+
+    <!--if product id exists-->
+    <div th:if="${productFound}">
+        <form method="post" role="form" class="ui form" id="form" th:action="@{/inventory/editTopping/} + ${ToppingID}" th:object="${form}">
+
+            <h3 class="ui dividing header" th:text="#{inventory.editTopping.title}">Edit Topping</h3>
+
+            <div class="ui negative message" th:if="${#fields.hasErrors('*')}">
+                <p th:text="#{inventory.addTopping.formErr}">Some inputs are not correct.</p>
+            </div>
+
+            <div class="field">
+                <label for="name" th:text="#{inventory.table.productname}">Productname</label>
+                <input id="name" name="name" th:field="*{name}" th:errorclass="fieldError" type="text"
+                       th:placeholder="#{inventory.table.productname}" placeholder="name" required="required"/><br/>
+                <div class="ui negative message" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">
+                    <p>name may not be empty</p>
+                </div>
+                <div class="ui negative message" th:if="${productAlrExists}">
+                    <p th:text="#{inventory.editProduct.productExists}">Product with this name does already exist</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="price" th:text="#{inventory.table.productprice}">price</label>
+                <input id="price" name="price" th:field="*{price}" th:errorclass="fieldError" type="text" pattern="[0-9]+((\.|,)[0-9][0-9]?)?"
+                       th:placeholder="#{inventory.table.productprice}" placeholder="price" required="required" /><br/>
+                <div class="ui negative message" th:if="${#fields.hasErrors('price')}" th:errors="*{price}">
+                    <p>your product must contain a price</p>
+                </div>
+            </div>
+
+
+            <!--noJS Modal-->
+            <a class = "ui button" th:href="@{'#modal1'}" th:text="#{main.edit}">Edit</a>
+
+            <div th:id="@{'modal1'}" class = "overlayModal">
+                <div class = "popupModal" >
+                    <a class="closeModal" href="#">&times;</a> <!-- change to button (in content div) or th-text-->
+                    <div class = "contentModal">
+                        <h2 th:text="#{inventory.modal.editTopping}">Are you sure you want to edit this product?</h2>
+                        <button type="submit" form="form" class="ui button red" th:text="#{main.confirm}">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class = "spacer"></div>
+    </div>
+
+    <!--if product id doesnt exist-->
+    <h1 class="ui header negative message" th:unless="${productFound}" th:text="#{inventory.editProduct.nonExisting}">
+        This product doesn't exist
+    </h1>
+    </div>
+</section>
+</body>
+</html>

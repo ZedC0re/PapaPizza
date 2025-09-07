@@ -1,0 +1,135 @@
+= Cross-Testing Feedback
+
+__Performing Group: 19__ +
+__Application of Group: 25__
+
+== Tested System
+Web-Application for "Autohaus/Leasingservice Kracher"
+
+== Bug Report
+// See http://asciidoctor.org/docs/user-manual/#tables
+
+
+=== /inventory
+[options="header"]
+|===
+| Path | Parameter | Description | Response
+
+| http://localhost:8080/registerCar | Bild (Url) | expected to input url | url is hardcoded to "/resources/img/product", so no actual urls can be used
+| http://localhost:8080/editItem/{id} | [Kategorie:Auto] Lagermenge | the edit form field contains a comma for 4 digit mileages, which throws an error | browser-side form field error
+| http://localhost:8080/editItem/{id} | [Kategorie:Auto] earlier added custom car | submitting the first form shows a second form with the wrong category | first form is not applied, but second one is (with category: Ersatzteil, original category remains correct though) → this results in values like stock amount & mileage being unchangeable
+| http://localhost:8080/editItem/{id} car:Pordi Walross | Leasingpreis | form field step is set to 0.01, so every input must be a multiple of 0.01 apart from the original value, i.e. 99,979 cannot be changed to 99,000 but only 99,009 or 98,999 | browser-side form field bug
+| http://localhost:8080/inventory | “Nur Ausverkaufte Produkte” | filter | does nothing
+| http://localhost:8080/resigned_employees | employee themselves | already fired employees can be fired again |
+| http://localhost:8080/inventory | Reorder | Reordering from a single products page has a maximum amount, reordering directly from http://localhost:8080/inventory does not have a max.|
+| http://localhost:8080/editItem/{id} | /edititem | Price isnt shown as on Product page, rounding error?! | price of 50€ leasing becomes 49.999
+| http://localhost:8080/inventory_detail/{id} | /edititem | Sometimes a leasing price can be seen in /edititem, but isnt shown in the product page?! |
+| http://localhost:8080/reorder | number | Whitelabel Error on entered number, if number is greater than 2,147,483,647 (Integer-max-value) | Bad Request, status=400
+| http://localhost:8080/registerItem | category | you can inject the wrong category using html (in Browser) to turn an item into a car | Status 500 when trying to view this item / car |
+|===
+
+
+=== /employees
+[options="header"]
+|===
+| Path | Parameter | Description | Response
+
+| http://localhost:8080/employees | create new (empty form, same name) | form doesnt do any validation at all, i.e. can create empty | same name redirects to Status 500
+| http://localhost:8080/new_employee | create new(nonsense inputs, for example: Letters in a Phone number) | No validation, site crashes upon creation | Nonsense input redirects to status 500
+| http://localhost:8080/person/{role} | edit Employee with nonsense input | similar to create new,  there’s no validation messages | Redirects to Homepage withot crashing, changes are not saved
+| http://localhost:8080/adjust_salary/seller | adjust salary(tried to input letters) | No validation, site crashes upon creation | Redirects to Whitelabel Error Page, no mapping for error
+| http://localhost:8080/employees | Resign | Resign button adds employees to resigned employees, already resigned employees and be resigned again with no effect or message | Redirects back to http://localhost:8080/employees, does nothing
+| http://localhost:8080/employees | Resign | You can still log in and perform other Actions as/on resigned Employees |
+|===
+
+
+=== /new_assignment
+[options="header"]
+|===
+| Path | Parameter | Description | Response
+
+| http://localhost:8080/new_assignment | Negative Duration (Time in Minutes) | reads field as empty, incorrect error message | "Duration field can't be empty"
+
+|===
+
+
+=== /customer
+[options="header"]
+|===
+| Path | Parameter | Description | Response
+
+| http://localhost:8080/new_customer | Empty form | Crashes | Something went wrong on our end.., 500
+| http://localhost:8080/new_customer | Phone | non  Number can be entered |
+| http://localhost:8080/new_customer | Name, Firstname, Address | only-Number-String can be entered |
+| http://localhost:8080/new_customer | form | with javascript turned off the new_customer page directs you back to itself |
+|===
+
+
+=== /catalog
+[options="header"]
+|===
+| Path | Parameter | Description | Response
+
+| http://localhost:8080/detail/{id} | Quantity: 10, with 10 in stock | Trying to add all of the currently stocked items to the cart does not work (works sometimes, at least with other products) | "Warning: Sorry, there is not enough stock"
+| http://localhost:8080/catalog | Different filter options | Filters dont work as intended, "Filter" is an option, when applying multiple filters they are applied, but not shown correctly, Only one is shown |
+| http://localhost:8080/detail/{id} | Quantity: 2.0 | Entering a quantity with a dot in it is possible but crashes the site | Bad Request 400, Whitelabel Error Page
+| http://localhost:8080/detail/{id} | Auto leasen | clicking on the “auto leasen” button will leave you with an error message | Status 403
+| https://localhost:808/detail/{id} | Auto leasen, Auto kaufen | Buttons have no english translations (when english language is selected) |
+| http://localhost:8080/detail/{id} | Quantity | Quantity is not updated upon adding something to cart → not terrible but could be misleading |
+| http://localhost:8080/catalog | catalog | towing service sees catalog in the navbar, can’t really access it (does not see any items) |
+| http://localhost:8080/catalog | url | url verification does not exist. |
+|===
+
+
+=== /cart
+[options="header"]
+|===
+| Path | Parameter | Description | Response
+
+| http://localhost:8080/cart | Repairjob | Price isnt shown correctly, example: 16min repairjob costs "18.4€", especially higher amounts are not displayed correctly (e.g. 1,8E+8€)|
+| http://localhost:8080/cart | Assignments | "Quantity" does not have a Unit, should be minutes, a little unclear, cannot type in field, makes changing the time by even an hour an absolute pain |
+| http://localhost:8080/cart | Assignments | a very high numbers of minutes in assignments (still int territory [e.g. 1000 minutes]) leads to the text field not displaying it and the + and - buttons to working. | Bad Request 400, Whitelabel Error Page
+| http://localhost:8080/cart | Quantity | field can’t be overwritten |
+| http://localhost:8080/cart | Car | you can lease a car for one day and pay the monthly price (e.g. from 19.12.2021 to 19.12.2021) |
+| http://localhost:8080/cart | customer | when you assign a customer in the cart & then delete it you can still confirm your purchase |
+| http://localhost:8080/cart | purchase | Order with the amout of 0 are possible |
+|===
+
+
+=== /orders
+[options="header"]
+|===
+| Path | Parameter | Description | Response
+| http://localhost:8080/orders | make Order with an edited Customer | checking out with an edited Customer shows the old Customer data in Order Overview |
+|===
+
+
+=== /financial
+[options="header"]
+|===
+| Path | Parameter | Description | Response
+| http://localhost:8080/financial | Graph | sales Graph does not work without JavaScript  |
+|===
+
+
+== Other
+* in general:
+- very nice looking and working application
+- html request error pages are nice
+- good workflow
+
+* Icons are nice-looking, but sometimes dont have any description, kind of unclear what they show
+    -> lower Icon changes to questionmark when clicking on a Product
+
+* there’s no Customer Tab in the Navbar (admin)
+* language selection only worked on some of our machines (some people got it working by changing the language (in e.g. chrome) itself & others not at all) [might be browser related issue]
+* In general, high amounts are not displayed correctly
+* The boss cannot be terminated. Problem: endless bosses
+* The website is not scalable
+* The Nav bar shows duplicate entries on the main page. Some entries are only displayed on the main page (Main page: [http://localhost:8080/](http://localhost:8080/ ))
+* generally nothing deleted from database upon deletion in system
+-> generally ok, but kinda questionable from a customers point of view
+
+== Improvement Suggestions
+* other than the Bugs we found there were no big noticeable flaws
+

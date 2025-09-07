@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{newOrder.title})}">
+<head>
+</head>
+<body>
+<section sec:authorize="hasAnyRole('BOSS','CASHIER')" layout:fragment="webcontent">
+    <div class="blurPadding">
+
+        <div class="ui negative message" th:if="${error == 'error'}">
+            <p th:text="#{newOrder.newShopOrderForm.message.error}"></p>
+        </div>
+
+        <!--- *{dishsetQuantities[__${itemStat.index}__]} --->
+
+        <form sec:authorize="hasAnyRole('BOSS','CASHIER')" id="cardForm" method="post" th:action="@{/newOrder/card}" th:object="${form}">
+            <h2 th:text="#{newOrder.dishSets.title}">dishSets</h2>
+            <div class="scrolling-wrapper">
+                <div class="card" th:each="entry : *{dishSets}" >
+                    <h3 th:text="${entry.key}">key</h3>
+                    <div class="ui input"><input type="number" min="0" max="500" th:value="${entry.value}" th:field="*{dishSets[__${entry.key}__]}"></div>
+                </div>
+            </div>
+
+
+            <h2 th:text="#{newOrder.pizzaPresets.title}">pizzaPresets</h2>
+            <div class="scrolling-wrapper">
+                <div class="card" th:each="entry : *{pizzaPresets}" >
+                    <h3 th:text="${entry.key}">key</h3>
+                    <div class="ui input"><input type="number" min="0" max="500" th:value="${entry.value}" th:field="*{pizzaPresets[__${entry.key}__]}"></div>
+                </div>
+            </div>
+
+            <h2 th:text="#{newOrder.consumables.title}">consumables</h2>
+            <div class="scrolling-wrapper">
+                <div class="card" th:each="entry : *{consumables}" >
+                    <h3 th:text="${entry.key}">key</h3>
+                    <div class="ui input"><input type="number" min="0" max="500" th:value="${entry.value}" th:field="*{consumables[__${entry.key}__]}"></div>
+                </div>
+            </div>
+
+            <h2 th:text="#{newOrder.drinks.title}">drinks</h2>
+            <div class="scrolling-wrapper">
+                <div class="card" th:each="entry : *{drinks}" >
+                    <h3 th:text="${entry.key}">key</h3>
+                    <div class="ui input"><input type="number" min="0" max="500" th:value="${entry.value}" th:field="*{drinks[__${entry.key}__]}"></div>
+                </div>
+            </div>
+
+            <h2 th:text="#{newOrder.configurator.title}">configurator</h2>
+            <div style="margin-bottom:10px">
+                <h3 class="inline" th:text="#{newOrder.configurator.quantity}"></h3>
+                <div class="inline"><div class="ui input"><input type="number" th:value="*{customPizzaQuantity}" min="1" max="500" th:field="*{customPizzaQuantity}"></div></div>
+                <div class="inline"><button class="ui button" style="float:right" th:text="#{newOrder.configurator.apply}" type="submit" th:formaction="@{/newOrder/configurator}">apply</button></div>
+            </div>
+            <div class="scrolling-wrapper">
+                <div class="card" th:each="topping : *{toppings}" >
+                    <h2 th:text="${topping}">name</h2>
+                    <div style="width:min-content;height:min-content;margin:auto">
+                        <input type="checkbox" class="ui checkbox" name="selectedToppings" th:value="${topping}">
+                    </div>
+                </div>
+            </div>
+
+            <hr style="height:3px">
+
+            <h2 th:text="#{newOrder.checkout.title}">checkout</h2>
+
+            <div style="margin-bottom:10px">
+                <h3 class="inline" th:text="#{newOrder.checkout.summary}">summary</h3>
+                <div class="inline"><button type="submit" style="float:right" class="ui button" th:text="#{newOrder.checkout.refreshButton}">Refresh</button></div>
+            </div>
+
+            <table class="ui celled table">
+                <thead>
+                    <tr>
+                        <th th:text="#{newOrder.summary.table.product}">product</th>
+                        <th th:text="#{newOrder.summary.table.quantity}">quantity</th>
+                        <th th:text="#{newOrder.summary.table.price}">price</th>
+                        <th th:text="#{newOrder.summary.table.remove}">remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="orderLine : *{shopOrderOrderLines}">
+                        <th th:text="${orderLine.getProductName()}">getProductName</th>
+                        <th th:text="${orderLine.getQuantity().getAmount()}">getAmount</th>
+                        <th th:text="${orderLine.getPrice().toString()}">getPrice</th>
+                        <th><button type="submit" class="ui button" th:text="#{newOrder.summary.table.remove}" th:formaction="@{/newOrder/removeFromSummary/} + ${orderLine.getProductIdentifier().getIdentifier()}"></button></th>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="inline" th:text="#{newOrder.checkout.summary}">summary</h3>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{newOrder.summary.table.discountType}">discountType</th>
+                    <th th:text="#{newOrder.summary.table.discountPrice}">quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="chargeLine : *{shopOrderChargeLines}">
+                    <th th:text="${chargeLine.getDescription()}">getDescription</th>
+                    <th th:text="${chargeLine.getPrice().toString}">getPrice</th>
+                </tr>
+                </tbody>
+            </table>
+
+            <h3 th:text="#{newOrder.summary.sum} + ': ' + ${newShopOrderTotal}">sum</h3>
+            <div th:if="${freeDrinkPossible}" class="ui warning message">
+                    <div class="header" th:text="#{newOrder.freeDrinkWarning}"></div>
+            </div>
+
+            <hr style="height:3px">
+
+            <div>
+                <h3 class="inline" th:text="#{newOrder.deliveryType.label}" >deliveryType</h3>
+                <div class="inline">
+                    <select class="ui dropdown" th:field="*{deliveryType}" required="required" >
+                        <option th:text="#{newOrder.deliveryType.delivery}" value="Delivery">delivery</option>
+                        <option th:text="#{newOrder.deliveryType.pickup}" value="Pickup" selected="selected">pickup</option>
+                    </select>
+                </div>
+                <div class="inline"><button class="ui blue button" type="submit" th:text="#{newOrder.apply}" style="float:right" th:formaction="@{/newOrder/apply}">Submit</button>
+                <div style="height:50px"></div></div>
+            </div>
+
+        </form>
+    </div>
+</section>
+</body>
+</html>

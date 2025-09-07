@@ -1,0 +1,83 @@
+= Protokoll Gruppe 19
+
+Treffen am 29.11.2021
+
+Ort:      Big Blue Button +
+Beginn:   16:40 Uhr +
+Ende:     18:00 Uhr
+
+__Schriftführer:__ Carl Bennet Kuhlmann
+
+*Nächstes Treffen:* +
+06.12.2021, 18:30 Uhr, Discord
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+- Fabian Hecker (Tutor)
+- Teilnehmer der Gruppe 20
+
+== Bemerkungen
+Diese Woche wurde die Zwischenpräsentation durchgeführt, an welcher zusätzlich Gruppe 20 und Fabian Hecker (Tutor) anwesend waren. Gruppe 20 begann 16:45 mit ihrer Vorstellung und beendete 17:05 ihre Fragerunde. Unser Vortrag begann 17:10, der Folienteil beanspruchte 12 min, der Vorstellungsteil ebenfalls 12 min und die Fragerunde ging bis 17:50. Hauptkritikpunkte der Präsentation waren der Überzug des zeitlichen Rahmens, sowie die verminderte Fokussierung auf die ursprüngliche Aufgabenstellung. Das Mergen eines funktionalen Prototypen hat allerdings erfolgreich in der vergangenen Woche stattgefunden, wodurch ein solider Ausgangspunkt für weitere Features gegeben ist.
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|10 |Inventory component    |fertig     | Max
+|11 |Order component | fertig | Bennet
+|13 |Kitchen component | fertig | Christian
+|15 |Delivery component |fertig | Tom
+|19 |Basic functionality | fertig |
+|20 |Interim presentation | fertig | Gesamtes Team
+|22 |employee mgmt boss | fertig | Florian, Eric
+|24 |change password & username -> new salespoint.useraccount | fertig | Florian, Eric
+|25 |Edit Employee: NonEmpty check | fertig | Eric
+|30 |Add custom pizza | fertig | Max, Bennet
+|33 |Make orders immutable? | fertig | Max, Bennet
+|37 |AttachedLines->OderLindes | fertig | Bennet
+|39 |new order: discount & free drink | fertig | Bennet
+|===
+
+
+== Aktueller Stand
+Der Prototyp beinhaltet die gesammte Verwaltung von Angestellten und Kunden, sowie die Abhandlung einer "normalen" Bestellung von Erstellung bis Vollendung.
+In kommender Woche werden speziell Features implementiert, welche in den Basic Functionalities charakterisiert wurden. Dazu zählt vor allem die sequenzielle Abhandlung verschiedener Bestellungen, sowie das Drucken der Rechnung etc. (siehe Pflichtenheft). Ein großteil der Arbeit in den nächsten Wochen wird sich auf die Komponenten Kitchen und Delivery beziehen.
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|17   |Form doesn't show confirmation modal on ENTER | bug | Florian | offen
+|18 |Ensure functionality without JS | bug | Florian | offen
+|21 |Employee management crucial&polish | comp:employee | Florian, Eric | offen
+|26 |Customer Frontend sort & filter | comp:customer, feature | Florian | offen
+|31 |Customer removal when linked | bug, comp:customer | Florian | offen
+|32 |Db linked inventory item removal | bug, comp:inventory | Max | offen
+|34 | Db linked employee removal | bug, comp:employee | Eric | offen
+|35 |Weekly order overview in analytics | comp:analytics, feature | Eric | offen
+|36 |dynamic capacity of vehicles | comp:delivery, feature | Tom | offen
+|38 |confirmation modal | comp:employee | Eric | offen
+|41 |KitchenController (71): Product separation Method to Product-Category | bug, comp:kitchen, invalid | Christian | offen
+|42 |Order: invoice creation | comp:order, feature | | offen
+|43 |InventoryInitializer: initialize Dink-Products | comp:inventory, feature | Max | offen
+|44 |NewOrder: update Order before apply | bug, comp:order | Bennet | offen
+|45 |OrderManagement: shopOrderManagement has not to be generic | bug, comp:order, invalid | Bennet | offen
+|46 |Order:complete Pickup Orders | comp:order, feature, help wanted | Bennet | offen
+|47 | OrderManagement: add UnitTests | comp:order, test | Bennet | offen
+|48 |OrderController:add UnitTests | comp:order, test | Bennet | offen
+|49 |Order: solve JdbcSQLIntegrityConstraintViolationException | bug, comp:order | Bennet | offen
+|===

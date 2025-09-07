@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{kitchen.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="webcontent">
+    <div class="blurPadding" sec:authorize="hasAnyRole('BOSS', 'CHEF')">
+
+        <h2 th:text="#{kitchen.title}">Kitchen</h2>
+
+        <div th:each="displayKitchen : ${displayKitchens}">
+            <div th:unless="${displayKitchen.isEmpty()}">
+                <div class="ui label" th:text="#{kitchen.oven.label}+ ' ' + ${displayKitchen.oven.getName()}"></div>
+                <div class="ui label"
+                     th:text="#{kitchen.employee.label} + ' ' + ${displayKitchen.oven.chef.firstname} + ' ' + ${displayKitchen.oven.chef.lastname}"></div>
+
+                <table class="ui celled table">
+                    <thead>
+                    <tr>
+                        <th th:text="#{kitchen.table.pizza}">Pizza</th>
+                        <th th:text="#{kitchen.table.ingredients}">Ingredients</th>
+                        <th th:text="#{kitchen.table.belongingOrder}">Belongs to</th>
+                        <th th:text="#{kitchen.table.interaction}">Interaction</th>
+                        <th th:text="#{kitchen.table.timeLeft}">Time left</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="pizza, iter:${displayKitchen.oven.pizzas}">
+                        <td th:text="${pizza.name}"></td> <!--NAME-->
+                        <td> <!--TOPPINGS-->
+                            <div th:each="topping:${pizza.toppings}">
+                                <span th:text="${topping.getName()}"></span>
+                                <br>
+                            </div>
+                        </td>
+                        <td><!--BELONGING ORDER-->
+                            <div th:text="${pizza.order.customer.firstname} + ' ' + ${pizza.order.customer.lastname}">NONE</div>
+                            <div th:text="'@' + ${#temporals.format(pizza.order.timeCreated, 'hh:mm')}"></div>
+                        </td>
+                        <td> <!--INTERACTION-->
+                            <form th:if="${pizza.state == T(papapizza.inventory.items.PizzaState).OPEN}"
+                                  th:action="@{/kitchen/bake/} + ${pizza.getId()}" method="post">
+                                <button class="ui button" type="submit" th:text="#{kitchen.bake}"
+                                        th:disabled="${iter.index!=0}"> Bake
+                                </button>
+                            </form>
+                            <form th:if="${pizza.state == T(papapizza.inventory.items.PizzaState).PENDING}"
+                                  th:action="@{/kitchen/finish/} + ${pizza.getId()}" method="post">
+                                <button class="ui button" type="submit" th:text="#{kitchen.finish}"> Finish</button>
+                            </form>
+                        </td>
+                        <td> <!--TIME-->
+                            <div th:if="${pizza.state == T(papapizza.inventory.items.PizzaState).OPEN}">
+                                <div th:if="${iter.index==0}">
+                                    <span th:text ="#{kitchen.oven.ready}"> Oven is ready </span>
+                                </div>
+                                <div th:unless="${iter.index==0}">
+                                    <span th:text = "#{kitchen.oven.waiting}"> Waiting for oven </span>
+                                </div>
+                            </div>
+                            <div th:if="${pizza.state == T(papapizza.inventory.items.PizzaState).PENDING}">
+                                <div th:if="${displayKitchen.times.get(pizza.getId()) <= 0}">
+                                    <span th:text = "#{kitchen.oven.takeout}"> Pizza needs to be taken out </span>
+                                </div>
+                                <div th:with="time=${displayKitchen.times.get(pizza.getId())}"
+                                     th:text="${time/60} + 'min ' + ${time}%60 +'s'"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr th:if="${#lists.isEmpty(displayKitchen.oven.pizzas)}">
+                        <td class="center aligned" colspan="42" th:text="#{main.empty}">empty</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+        </div>
+        <div>
+            <form th:action="@{/kitchen}" method="get">
+                <button class="ui button" type="submit" th:text="#{kitchen.refresh}"> Refresh</button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

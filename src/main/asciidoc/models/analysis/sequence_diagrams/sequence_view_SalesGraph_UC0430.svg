@@ -1,0 +1,209 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="711" height="611">
+	<defs/>
+	<g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 8 0 L 699 0 L 699 591 L 8 591 L 8 0" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 8 0 L 8 22 L 135.998046875 22 L 146.998046875 11 L 146.998046875 0 L 8 0"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 8 0 L 8 22 L 135.998046875 22 L 146.998046875 11 L 146.998046875 0 L 8 0 L 8 0" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="32.72998046875" y="17.5">view SalesGraph</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="13" y="17.5">sd</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="63" y="47" width="120.1435546875" height="39" opacity="0.2"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="56" y="40" width="120.1435546875" height="39"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 56 40 L 176.1435546875 40 L 176.1435546875 79 L 56 79 L 56 40 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="69.10546875" y="59.5">Boss: Employee</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 117.5 80 L 117.5 470" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="207" y="47" width="140.38623046875" height="39" opacity="0.2"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="200" y="40" width="140.38623046875" height="39"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 200 40 L 340.38623046875 40 L 340.38623046875 79 L 200 79 L 200 40 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="215.28271484375" y="59.5">analytics: Analytics</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 271.5 80 L 271.5 528" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="415" y="47" width="95.57177734375" height="39" opacity="0.2"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="408" y="40" width="95.57177734375" height="39"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 408 40 L 503.57177734375 40 L 503.57177734375 79 L 408 79 L 408 40 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="420.385009765625" y="59.5">order: Order</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 456.5 80 L 456.5 488" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 117 122 L 264 122" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="#000000" stroke="none" d="M 253.83732514237585 126.20951775601598 L 264 122 L 253.83732514237585 117.79048224398402"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 253.83732514237585 126.20951775601598 L 264 122 L 253.83732514237585 117.79048224398402 L 253.83732514237585 126.20951775601598" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="133.5" y="118.5">1 : getSalesGraph()</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="264" y="122" width="13" height="334"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 264 122 L 277 122 L 277 456 L 264 456 L 264 122 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 277 168 L 307 168 L 307 188 L 284 188" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="#000000" stroke="none" d="M 294.16267485762415 183.790482243984 L 284 188 L 294.16267485762415 192.209517756016"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 294.16267485762415 183.790482243984 L 284 188 L 294.16267485762415 192.209517756016 L 294.16267485762415 183.790482243984" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="248.5" y="183.5">2 : getTotalsAndDates()</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="271" y="188" width="13" height="52"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 271 188 L 284 188 L 284 240 L 271 240 L 271 188 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 284 209 L 449 209" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="#000000" stroke="none" d="M 438.83732514237585 213.209517756016 L 449 209 L 438.83732514237585 204.790482243984"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 438.83732514237585 213.209517756016 L 449 209 L 438.83732514237585 204.790482243984 L 438.83732514237585 213.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="299.5" y="205.5">3 : getTotal(), getDate()</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="449" y="209" width="13" height="39"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 449 209 L 462 209 L 462 248 L 449 248 L 449 209 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 449 236 L 284 236" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 294.16267485762415 231.790482243984 L 284 236 L 294.16267485762415 240.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="320.5" y="252.5">4 : (Total, Date)</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 277 344 L 307 344 L 307 364 L 284 364" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="#000000" stroke="none" d="M 294.16267485762415 359.790482243984 L 284 364 L 294.16267485762415 368.209517756016"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 294.16267485762415 359.790482243984 L 284 364 L 294.16267485762415 368.209517756016 L 294.16267485762415 359.790482243984" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="250.5" y="359.5">5 : createSalesGraph()</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="271" y="364" width="13" height="28"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 271 364 L 284 364 L 284 392 L 271 392 L 271 364 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 264 419 L 117 419" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 127.16267485762415 414.790482243984 L 117 419 L 127.16267485762415 423.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="145.279541015625" y="435.5">6 : SalesGraph</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 176 136 L 496 136 L 496 304 L 176 304 L 176 136" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 176 136 L 176 158 L 325.6943359375 158 L 336.6943359375 147 L 336.6943359375 136 L 176 136"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 176 136 L 176 158 L 325.6943359375 158 L 336.6943359375 147 L 336.6943359375 136 L 176 136 L 176 136" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="207.9599609375" y="153.5">loop: for each order</text>
+			</g>
+		</g>
+		<g transform="translate(2,10) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="181" y="153.5">seq</text>
+			</g>
+		</g>
+	</g>
+</svg>

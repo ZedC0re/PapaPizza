@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <meta charset="UTF-8">
+        <title>devcon</title>
+    </head>
+    <body>
+        <div>Current Roles:</div>
+        <div th:each="role : ${currentRoles}">
+            <div th:text="${role.name}">n/a</div>
+        </div>
+
+        <button onclick="window.location.href='/logout'">Logout</button>
+        <button onclick="window.location.href='/order'">Order</button>
+        <button onclick="window.location.href='/cstmrMgmt'">Customer Management</button>
+        <button onclick="window.location.href='/employeeManagement'">Employee Management</button>
+        <button onclick="window.location.href='/inventory'">Inv</button>
+        <button onclick="window.location.href='/delivery'">Delivery</button>
+        <button onclick="window.location.href='/kitchen'">Kitchen</button>
+        <br>
+        <button onclick="window.location.href='/cstmrMgmt/returnSet/7'">Return set</button>
+    </body>
+</html>

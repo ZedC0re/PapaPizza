@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{cstmrMgmt.returnSet.title})}">
+<head>
+</head>
+<body>
+    <section layout:fragment="webcontent">
+        <div class="blurPadding">
+            <h2 th:text="#{cstmrMgmt.returnSet.title}">Dishset return</h2>
+
+            <form th:action="@{/cstmrMgmt/returnSet/}+${customerId}" method="post">
+            <table class="ui celled table">
+                <thead>
+                    <tr>
+                        <th th:text="#{cstmrMgmt.returnSet.table.return}"></th>
+                        <th th:text="#{cstmrMgmt.returnSet.table.typeLent}">Set type</th>
+                        <th th:text="#{cstmrMgmt.returnSet.table.timeLent}">dateLent</th>
+                        <th th:text="#{cstmrMgmt.returnSet.table.timeRemaining}">Remaining time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="dishset : ${dishsets}">
+                        <td class="collapsing ui equal width center aligned">
+                            <input class="ui checkbox"
+                                   type="checkbox"
+                                   name="selectedSets"
+                                   th:value="${dishset.id}"
+                                   th:if="${dishset.getRemainingTimeSec() > 0}"
+                            />
+                        </td>
+                        <td th:text="${dishset.dishsetType.name}">dishset type</td>
+                        <td th:text="${#temporals.format(dishset.dateLent, 'dd.MM.yyyy HH:mm')}">dateLent</td>
+                        <td class="collapsing" th:with="remainTime = ${dishset.getRemainingTimeSec()}"
+                            th:text="${remainTime<0} ? #{cstmrMgmt.returnSet.timeOver} : ${@FEUtils.splitUnitsTimeFormatted(remainTime)}"></td>
+                    </tr>
+                </tbody>
+            </table>
+                <div align="right">
+                    <button class="ui button blue" type="submit"
+                            th:text="#{cstmrMgmt.returnSet.submitBtn}">Return Sets</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

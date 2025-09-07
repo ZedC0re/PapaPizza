@@ -1,0 +1,55 @@
+= Protokoll Gruppe 19
+
+Treffen am 18.10.2021
+
+Ort:      Online Meeting über BBB +
+Beginn:   18:30 Uhr +
+Ende:     20:30 Uhr
+
+__Schriftführer:__ Carl Bennet Kuhlmann
+
+*Nächstes Treffen:* +
+25.10.2021, 18:30 Uhr, Online Meeting über BBB (selber Link)
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Tom-Erik Günther
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+
+== Bemerkungen
+In der Vorstellungsrunde der Aufgaben von Woche 1 konnte jeder ein erarbeitetes Ergebnis vorzeigen. Lediglich fiel auf, dass bis auf Tom keine eine Validierung der Email implementiert hat. Es fand eine Fragerunde zum Pizza-Projekt statt, zu welcher sich unter https://www.notion.so/Softwareprojekt-2c9e46001fde4b528d691c00d7ca35c9[notion] eine Auswertung findet. Eine Nachbesprechung im Team, zur Aufgabenaufteilung und weiteren PLanung wurde am 19.10.21 durchgeführt.
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status  |Bemerkung
+|…     |Einrichten Git, IDE (IntelliJ)       |closed (by everyone)      |Nachträglicher Umstieg von Eclipse auf IntelliJ
+|…     |Guestbook: Email Textfeld hinzufügen        |closed (by everyone)       |eine Validierung wurde nur von einem Teammitglied implementiert
+|===
+
+
+== Aktueller Stand
+Die Aufgaben zur Woche 1 sind abgeschlossen. Außerdem wurde eine ausführliche Planung des zweiten Sprints durchgeführt. Dabei wurde sich unter anderem auf das UML-Tool StarUML geeinigt.
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|#1     |Aufgabe 1     |Beginnen einer Implementierung der Aufgabe            |Eric, Christian                |open
+|#2     |Aufgabe 2     |Beginnen einer Implementierung der Aufgabe            |Bennet                |open
+|#3     |Aufgabe 3     |Beginnen einer Implementierung der Aufgabe            |Maximilian                |open
+|#4     |Aufgabe 4     |Beginnen einer Implementierung der Aufgabe            |Tom-Erik                |open
+|#5     |Aufgabe 5     |Beginnen einer Implementierung der Aufgabe            |Florian                |open
+|===

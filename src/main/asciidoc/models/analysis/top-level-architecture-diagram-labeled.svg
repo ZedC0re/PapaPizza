@@ -1,0 +1,590 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1211" height="1045">
+	<defs/>
+	<g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 224 80 L 1415 80 L 1415 1104 L 224 1104 L 224 80" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 224 80 L 224 102 L 372.9580078125 102 L 383.9580078125 91 L 383.9580078125 80 L 224 80"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 224 80 L 224 102 L 372.9580078125 102 L 383.9580078125 91 L 383.9580078125 80 L 224 80 L 224 80" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="255.9599609375" y="97.5">PapasPizzaService</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="229" y="97.5">pkg</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="377" y="127" width="941" height="928" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="360" y="120" width="951" height="928"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 360 120 L 1311 120 L 1311 1048 L 360 1048 L 360 120 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="360" y="120" width="951" height="928"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 360 120 L 1311 120 L 1311 1048 L 360 1048 L 360 120 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1291" y="130" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1291 130 L 1304 130 L 1304 146 L 1291 146 L 1291 130 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1288" y="133" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1288 133 L 1295 133 L 1295 137 L 1288 137 L 1288 133 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1288" y="139" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1288 139 L 1295 139 L 1295 143 L 1288 143 L 1288 139 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="767.5009765625" y="139.5">PapasPizzaService</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="353" y="518" width="14" height="14"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 353 518 L 367 518 L 367 532 L 353 532 L 353 518 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="315.595947265625" y="516">Employee</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1304" y="525" width="14" height="14"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1304 525 L 1318 525 L 1318 539 L 1304 539 L 1304 525 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1281.049560546875" y="523">Boss</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="961" y="175" width="174" height="120" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="944" y="168" width="184" height="120"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 168 L 1128 168 L 1128 288 L 944 288 L 944 168 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="944" y="168" width="184" height="120"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 168 L 1128 168 L 1128 288 L 944 288 L 944 168 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1108" y="178" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1108 178 L 1121 178 L 1121 194 L 1108 194 L 1108 178 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1105" y="181" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1105 181 L 1112 181 L 1112 185 L 1105 185 L 1105 181 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1105" y="187" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1105 187 L 1112 187 L 1112 191 L 1105 191 L 1105 187 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="957.156005859375" y="187.5">EmployeeManagement</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="537" y="175" width="174" height="120" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="520" y="168" width="184" height="120"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 520 168 L 704 168 L 704 288 L 520 288 L 520 168 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="520" y="168" width="184" height="120"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 520 168 L 704 168 L 704 288 L 520 288 L 520 168 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="684" y="178" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 684 178 L 697 178 L 697 194 L 684 194 L 684 178 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="681" y="181" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 681 181 L 688 181 L 688 185 L 681 185 L 681 181 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="681" y="187" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 681 187 L 688 187 L 688 191 L 681 191 L 681 187 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="533.885986328125" y="187.5">CustomerManagement</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="961" y="543" width="173" height="120" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="944" y="536" width="183" height="120"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 536 L 1127 536 L 1127 656 L 944 656 L 944 536 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="944" y="536" width="183" height="120"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 536 L 1127 536 L 1127 656 L 944 656 L 944 536 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1107" y="546" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1107 546 L 1120 546 L 1120 562 L 1107 562 L 1107 546 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1104" y="549" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1104 549 L 1111 549 L 1111 553 L 1104 553 L 1104 549 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1104" y="555" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1104 555 L 1111 555 L 1111 559 L 1104 559 L 1104 555 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="996.763671875" y="555.5">Inventory</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="961" y="359" width="174" height="119" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="944" y="352" width="184" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 352 L 1128 352 L 1128 471 L 944 471 L 944 352 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="944" y="352" width="184" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 352 L 1128 352 L 1128 471 L 944 471 L 944 352 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1108" y="362" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1108 362 L 1121 362 L 1121 378 L 1108 378 L 1108 362 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1105" y="365" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1105 365 L 1112 365 L 1112 369 L 1105 369 L 1105 365 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1105" y="371" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1105 371 L 1112 371 L 1112 375 L 1105 375 L 1105 371 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="997.990478515625" y="371.5">Analytics</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="537" y="543" width="181" height="119" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="520" y="536" width="191" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 520 536 L 711 536 L 711 655 L 520 655 L 520 536 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="520" y="536" width="191" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 520 536 L 711 536 L 711 655 L 520 655 L 520 536 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="691" y="546" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 691 546 L 704 546 L 704 562 L 691 562 L 691 546 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="688" y="549" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 688 549 L 695 549 L 695 553 L 688 553 L 688 549 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="688" y="555" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 688 555 L 695 555 L 695 559 L 688 559 L 688 555 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="586.885009765625" y="555.5">Order</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="961" y="887" width="173" height="119" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="944" y="880" width="183" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 880 L 1127 880 L 1127 999 L 944 999 L 944 880 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="944" y="880" width="183" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 880 L 1127 880 L 1127 999 L 944 999 L 944 880 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1107" y="890" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1107 890 L 1120 890 L 1120 906 L 1107 906 L 1107 890 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1104" y="893" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1104 893 L 1111 893 L 1111 897 L 1104 897 L 1104 893 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1104" y="899" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1104 899 L 1111 899 L 1111 903 L 1104 903 L 1104 899 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1000.023193359375" y="899.5">Delivery</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="537" y="887" width="173" height="119" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="520" y="880" width="183" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 520 880 L 703 880 L 703 999 L 520 999 L 520 880 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="520" y="880" width="183" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 520 880 L 703 880 L 703 999 L 520 999 L 520 880 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="683" y="890" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 683 890 L 696 890 L 696 906 L 683 906 L 683 890 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="680" y="893" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 680 893 L 687 893 L 687 897 L 680 897 L 680 893 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="680" y="899" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 680 899 L 687 899 L 687 903 L 680 903 L 680 899 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="577.819580078125" y="899.5">Kitchen</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="537" y="359" width="181" height="119" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="520" y="352" width="191" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 520 352 L 711 352 L 711 471 L 520 471 L 520 352 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="520" y="352" width="191" height="119"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 520 352 L 711 352 L 711 471 L 520 471 L 520 352 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="691" y="362" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 691 362 L 704 362 L 704 378 L 691 378 L 691 362 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="688" y="365" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 688 365 L 695 365 L 695 369 L 688 369 L 688 365 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="688" y="371" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 688 371 L 695 371 L 695 375 L 688 375 L 688 371 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="581.8291015625" y="371.5">System</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 367 525 L 464 525 M 464 525 A 8 8 0 0 0 472 517 L 472 417 M 472 417 A 8 8 0 0 1 480 409 L 520 409" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 509.83732514237585 413.209517756016 L 520 409 L 509.83732514237585 404.790482243984" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 367 525 L 464 525 M 464 525 A 8 8 0 0 1 472 533 L 472 571 M 472 571 A 8 8 0 0 0 480 579 L 520 579" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 509.83732514237585 583.209517756016 L 520 579 L 509.83732514237585 574.790482243984" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 367 525 L 464 525 M 464 525 A 8 8 0 0 0 472 517 L 472 226 M 472 226 A 8 8 0 0 1 480 218 L 520 218" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 509.83732514237585 222.209517756016 L 520 218 L 509.83732514237585 213.790482243984" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1059 1104 L 1059 999" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1063.2095177560159 1009.1626748576241 L 1059 999 L 1054.7904822439841 1009.1626748576241" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 367 525 L 464 525 M 464 525 A 8 8 0 0 1 472 533 L 472 1016 M 472 1016 A 8 8 0 0 0 480 1024 L 635 1024 M 635 1024 A 8 8 0 0 0 643 1016 L 643 999" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 647.209517756016 1009.1626748576241 L 643 999 L 638.790482243984 1009.1626748576241" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1304 532 L 1248 532 M 1248 532 A 8 8 0 0 1 1240 524 L 1240 234 M 1240 234 A 8 8 0 0 0 1232 226 L 1128 226" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1138.162674857624 221.790482243984 L 1128 226 L 1138.162674857624 230.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1304 532 L 1248 532 M 1248 532 A 8 8 0 0 1 1240 524 L 1240 426 M 1240 426 A 8 8 0 0 0 1232 418 L 1128 418" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1138.162674857624 413.790482243984 L 1128 418 L 1138.162674857624 422.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1304 532 L 1248 532 M 1248 532 A 8 8 0 0 0 1240 540 L 1240 556 M 1240 556 A 8 8 0 0 1 1232 564 L 1127 564" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1137.162674857624 559.790482243984 L 1127 564 L 1137.162674857624 568.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 615 655 L 615 792 M 615 792 A 8 8 0 0 0 623 800 L 960 800 M 960 800 A 8 8 0 0 1 968 808 L 968 880" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 963.790482243984 869.8373251423759 L 968 880 L 972.209517756016 869.8373251423759" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="803.5" y="819.5">+provides ReadyOrders</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 584 655 L 584 880" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 579.790482243984 869.8373251423759 L 584 880 L 588.209517756016 869.8373251423759" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="511.5" y="840.5">+provides OpenOrders</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 711 579 L 816 579 M 816 579 A 8 8 0 0 0 824 571 L 824 256 M 824 256 A 8 8 0 0 0 816 248 L 704 248" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 714.1626748576241 243.790482243984 L 704 248 L 714.1626748576241 252.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="735.5" y="212.5">+marks LentDishes</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 944 419 L 888 419 M 888 419 A 8 8 0 0 1 880 411 L 880 224 M 880 224 A 8 8 0 0 0 872 216 L 704 216" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 714.1626748576241 211.790482243984 L 704 216 L 714.1626748576241 220.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 592 352 L 592 336 M 592 336 A 8 8 0 0 1 600 328 L 1024 328 M 1024 328 A 8 8 0 0 0 1032 320 L 1032 288" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1036.2095177560159 298.16267485762415 L 1032 288 L 1027.7904822439841 298.16267485762415" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="630.5" y="323.5">+login logout</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 968 656 L 968 736 M 968 736 A 8 8 0 0 1 960 744 L 864 744" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 874.1626748576241 739.790482243984 L 864 744 L 874.1626748576241 748.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="896.6962890625" y="764.5">+provides items</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1080 656 L 1080 840 M 1080 840 A 8 8 0 0 1 1072 848 L 611 848 M 611 848 A 8 8 0 0 0 603 856 L 603 880" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 598.790482243984 869.8373251423759 L 603 880 L 607.209517756016 869.8373251423759" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="672.5" y="868.5">+provides ovens</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1127 936 L 1160 936 M 1160 936 A 8 8 0 0 0 1168 928 L 1168 512 M 1168 512 A 8 8 0 0 0 1160 504 L 1048 504 M 1048 504 A 8 8 0 0 1 1040 496 L 1040 471" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1044.2095177560159 481.16267485762415 L 1040 471 L 1035.7904822439841 481.16267485762415" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1046.5" y="499.5">+provides DeliveredOrders</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="729" y="695" width="142" height="96" opacity="0.2"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="712" y="688" width="152" height="96"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 712 688 L 864 688 L 864 784 L 712 784 L 712 688 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="712" y="688" width="152" height="96"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 712 688 L 864 688 L 864 784 L 712 784 L 712 688 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="844" y="698" width="13" height="16"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 844 698 L 857 698 L 857 714 L 844 714 L 844 698 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="841" y="701" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 841 701 L 848 701 L 848 705 L 841 705 L 841 701 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="841" y="707" width="7" height="4"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 841 707 L 848 707 L 848 711 L 841 711 L 841 707 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="746.3818359375" y="707.5">NewOrder</text>
+			</g>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 632 655 L 632 736 M 632 736 A 8 8 0 0 0 640 744 L 712 744" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 701.8373251423759 748.209517756016 L 712 744 L 701.8373251423758 739.790482243984" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-214,-70) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="639.5" y="735.5">+creates</text>
+			</g>
+		</g>
+	</g>
+</svg>

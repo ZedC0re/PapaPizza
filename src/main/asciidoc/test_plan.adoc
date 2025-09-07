@@ -1,0 +1,187 @@
+= Test-Plan
+
+This test plan is a simplified version of the IEEE 829-1998 template. 
+
+== Introduction
+The working group swt21w19 from the Chair of Software Technolige has high quality standards and has therefore decided to create a test plan according to IEEE 829-1998.
+This test plan has a total of three target groups owner, developer and future documentation, i.e. future developers. +
+
+During the development phase of software products, it is extremely important to regularly check all functions. This test plan is created so that all functions of a software are checked accurately and in full.
+The test plan describes different aspects of testing and the most important target groups. A uniform convention about the naming and the procedure for testing is extremely relevant here in order to prevent all eventualities. +
+
+The boss is the only one with technical knowledge of the software. Nevertheless, a transparent test plan is important. 
+The customer (PapasPizzaService owner) should and must be involved in every development step. Difficulties and change requests can thus be implemented.
+In addition, the operability should be tested in order to rule out software errors. +
+
+For the current developer of the software, it is important to have a clear and well-structured test plan to have all eventualities. 
+Furthermore, it is very important for the development that all functions are checked for their functionality. Regular checking of all functions can significantly accelerate the later development process. 
+This prevents errors that you would otherwise not have recognized +
+
+Future developers also have the opportunity to familiarize themselves with the software more easily with this test plan. Furthermore, you have a solid basis for further test development. +
+
+== Structure of the test identifier
+
+The test identifiers essentially differ between integration test and unit test.
+
+The following identifiers are used as follows, U - Unit Test, I - Integration Test
+
+After the name of the test, there is a reference for the package, + 
+F - financial, + 
+O - Orders,  + 
+I - Inventory, + 
+
+The following naming convention follows from this:
+
+U-F-O = Unitest Financial Nr. 0 +
+I-O-5 = Integrationtest Orders Nr. 5
+I-FO-3 = Integrationtest Fincial and Orders Nr. 3
+
+== Test items
+* Controller +
+....
+CustomerController
+DeliveryController
+EmployeeController
+ShopOrderController
+KitchenController
+AnalyticsController
+ShopInventoryController
+....
+
+* Enums +
+....
+Role
+ShopOrderState
+DeliveryType
+PizzaState
+ProductCategory
+....
+
+* Managent +
+....
+CustomerManagent
+DeliveryManagent
+ShopOrderManagent
+EmployeeManagent
+ShopCatalogManagent
+KitchenManagent
+....
+
+* Data/-Initializer +
+....
+CustomerDataInitializer
+EmployeeDataInitializer
+ShopCatalogInitializer
+ShopOrderDataInitializer
+OrdersInitilizer
+....
+
+* Repository +
+....
+CustomerRepository
+EmployeeRepository
+ShopCatalog
+OrderRepository
+....
+
+* Additional +
+....
+Kitchen 
+Customer
+Delivery
+Employee
+ConsumableProduct
+DishsetProduct
+OvenProduct
+PizzaProduct
+ToppingProduct
+VehicleProduct
+Analitics
+....
+
+== Functionalities to be tested
+The working group swt21w19 decided to cover all self-written functions with as many eventualities as possible.
+Every package from us is therefore tested with unit tests and integration tests.
+
+== Functionalities not to be tested
+In this section we describe certain cases that we cannot test.
+Springframework wird von uns nicht getestet, da es ein Industriestandard ist.
+Furthermore, the Salespoint Framework is not tested, but the extensive test and developer experience of the TU Dresden and the BW University of Munich are relied on.
+Standard Java libares are also not tested. 
+
+== approach
+To test the individual classes or functions within the code we have written, the swt21w19 working group relies on JUnit 5 test.
+All functions are fed with all possible inputs and the behavior of the software is evaluated. +
++
+The integration test works according to the bottom-up principle, this assumes that all unit tests are passed successfully.
+Then software sections are summarized and tested on a larger scale.
+With this type of test, it is not possible to test everything at once, as this could exceed the cost-benefit factor. Therefore, sensible "packages" are combined and tested. +
+Despite the fact that you don't test everything at the same time, an almost 100% quota can be met.
+This means that in theory a failure after a successful test can be ruled out. +
++
+A manual check is required to test the design, which means that the developers independently regularly check the design for errors in all supported browsers. 
+
+== Environmental requirements
+* Do you need special hardware? +
+No specific hardware requirements are provided in this test plan, only recommendations for rapid processing. +
+Recommended: Quad Core (desktop variant) or comparable, 100GB memory, 64-bit OS, 8Gb RAM and input devices +
+
+* Which data must be provided? How is the data provided? +
+The tests bring their own data and initialize them. There is therefore no need to provide a database with existing data. +
+
+* Do you need additional software for testing? +
+JUnit 5 is required for the standard software (current OS, OpenJDK11 or higher and Web-Browser). +
+
+* How does the software communicate during testing? Internet? Network? +
+The software only communicates internally during the test and does not establish a network connection. + 
+
+== Test cases and accountability
+* Unit test
+....
+Delivery - Tom
+Analitics - Eric
+Kitchen - Christian
+Orders - Bennet
+Employee - Eric, Flo
+Inventory - Max
+Customer -Flo
+.... 
+
+
+* Integrationtest
+....
+Delivery - Tom
+Analitics - Eric
+Kitchen - Christian
+Orders - Bennet
+Employee - Eric, Flo
+Inventory - Max
+Customer -Flo
+....
+// See http://asciidoctor.org/docs/user-manual/#tables
+[options="headers"]
+|===
+|ID 			|Use case |Description					|Preconditions											|Input 												|Output
+|**<<U-P-0>>**  |**<<UC0010>>**	|login Nullpointer					|User boss with PW in database							|Username: Null, PW: abc 								|NullpointerException
+|**<<U-P-1>>**  |**<<UC0010>>**	|login Nullpointer					|User boss with PW in database							|Username: Boss, PW: Null 								|NullpointerException
+|**<<U-P-2>>**  |**<<UC0010>>**	|logindaten false					|User boss with PW in database							|Username: Boss, PW: 123 								|Einloggen fehlgeschlagen
+|**<<U-P-3>>**  |**<<UC0010>>** |logindaten richtig    |User boss with PW in database       |Username: Boss, PW: abc         |Login and forwarding to the homepage, has the role of ADMIN
+|**<<U-P-5>>**	|**<<UC0020>>**	|end logout session				|User logged in										|Call logout function				|Block access for session
+|**<<U-P-6>>**  |**<<UC0210>>** |create EmployeeAccount    |User not contained in database  |Username: Test, PW: test, name: xxx, vorname: xxx  |return true, users saved in database
+|**<<U-P-7>>**  |**<<UC0210>>** |create EmployeeAccount				|Users already included in the database		|Username: Boss, PW: test, name: xxx, vorname: xxx		|return false, Nutzername schon vergeben
+|**<<U-P-8>>**  |**<<UC0210>>** |create EmployeeAccount    |Password and password validation do not match |Call passValidation |return false
+|**<<U-P-9>>**  |**<<UC0230>>** |view EmployeeAccounts   |Employees included in database, logged in as boss |Call funktion |Streamable with Employees
+|**<<U-P-10>>** |**<<UC0220>>** |delete EmployeeAccount |Employee contained in the database, logged in as boss | Call deleteStaff | return true, employee deleted from the database
+|**<<U-P-11>>** |**<<UC0220>>** |delete EmployeeAccount | Employee not in database, logged in as boss | call deleteStaff | return false
+|**<<U-P-12>>** |**<<UC0220>>** |delete Boss Account | Boss contained in database, logged in as boss | call deleteStaff | return false
+|**<<U-O-0>>**	|**<<UC0410>>** |view OrderList					    |Orders contained in database and employee logged in        |Call function                                          |List with orders
+|**<<U-O-1>>**	|**<<UC0430>>** |view SalesGraph					|Boss takes a look at the analytics						    |Call function											|Analytics Output
+|**<<U-O-2>>**	|**<<UC0310>>**	|view Inventory						|Status of existing items is displayed 						|Call function 											|List with Products
+|**<<U-O-3>>**	|**<<UC0320>>**	|add Inventory						|The boss can add a new inventory Product 						|gui (inventory-context → inventory-table-view → table-section → button) |nothing
+|**<<U-O-4>>**	|**<<UC0330>>**	|edit InventoryProduct					|The boss can edit the details if an inventory Product			|gui (inventory-context → inventory-table-view → table-section → table-entry → button) |nothing
+|**<<U-O-5>>**	|**<<UC0340>>**	|delete InventoryProduct				|The boss can delete an inventory Product						|gui (inventory-context → inventory-table-view → table-section → table-entry → button) |Delete message
+|**<<U-F-1>>**	|**<<UC0440>>**	|view AverageTimesGraph of Order States			|The boss can see a graph of average times as a function of time									|gui (analytics-context → average-times-graph)												|return Graph
+|**<<U-F-2>>**	|**<<UC0420>>**	|print Invoice of Order			|The boss can print the invoice of a completed order as a PDF file.			|gui (analytics-context → completed-orders-table-view → table-entry → button)									|invoice
+|**<<I-FO-0>>**	|**<<UC0530>>**	|mark Delivery as COMPLETED			|The employee can tell the system, that a delivery has been delivered.			|gui (kitchen-context → assigned-delivery-list-view → list-entry → button)					|System forwards the status
+|**<<I-FO-1>>**	|**<<UC0610>>**	|view OPEN and INOVEN Pizzas						|The Employee can see all Pizzas which are in the state OPEN or INOVEN inside a table view				|gui (kitchen-context → pizza-table-view)							|return pizza table
+|===	

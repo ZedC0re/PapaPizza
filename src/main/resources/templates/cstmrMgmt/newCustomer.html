@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{blanklayout.html(title=#{cstmrMgmt.newCS.title})}">
+<head>
+</head>
+    <body>
+        <section layout:fragment="content">
+            <div class="blurPadding">
+                <form method="post" role="form" class="ui form" id="form" th:action="@{/cstmrMgmt/new}" th:object="${form}">
+
+                    <h3 class="ui dividing header" th:text="#{cstmrMgmt.newCS.title}">New Customer</h3>
+
+                    <div class="ui negative message" th:if="${#fields.hasErrors('*')}">
+                        <p th:text="#{cstmrMgmt.newCS.formErr}">Some inputs are not correct.</p>
+                    </div>
+
+                    <div class="field">
+                        <label for="phone" th:text="#{cstmrMgmt.table.phone}">Phone</label>
+                        <input id="phone" name="phone" th:field="*{phone}" th:errorclass="fieldError" type="text"
+                               th:placeholder="#{cstmrMgmt.table.phone}" placeholder="phone" required="required" /><br/>
+                        <div class="ui negative message" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}">
+                            <p>Phone may not be empty</p>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="firstname" th:text="#{cstmrMgmt.table.firstname}">First name</label>
+                        <input id="firstname" name="firstname" th:field="*{firstname}" th:errorclass="fieldError" type="text"
+                               th:placeholder="#{cstmrMgmt.table.firstname}" placeholder="firstname" required="required"/><br/>
+                        <div class="ui negative message" th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}">
+                            <p>First name may not be empty</p>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="lastname" th:text="#{cstmrMgmt.table.lastname}">Last name</label>
+                        <input id="lastname" name="lastname" th:field="*{lastname}" th:errorclass="fieldError" type="text"
+                               th:placeholder="#{cstmrMgmt.table.lastname}" placeholder="lastname" required="required" /><br/>
+                        <div class="ui negative message" th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}">
+                            <p>Last name may not be empty</p>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="address" th:text="#{cstmrMgmt.table.address}">Address</label>
+                        <input id="address" name="address" th:field="*{address}" th:errorclass="fieldError" type="text"
+                               th:placeholder="#{cstmrMgmt.table.address}" placeholder="address" required="required" /><br/>
+                        <div class="ui negative message" th:if="${#fields.hasErrors('address')}" th:errors="*{address}">
+                            <p>Address may not be empty</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="ui button" th:text="#{cstmrMgmt.newCS.submit}">Create</button>
+                </form>
+            </div>
+        </section>
+    </body>
+</html>

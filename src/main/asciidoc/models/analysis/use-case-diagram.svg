@@ -1,0 +1,1484 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1916" height="1116">
+	<defs/>
+	<g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 40 16 L 1936 16 L 1936 1112 L 40 1112 L 40 16" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 40 16 L 40 38 L 188.9580078125 38 L 199.9580078125 27 L 199.9580078125 16 L 40 16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 40 16 L 40 38 L 188.9580078125 38 L 199.9580078125 27 L 199.9580078125 16 L 40 16 L 40 16" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="71.9599609375" y="33.5">PapasPizzaService</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="45" y="33.5">pkg</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="209" y="63" width="1614" height="1040" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="192" y="56" width="1624" height="1040"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 192 56 L 1816 56 L 1816 1096 L 192 1096 L 192 56 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="192" y="56" width="1624" height="1040"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 192 56 L 1816 56 L 1816 1096 L 192 1096 L 192 56 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1796" y="66" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1796 66 L 1809 66 L 1809 82 L 1796 82 L 1796 66 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1793" y="69" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1793 69 L 1800 69 L 1800 73 L 1793 73 L 1793 69 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1793" y="75" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1793 75 L 1800 75 L 1800 79 L 1793 79 L 1793 75 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="936.0009765625" y="75.5">PapasPizzaService</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="1353" y="831" width="382" height="264" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1336" y="824" width="392" height="264"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1336 824 L 1728 824 L 1728 1088 L 1336 1088 L 1336 824 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1336" y="824" width="392" height="264"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1336 824 L 1728 824 L 1728 1088 L 1336 1088 L 1336 824 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1708" y="834" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1708 834 L 1721 834 L 1721 850 L 1708 850 L 1708 834 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1705" y="837" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1705 837 L 1712 837 L 1712 841 L 1705 841 L 1705 837 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1705" y="843" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1705 843 L 1712 843 L 1712 847 L 1705 847 L 1705 843 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1493.990478515625" y="843.5">Analytics</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1444.865966796875" y="858.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="1529" y="439" width="198" height="320" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1512" y="432" width="208" height="320"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1512 432 L 1720 432 L 1720 752 L 1512 752 L 1512 432 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1512" y="432" width="208" height="320"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1512 432 L 1720 432 L 1720 752 L 1512 752 L 1512 432 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1700" y="442" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1700 442 L 1713 442 L 1713 458 L 1700 458 L 1700 442 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1697" y="445" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1697 445 L 1704 445 L 1704 449 L 1697 449 L 1697 445 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1697" y="451" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1697 451 L 1704 451 L 1704 455 L 1697 455 L 1697 451 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1577.263671875" y="451.5">Inventory</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1528.865966796875" y="466.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1551 505 C 1551 490.6405952 1582.340064 479 1621 479 C 1659.659936 479 1691 490.6405952 1691 505 C 1691 519.3594048 1659.659936 531 1621 531 C 1582.340064 531 1551 519.3594048 1551 505 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1544 498 C 1544 483.6405952 1575.340064 472 1614 472 C 1652.659936 472 1684 483.6405952 1684 498 C 1684 512.3594048 1652.659936 524 1614 524 C 1575.340064 524 1544 512.3594048 1544 498 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1544 498 C 1544 483.6405952 1575.340064 472 1614 472 C 1652.659936 472 1684 483.6405952 1684 498 C 1684 512.3594048 1652.659936 524 1614 524 C 1575.340064 524 1544 512.3594048 1544 498 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1579.31005859375" y="496.5">«[UC0310]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1572.45458984375" y="511.5">view Inventory</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1535 561 C 1535 546.6405952 1573.2796496 535 1620.5 535 C 1667.7203504 535 1706 546.6405952 1706 561 C 1706 575.3594048 1667.7203504 587 1620.5 587 C 1573.2796496 587 1535 575.3594048 1535 561 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1528 554 C 1528 539.6405952 1566.2796496 528 1613.5 528 C 1660.7203504 528 1699 539.6405952 1699 554 C 1699 568.3594048 1660.7203504 580 1613.5 580 C 1566.2796496 580 1528 568.3594048 1528 554 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1528 554 C 1528 539.6405952 1566.2796496 528 1613.5 528 C 1660.7203504 528 1699 539.6405952 1699 554 C 1699 568.3594048 1660.7203504 580 1613.5 580 C 1566.2796496 580 1528 568.3594048 1528 554 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1578.81005859375" y="552.5">«[UC0320]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1561.471435546875" y="567.5">add InventoryItem</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1535 617 C 1535 602.6405952 1573.2796496 591 1620.5 591 C 1667.7203504 591 1706 602.6405952 1706 617 C 1706 631.3594048 1667.7203504 643 1620.5 643 C 1573.2796496 643 1535 631.3594048 1535 617 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1528 610 C 1528 595.6405952 1566.2796496 584 1613.5 584 C 1660.7203504 584 1699 595.6405952 1699 610 C 1699 624.3594048 1660.7203504 636 1613.5 636 C 1566.2796496 636 1528 624.3594048 1528 610 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1528 610 C 1528 595.6405952 1566.2796496 584 1613.5 584 C 1660.7203504 584 1699 595.6405952 1699 610 C 1699 624.3594048 1660.7203504 636 1613.5 636 C 1566.2796496 636 1528 624.3594048 1528 610 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1578.81005859375" y="608.5">«[UC0330]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1561.83642578125" y="623.5">edit InventoryItem</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1527 673 C 1527 658.6405952 1569.7568016 647 1622.5 647 C 1675.2431984 647 1718 658.6405952 1718 673 C 1718 687.3594048 1675.2431984 699 1622.5 699 C 1569.7568016 699 1527 687.3594048 1527 673 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1520 666 C 1520 651.6405952 1562.7568016 640 1615.5 640 C 1668.2431984 640 1711 651.6405952 1711 666 C 1711 680.3594048 1668.2431984 692 1615.5 692 C 1562.7568016 692 1520 680.3594048 1520 666 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1520 666 C 1520 651.6405952 1562.7568016 640 1615.5 640 C 1668.2431984 640 1711 651.6405952 1711 666 C 1711 680.3594048 1668.2431984 692 1615.5 692 C 1562.7568016 692 1520 680.3594048 1520 666 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1580.81005859375" y="664.5">«[UC0340]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1556.6064453125" y="679.5">delete InventoryItem</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="1047.73193359375" y="479" width="183.26806640625" height="176" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1030.73193359375" y="472" width="193.26806640625" height="176"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1030.73193359375 472 L 1224 472 L 1224 648 L 1030.73193359375 648 L 1030.73193359375 472 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1030.73193359375" y="472" width="193.26806640625" height="176"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1030.73193359375 472 L 1224 472 L 1224 648 L 1030.73193359375 648 L 1030.73193359375 472 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1204" y="482" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1204 482 L 1217 482 L 1217 498 L 1204 498 L 1204 482 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1201" y="485" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1201 485 L 1208 485 L 1208 489 L 1201 489 L 1201 485 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1201" y="491" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1201 491 L 1208 491 L 1208 495 L 1201 495 L 1201 491 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1093.695068359375" y="491.5">System</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1040.23193359375" y="506.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="1425" y="87" width="294" height="328" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1408" y="80" width="304" height="328"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1408 80 L 1712 80 L 1712 408 L 1408 408 L 1408 80 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1408" y="80" width="304" height="328"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1408 80 L 1712 80 L 1712 408 L 1408 408 L 1408 80 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1692" y="90" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1692 90 L 1705 90 L 1705 106 L 1692 106 L 1692 90 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1689" y="93" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1689 93 L 1696 93 L 1696 97 L 1689 97 L 1689 93 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1689" y="99" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1689 99 L 1696 99 L 1696 103 L 1689 103 L 1689 99 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1481.156005859375" y="99.5">EmployeeManagement</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1472.865966796875" y="114.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="1033" y="111" width="246" height="328" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1016" y="104" width="256" height="328"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1016 104 L 1272 104 L 1272 432 L 1016 432 L 1016 104 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1016" y="104" width="256" height="328"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1016 104 L 1272 104 L 1272 432 L 1016 432 L 1016 104 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1252" y="114" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1252 114 L 1265 114 L 1265 130 L 1252 130 L 1252 114 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1249" y="117" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1249 117 L 1256 117 L 1256 121 L 1249 121 L 1249 117 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1249" y="123" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1249 123 L 1256 123 L 1256 127 L 1249 127 L 1249 123 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1065.885986328125" y="123.5">CustomerManagement</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1056.865966796875" y="138.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1039 185 C 1039 170.6405952 1090.7111055999999 159 1154.5 159 C 1218.2888944000001 159 1270 170.6405952 1270 185 C 1270 199.3594048 1218.2888944000001 211 1154.5 211 C 1090.7111055999999 211 1039 199.3594048 1039 185 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1032 178 C 1032 163.6405952 1083.7111055999999 152 1147.5 152 C 1211.2888944000001 152 1263 163.6405952 1263 178 C 1263 192.3594048 1211.2888944000001 204 1147.5 204 C 1083.7111055999999 204 1032 192.3594048 1032 178 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1032 178 C 1032 163.6405952 1083.7111055999999 152 1147.5 152 C 1211.2888944000001 152 1263 163.6405952 1263 178 C 1263 192.3594048 1211.2888944000001 204 1147.5 204 C 1083.7111055999999 204 1032 192.3594048 1032 178 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1113.29248046875" y="176.5">«[UC0110]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1075.96826171875" y="191.5">create CustomerAccount</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1061 353 C 1061 338.6405952 1108.010096 327 1166 327 C 1223.989904 327 1271 338.6405952 1271 353 C 1271 367.3594048 1223.989904 379 1166 379 C 1108.010096 379 1061 367.3594048 1061 353 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1054 346 C 1054 331.6405952 1101.010096 320 1159 320 C 1216.989904 320 1264 331.6405952 1264 346 C 1264 360.3594048 1216.989904 372 1159 372 C 1101.010096 372 1054 360.3594048 1054 346 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1054 346 C 1054 331.6405952 1101.010096 320 1159 320 C 1216.989904 320 1264 331.6405952 1264 346 C 1264 360.3594048 1216.989904 372 1159 372 C 1101.010096 372 1054 360.3594048 1054 346 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1124.31005859375" y="344.5">«[UC0140]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1095.0537109375" y="359.5">edit CustomerAccount</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1041 241 C 1041 226.6405952 1092.487248 215 1156 215 C 1219.512752 215 1271 226.6405952 1271 241 C 1271 255.3594048 1219.512752 267 1156 267 C 1092.487248 267 1041 255.3594048 1041 241 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1034 234 C 1034 219.6405952 1085.487248 208 1149 208 C 1212.512752 208 1264 219.6405952 1264 234 C 1264 248.3594048 1212.512752 260 1149 260 C 1085.487248 260 1034 248.3594048 1034 234 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1034 234 C 1034 219.6405952 1085.487248 208 1149 208 C 1212.512752 208 1264 219.6405952 1264 234 C 1264 248.3594048 1212.512752 260 1149 260 C 1085.487248 260 1034 248.3594048 1034 234 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1114.31005859375" y="232.5">«[UC0120]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1077.82373046875" y="247.5">delete CustomerAccount</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1071 545 C 1071 530.6405952 1095.8481936 519 1126.5 519 C 1157.1518064 519 1182 530.6405952 1182 545 C 1182 559.3594048 1157.1518064 571 1126.5 571 C 1095.8481936 571 1071 559.3594048 1071 545 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1064 538 C 1064 523.6405952 1088.8481936 512 1119.5 512 C 1150.1518064 512 1175 523.6405952 1175 538 C 1175 552.3594048 1150.1518064 564 1119.5 564 C 1088.8481936 564 1064 552.3594048 1064 538 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1064 538 C 1064 523.6405952 1088.8481936 512 1119.5 512 C 1150.1518064 512 1175 523.6405952 1175 538 C 1175 552.3594048 1150.1518064 564 1119.5 564 C 1088.8481936 564 1064 552.3594048 1064 538 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1084.81005859375" y="536.5">«[UC0010]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1105.766845703125" y="551.5">login</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1447 153 C 1447 138.6405952 1498.9349632 127 1563 127 C 1627.0650368 127 1679 138.6405952 1679 153 C 1679 167.3594048 1627.0650368 179 1563 179 C 1498.9349632 179 1447 167.3594048 1447 153 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1440 146 C 1440 131.6405952 1491.9349632 120 1556 120 C 1620.0650368 120 1672 131.6405952 1672 146 C 1672 160.3594048 1620.0650368 172 1556 172 C 1491.9349632 172 1440 160.3594048 1440 146 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1440 146 C 1440 131.6405952 1491.9349632 120 1556 120 C 1620.0650368 120 1672 131.6405952 1672 146 C 1672 160.3594048 1620.0650368 172 1556 172 C 1491.9349632 172 1440 160.3594048 1440 146 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1521.31005859375" y="144.5">«[UC0210]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1483.73828125" y="159.5">create EmployeeAccount</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1447 209 C 1447 194.6405952 1498.7111055999999 183 1562.5 183 C 1626.2888944000001 183 1678 194.6405952 1678 209 C 1678 223.3594048 1626.2888944000001 235 1562.5 235 C 1498.7111055999999 235 1447 223.3594048 1447 209 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1440 202 C 1440 187.6405952 1491.7111055999999 176 1555.5 176 C 1619.2888944000001 176 1671 187.6405952 1671 202 C 1671 216.3594048 1619.2888944000001 228 1555.5 228 C 1491.7111055999999 228 1440 216.3594048 1440 202 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1440 202 C 1440 187.6405952 1491.7111055999999 176 1555.5 176 C 1619.2888944000001 176 1671 187.6405952 1671 202 C 1671 216.3594048 1619.2888944000001 228 1555.5 228 C 1491.7111055999999 228 1440 216.3594048 1440 202 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1520.81005859375" y="200.5">«[UC0220]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1483.59375" y="215.5">delete EmployeeAccount</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1439 265 C 1439 250.6405952 1495.8598304 239 1566 239 C 1636.1401696 239 1693 250.6405952 1693 265 C 1693 279.3594048 1636.1401696 291 1566 291 C 1495.8598304 291 1439 279.3594048 1439 265 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1432 258 C 1432 243.6405952 1488.8598304 232 1559 232 C 1629.1401696 232 1686 243.6405952 1686 258 C 1686 272.3594048 1629.1401696 284 1559 284 C 1488.8598304 284 1432 272.3594048 1432 258 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1432 258 C 1432 243.6405952 1488.8598304 232 1559 232 C 1629.1401696 232 1686 243.6405952 1686 258 C 1686 272.3594048 1629.1401696 284 1559 284 C 1488.8598304 284 1432 272.3594048 1432 258 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1524.31005859375" y="256.5">«[UC0230]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1480.241455078125" y="271.5">view all EmployeeAccounts</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1455 321 C 1455 306.6405952 1504.4725296 295 1565.5 295 C 1626.5274704 295 1676 306.6405952 1676 321 C 1676 335.3594048 1626.5274704 347 1565.5 347 C 1504.4725296 347 1455 335.3594048 1455 321 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1448 314 C 1448 299.6405952 1497.4725296 288 1558.5 288 C 1619.5274704 288 1669 299.6405952 1669 314 C 1669 328.3594048 1619.5274704 340 1558.5 340 C 1497.4725296 340 1448 328.3594048 1448 314 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1448 314 C 1448 299.6405952 1497.4725296 288 1558.5 288 C 1619.5274704 288 1669 299.6405952 1669 314 C 1669 328.3594048 1619.5274704 340 1558.5 340 C 1497.4725296 340 1448 328.3594048 1448 314 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1523.81005859375" y="312.5">«[UC0240]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1490.57373046875" y="327.5">edit EmployeeAccounts</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1044 297 C 1044 282.6405952 1094.8156752 271 1157.5 271 C 1220.1843248 271 1271 282.6405952 1271 297 C 1271 311.3594048 1220.1843248 323 1157.5 323 C 1094.8156752 323 1044 311.3594048 1044 297 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1037 290 C 1037 275.6405952 1087.8156752 264 1150.5 264 C 1213.1843248 264 1264 275.6405952 1264 290 C 1264 304.3594048 1213.1843248 316 1150.5 316 C 1087.8156752 316 1037 304.3594048 1037 290 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1037 290 C 1037 275.6405952 1087.8156752 264 1150.5 264 C 1213.1843248 264 1264 275.6405952 1264 290 C 1264 304.3594048 1213.1843248 316 1150.5 316 C 1087.8156752 316 1037 304.3594048 1037 290 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1115.81005859375" y="288.5">«[UC0130]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1080.780517578125" y="303.5">view CustomerAccounts</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1036 409 C 1036 394.6405952 1088.606536 383 1153.5 383 C 1218.393464 383 1271 394.6405952 1271 409 C 1271 423.3594048 1218.393464 435 1153.5 435 C 1088.606536 435 1036 423.3594048 1036 409 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1029 402 C 1029 387.6405952 1081.606536 376 1146.5 376 C 1211.393464 376 1264 387.6405952 1264 402 C 1264 416.3594048 1211.393464 428 1146.5 428 C 1081.606536 428 1029 416.3594048 1029 402 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1029 402 C 1029 387.6405952 1081.606536 376 1146.5 376 C 1211.393464 376 1264 387.6405952 1264 402 C 1264 416.3594048 1211.393464 428 1146.5 428 C 1081.606536 428 1029 416.3594048 1029 402 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1111.81005859375" y="400.5">«[UC0150]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1072.20703125" y="415.5">create new CustomerTAN</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1415 897 C 1415 882.6405952 1468.2781088 871 1534 871 C 1599.7218912 871 1653 882.6405952 1653 897 C 1653 911.3594048 1599.7218912 923 1534 923 C 1468.2781088 923 1415 911.3594048 1415 897 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1408 890 C 1408 875.6405952 1461.2781088 864 1527 864 C 1592.7218912 864 1646 875.6405952 1646 890 C 1646 904.3594048 1592.7218912 916 1527 916 C 1461.2781088 916 1408 904.3594048 1408 890 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1408 890 C 1408 875.6405952 1461.2781088 864 1527 864 C 1592.7218912 864 1646 875.6405952 1646 890 C 1646 904.3594048 1592.7218912 916 1527 916 C 1461.2781088 916 1408 904.3594048 1408 890 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1492.31005859375" y="888.5">«[UC0410]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1452.576904296875" y="903.5">view SearchableOrderList</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1455 1009 C 1455 994.6405952 1490.817216 983 1535 983 C 1579.182784 983 1615 994.6405952 1615 1009 C 1615 1023.3594048 1579.182784 1035 1535 1035 C 1490.817216 1035 1455 1023.3594048 1455 1009 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1448 1002 C 1448 987.6405952 1483.817216 976 1528 976 C 1572.182784 976 1608 987.6405952 1608 1002 C 1608 1016.3594048 1572.182784 1028 1528 1028 C 1483.817216 1028 1448 1016.3594048 1448 1002 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1448 1002 C 1448 987.6405952 1483.817216 976 1528 976 C 1572.182784 976 1608 987.6405952 1608 1002 C 1608 1016.3594048 1572.182784 1028 1528 1028 C 1483.817216 1028 1448 1016.3594048 1448 1002 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1493.31005859375" y="1000.5">«[UC0430]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1478.865966796875" y="1015.5">view SalesGraph</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="897" y="743" width="414" height="264" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="880" y="736" width="424" height="264"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 880 736 L 1304 736 L 1304 1000 L 880 1000 L 880 736 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="880" y="736" width="424" height="264"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 880 736 L 1304 736 L 1304 1000 L 880 1000 L 880 736 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1284" y="746" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1284 746 L 1297 746 L 1297 762 L 1284 762 L 1284 746 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1281" y="749" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1281 749 L 1288 749 L 1288 753 L 1281 753 L 1281 749 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="1281" y="755" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1281 755 L 1288 755 L 1288 759 L 1281 759 L 1281 755 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1056.523193359375" y="755.5">Delivery</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1004.865966796875" y="770.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 919 809 C 919 794.6405952 998.2455904 783 1096 783 C 1193.7544096 783 1273 794.6405952 1273 809 C 1273 823.3594048 1193.7544096 835 1096 835 C 998.2455904 835 919 823.3594048 919 809 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 912 802 C 912 787.6405952 991.2455904 776 1089 776 C 1186.7544096 776 1266 787.6405952 1266 802 C 1266 816.3594048 1186.7544096 828 1089 828 C 991.2455904 828 912 816.3594048 912 802 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 912 802 C 912 787.6405952 991.2455904 776 1089 776 C 1186.7544096 776 1266 787.6405952 1266 802 C 1266 816.3594048 1186.7544096 828 1089 828 C 991.2455904 828 912 816.3594048 912 802 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1054.31005859375" y="800.5">«[UC0510]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="972.43798828125" y="815.5">view OPEN and INDELIVERY Deliveries</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 983 865 C 983 850.6405952 1034.2633904 839 1097.5 839 C 1160.7366096 839 1212 850.6405952 1212 865 C 1212 879.3594048 1160.7366096 891 1097.5 891 C 1034.2633904 891 983 879.3594048 983 865 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 976 858 C 976 843.6405952 1027.2633904 832 1090.5 832 C 1153.7366096 832 1205 843.6405952 1205 858 C 1205 872.3594048 1153.7366096 884 1090.5 884 C 1027.2633904 884 976 872.3594048 976 858 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 976 858 C 976 843.6405952 1027.2633904 832 1090.5 832 C 1153.7366096 832 1205 843.6405952 1205 858 C 1205 872.3594048 1153.7366096 884 1090.5 884 C 1027.2633904 884 976 872.3594048 976 858 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1055.81005859375" y="856.5">«[UC0520]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1019.330078125" y="871.5">view assigned Deliveries</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="313" y="735" width="406" height="328" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="296" y="728" width="416" height="328"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 296 728 L 712 728 L 712 1056 L 296 1056 L 296 728 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="296" y="728" width="416" height="328"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 296 728 L 712 728 L 712 1056 L 296 1056 L 296 728 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="692" y="738" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 692 738 L 705 738 L 705 754 L 692 754 L 692 738 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="689" y="741" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 689 741 L 696 741 L 696 745 L 689 745 L 689 741 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="689" y="747" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 689 747 L 696 747 L 696 751 L 689 751 L 689 747 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="470.319580078125" y="747.5">Kitchen</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="416.865966796875" y="762.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 367 809 C 367 794.6405952 430.5755584 783 509 783 C 587.4244416 783 651 794.6405952 651 809 C 651 823.3594048 587.4244416 835 509 835 C 430.5755584 835 367 823.3594048 367 809 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 360 802 C 360 787.6405952 423.5755584 776 502 776 C 580.4244416 776 644 787.6405952 644 802 C 644 816.3594048 580.4244416 828 502 828 C 423.5755584 828 360 816.3594048 360 802 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 360 802 C 360 787.6405952 423.5755584 776 502 776 C 580.4244416 776 644 787.6405952 644 802 C 644 816.3594048 580.4244416 828 502 828 C 423.5755584 828 360 816.3594048 360 802 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="467.31005859375" y="800.5">«[UC0610]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="408.44189453125" y="815.5">view OPEN and INOVEN Pizzas</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 125.87418181818182 427.21000000000004 C 125.87418181818182 421.571172192 130.40766453061818 417 136 417 C 141.59233546938182 417 146.12581818181818 421.571172192 146.12581818181818 427.21000000000004 C 146.12581818181818 432.84882780800007 141.59233546938182 437.42 136 437.42 C 130.40766453061818 437.42 125.87418181818182 432.84882780800007 125.87418181818182 427.21000000000004 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 125.87418181818182 427.21000000000004 C 125.87418181818182 421.571172192 130.40766453061818 417 136 417 C 141.59233546938182 417 146.12581818181818 421.571172192 146.12581818181818 427.21000000000004 C 146.12581818181818 432.84882780800007 141.59233546938182 437.42 136 437.42 C 130.40766453061818 437.42 125.87418181818182 432.84882780800007 125.87418181818182 427.21000000000004 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 136 437.42 L 136 457.58" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 125.27854545454547 444.98 L 146.72145454545455 444.98" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 136 457.58 L 121.10909090909092 478" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 136 457.58 L 150.89090909090908 478" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="107.095947265625" y="498.5">Employee</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1859.1058181818182 505.84 C 1859.1058181818182 496.53952396799997 1866.445742573382 489 1875.5 489 C 1884.554257426618 489 1891.8941818181818 496.53952396799997 1891.8941818181818 505.84 C 1891.8941818181818 515.1404760319999 1884.554257426618 522.68 1875.5 522.68 C 1866.445742573382 522.68 1859.1058181818182 515.1404760319999 1859.1058181818182 505.84 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1859.1058181818182 505.84 C 1859.1058181818182 496.53952396799997 1866.445742573382 489 1875.5 489 C 1884.554257426618 489 1891.8941818181818 496.53952396799997 1891.8941818181818 505.84 C 1891.8941818181818 515.1404760319999 1884.554257426618 522.68 1875.5 522.68 C 1866.445742573382 522.68 1859.1058181818182 515.1404760319999 1859.1058181818182 505.84 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1875.5 522.68 L 1875.5 555.3199999999999" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1858.1414545454545 534.92 L 1892.8585454545455 534.92" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1875.5 555.3199999999999 L 1851.3909090909092 589" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1875.5 555.3199999999999 L 1899.6090909090908 589" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1861.049560546875" y="609.5">Boss</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="249" y="95" width="206" height="272" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="232" y="88" width="216" height="272"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 232 88 L 448 88 L 448 360 L 232 360 L 232 88 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="232" y="88" width="216" height="272"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 232 88 L 448 88 L 448 360 L 232 360 L 232 88 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="428" y="98" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 428 98 L 441 98 L 441 114 L 428 114 L 428 98 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="425" y="101" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 425 101 L 432 101 L 432 105 L 425 105 L 425 101 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="425" y="107" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 425 107 L 432 107 L 432 111 L 425 111 L 425 107 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="311.385009765625" y="107.5">Order</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="252.865966796875" y="122.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 255 161 C 255 146.6405952 295.0705104 135 344.5 135 C 393.9294896 135 434 146.6405952 434 161 C 434 175.3594048 393.9294896 187 344.5 187 C 295.0705104 187 255 175.3594048 255 161 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 248 154 C 248 139.6405952 288.0705104 128 337.5 128 C 386.9294896 128 427 139.6405952 427 154 C 427 168.3594048 386.9294896 180 337.5 180 C 288.0705104 180 248 168.3594048 248 154 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 248 154 C 248 139.6405952 288.0705104 128 337.5 128 C 386.9294896 128 427 139.6405952 427 154 C 427 168.3594048 386.9294896 180 337.5 180 C 288.0705104 180 248 168.3594048 248 154 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="302.81005859375" y="152.5">«[UC0710]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="288.010498046875" y="167.5">create NewOrder</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 255 217 C 255 202.6405952 294.8466528 191 344 191 C 393.1533472 191 433 202.6405952 433 217 C 433 231.3594048 393.1533472 243 344 243 C 294.8466528 243 255 231.3594048 255 217 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 248 210 C 248 195.6405952 287.8466528 184 337 184 C 386.1533472 184 426 195.6405952 426 210 C 426 224.3594048 386.1533472 236 337 236 C 287.8466528 236 248 224.3594048 248 210 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 248 210 C 248 195.6405952 287.8466528 184 337 184 C 386.1533472 184 426 195.6405952 426 210 C 426 224.3594048 386.1533472 236 337 236 C 287.8466528 236 248 224.3594048 248 210 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="302.31005859375" y="208.5">«[UC0720]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="280.642333984375" y="223.5">delete OPEN Order</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 271 273 C 271 258.6405952 303.0116368 247 342.5 247 C 381.9883632 247 414 258.6405952 414 273 C 414 287.3594048 381.9883632 299 342.5 299 C 303.0116368 299 271 287.3594048 271 273 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 264 266 C 264 251.6405952 296.0116368 240 335.5 240 C 374.9883632 240 407 251.6405952 407 266 C 407 280.3594048 374.9883632 292 335.5 292 C 296.0116368 292 264 280.3594048 264 266 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 264 266 C 264 251.6405952 296.0116368 240 335.5 240 C 374.9883632 240 407 251.6405952 407 266 C 407 280.3594048 374.9883632 292 335.5 292 C 296.0116368 292 264 280.3594048 264 266 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="300.81005859375" y="264.5">«[UC0730]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="292.516845703125" y="279.5">view all Orders</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1535 729 C 1535 714.6405952 1573.9512224 703 1622 703 C 1670.0487776 703 1709 714.6405952 1709 729 C 1709 743.3594048 1670.0487776 755 1622 755 C 1573.9512224 755 1535 743.3594048 1535 729 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1528 722 C 1528 707.6405952 1566.9512224 696 1615 696 C 1663.0487776 696 1702 707.6405952 1702 722 C 1702 736.3594048 1663.0487776 748 1615 748 C 1566.9512224 748 1528 736.3594048 1528 722 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1528 722 C 1528 707.6405952 1566.9512224 696 1615 696 C 1663.0487776 696 1702 707.6405952 1702 722 C 1702 736.3594048 1663.0487776 748 1615 748 C 1566.9512224 748 1528 736.3594048 1528 722 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1580.31005859375" y="720.5">«[UC0350]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1560.4482421875" y="735.5">create PizzaPreset</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 335 977 C 335 962.6405952 413.5740176 951 510.5 951 C 607.4259824000001 951 686 962.6405952 686 977 C 686 991.3594048 607.4259824000001 1003 510.5 1003 C 413.5740176 1003 335 991.3594048 335 977 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 328 970 C 328 955.6405952 406.5740176 944 503.5 944 C 600.4259824000001 944 679 955.6405952 679 970 C 679 984.3594048 600.4259824000001 996 503.5 996 C 406.5740176 996 328 984.3594048 328 970 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 328 970 C 328 955.6405952 406.5740176 944 503.5 944 C 600.4259824000001 944 679 955.6405952 679 970 C 679 984.3594048 600.4259824000001 996 503.5 996 C 406.5740176 996 328 984.3594048 328 970 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="468.81005859375" y="968.5">«[UC0640]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="387.906005859375" y="983.5">mark assigned OPEN Pizza as INOVEN</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 959 977 C 959 962.6405952 1021.4562704 951 1098.5 951 C 1175.5437296 951 1238 962.6405952 1238 977 C 1238 991.3594048 1175.5437296 1003 1098.5 1003 C 1021.4562704 1003 959 991.3594048 959 977 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 952 970 C 952 955.6405952 1014.4562704 944 1091.5 944 C 1168.5437296 944 1231 955.6405952 1231 970 C 1231 984.3594048 1168.5437296 996 1091.5 996 C 1014.4562704 996 952 984.3594048 952 970 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 952 970 C 952 955.6405952 1014.4562704 944 1091.5 944 C 1168.5437296 944 1231 955.6405952 1231 970 C 1231 984.3594048 1168.5437296 996 1091.5 996 C 1014.4562704 996 952 984.3594048 952 970 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1056.81005859375" y="968.5">«[UC0540]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1000.845947265625" y="983.5">mark Delivery as COMPLETED</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1864 488 L 1864 40 L 136 40 L 136 416" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#FFFFFF" stroke="none" d="M 127.58096448796803 395.6746502847517 L 136 416 L 144.41903551203197 395.6746502847517"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 127.58096448796803 395.6746502847517 L 136 416 L 144.41903551203197 395.6746502847517 L 127.58096448796803 395.6746502847517" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1071 602.5 C 1071 587.312168 1095.8481936 575 1126.5 575 C 1157.1518064 575 1182 587.312168 1182 602.5 C 1182 617.687832 1157.1518064 630 1126.5 630 C 1095.8481936 630 1071 617.687832 1071 602.5 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1064 595.5 C 1064 580.312168 1088.8481936 568 1119.5 568 C 1150.1518064 568 1175 580.312168 1175 595.5 C 1175 610.687832 1150.1518064 623 1119.5 623 C 1088.8481936 623 1064 610.687832 1064 595.5 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1064 595.5 C 1064 580.312168 1088.8481936 568 1119.5 568 C 1150.1518064 568 1175 580.312168 1175 595.5 C 1175 610.687832 1150.1518064 623 1119.5 623 C 1088.8481936 623 1064 610.687832 1064 595.5 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1084.81005859375" y="594">«[UC0020]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1101.7900390625" y="609">logout</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 247 329 C 247 314.6405952 290.8760896 303 345 303 C 399.1239104 303 443 314.6405952 443 329 C 443 343.3594048 399.1239104 355 345 355 C 290.8760896 355 247 343.3594048 247 329 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 240 322 C 240 307.6405952 283.8760896 296 338 296 C 392.1239104 296 436 307.6405952 436 322 C 436 336.3594048 392.1239104 348 338 348 C 283.8760896 348 240 336.3594048 240 322 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 240 322 C 240 307.6405952 283.8760896 296 338 296 C 392.1239104 296 436 307.6405952 436 322 C 436 336.3594048 392.1239104 348 338 348 C 283.8760896 348 240 336.3594048 240 322 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="303.31005859375" y="320.5">«[UC0740]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="277.675048828125" y="335.5">view Details of Order</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#C0C0C0" stroke="none" x="569" y="95" width="350" height="544" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="552" y="88" width="360" height="544"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 552 88 L 912 88 L 912 632 L 552 632 L 552 88 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="552" y="88" width="360" height="544"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 552 88 L 912 88 L 912 632 L 552 632 L 552 88 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="892" y="98" width="13" height="16"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 892 98 L 905 98 L 905 114 L 892 114 L 892 98 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="889" y="101" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 889 101 L 896 101 L 896 105 L 889 105 L 889 101 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<rect fill="#ffffff" stroke="none" x="889" y="107" width="7" height="4"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 889 107 L 896 107 L 896 111 L 889 111 L 889 107 Z Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="690.3818359375" y="107.5">NewOrder</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="644.865966796875" y="122.5">(from PapasPizzaService)</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 663 161 C 663 146.6405952 697.2502128 135 739.5 135 C 781.7497872 135 816 146.6405952 816 161 C 816 175.3594048 781.7497872 187 739.5 187 C 697.2502128 187 663 175.3594048 663 161 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 656 154 C 656 139.6405952 690.2502128 128 732.5 128 C 774.7497872 128 809 139.6405952 809 154 C 809 168.3594048 774.7497872 180 732.5 180 C 690.2502128 180 656 168.3594048 656 154 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 656 154 C 656 139.6405952 690.2502128 128 732.5 128 C 774.7497872 128 809 139.6405952 809 154 C 809 168.3594048 774.7497872 180 732.5 180 C 690.2502128 180 656 168.3594048 656 154 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="697.81005859375" y="152.5">«[UC0810]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="686.990478515625" y="167.5">verify Customer</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 639 273 C 639 258.6405952 683.3238048 247 738 247 C 792.6761952 247 837 258.6405952 837 273 C 837 287.3594048 792.6761952 299 738 299 C 683.3238048 299 639 287.3594048 639 273 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 632 266 C 632 251.6405952 676.3238048 240 731 240 C 785.6761952 240 830 251.6405952 830 266 C 830 280.3594048 785.6761952 292 731 292 C 676.3238048 292 632 280.3594048 632 266 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 632 266 C 632 251.6405952 676.3238048 240 731 240 C 785.6761952 240 830 251.6405952 830 266 C 830 280.3594048 785.6761952 292 731 292 C 676.3238048 292 632 280.3594048 632 266 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="696.31005859375" y="264.5">«[UC0830]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="670.300537109375" y="279.5">add Product to Order</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 567 329 C 567 314.6405952 644.4547296 303 740 303 C 835.5452704 303 913 314.6405952 913 329 C 913 343.3594048 835.5452704 355 740 355 C 644.4547296 355 567 343.3594048 567 329 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 560 322 C 560 307.6405952 637.4547296 296 733 296 C 828.5452704 296 906 307.6405952 906 322 C 906 336.3594048 828.5452704 348 733 348 C 637.4547296 348 560 336.3594048 560 322 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 560 322 C 560 307.6405952 637.4547296 296 733 296 C 828.5452704 296 906 307.6405952 906 322 C 906 336.3594048 828.5452704 348 733 348 C 637.4547296 348 560 336.3594048 560 322 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="698.31005859375" y="320.5">«[UC0840]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="622.801513671875" y="335.5">configure, add and reset CustomPizza</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 679 497 C 679 482.6405952 706.9822 471 741.5 471 C 776.0178 471 804 482.6405952 804 497 C 804 511.3594048 776.0178 523 741.5 523 C 706.9822 523 679 511.3594048 679 497 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 672 490 C 672 475.6405952 699.9822 464 734.5 464 C 769.0178 464 797 475.6405952 797 490 C 797 504.3594048 769.0178 516 734.5 516 C 699.9822 516 672 504.3594048 672 490 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 672 490 C 672 475.6405952 699.9822 464 734.5 464 C 769.0178 464 797 475.6405952 797 490 C 797 504.3594048 769.0178 516 734.5 516 C 699.9822 516 672 504.3594048 672 490 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="699.81005859375" y="488.5">«[UC0870]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="697.2900390625" y="503.5">cancel Order</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 639 609 C 639 594.6405952 683.77152 583 739 583 C 794.22848 583 839 594.6405952 839 609 C 839 623.3594048 794.22848 635 739 635 C 683.77152 635 639 623.3594048 639 609 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 632 602 C 632 587.6405952 676.77152 576 732 576 C 787.22848 576 832 587.6405952 832 602 C 832 616.3594048 787.22848 628 732 628 C 676.77152 628 632 616.3594048 632 602 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 632 602 C 632 587.6405952 676.77152 576 732 576 C 787.22848 576 832 587.6405952 832 602 C 832 616.3594048 787.22848 628 732 628 C 676.77152 628 632 616.3594048 632 602 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="697.31005859375" y="600.5">«[UC0890]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="671.306884765625" y="615.5">print Invoice of Order</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 615 217 C 615 202.6405952 668.2781088 191 734 191 C 799.7218912 191 853 202.6405952 853 217 C 853 231.3594048 799.7218912 243 734 243 C 668.2781088 243 615 231.3594048 615 217 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 608 210 C 608 195.6405952 661.2781088 184 727 184 C 792.7218912 184 846 195.6405952 846 210 C 846 224.3594048 792.7218912 236 727 236 C 661.2781088 236 608 224.3594048 608 210 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 608 210 C 608 195.6405952 661.2781088 184 727 184 C 792.7218912 184 846 195.6405952 846 210 C 846 224.3594048 792.7218912 236 727 236 C 661.2781088 236 608 224.3594048 608 210 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="692.31005859375" y="208.5">«[UC0820]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="652.94189453125" y="223.5">specify Order PickupType</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 671 553 C 671 538.6405952 701.220776 527 738.5 527 C 775.779224 527 806 538.6405952 806 553 C 806 567.3594048 775.779224 579 738.5 579 C 701.220776 579 671 567.3594048 671 553 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 664 546 C 664 531.6405952 694.220776 520 731.5 520 C 768.779224 520 799 531.6405952 799 546 C 799 560.3594048 768.779224 572 731.5 572 C 694.220776 572 664 560.3594048 664 546 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 664 546 C 664 531.6405952 694.220776 520 731.5 520 C 768.779224 520 799 531.6405952 799 546 C 799 560.3594048 768.779224 572 731.5 572 C 694.220776 572 664 560.3594048 664 546 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="696.81005859375" y="544.5">«[UC0880]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="691.77001953125" y="559.5">confirm Order</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 671 385 C 671 370.6405952 702.5639216 359 741.5 359 C 780.4360784 359 812 370.6405952 812 385 C 812 399.3594048 780.4360784 411 741.5 411 C 702.5639216 411 671 399.3594048 671 385 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 664 378 C 664 363.6405952 695.5639216 352 734.5 352 C 773.4360784 352 805 363.6405952 805 378 C 805 392.3594048 773.4360784 404 734.5 404 C 695.5639216 404 664 392.3594048 664 378 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 664 378 C 664 363.6405952 695.5639216 352 734.5 352 C 773.4360784 352 805 363.6405952 805 378 C 805 392.3594048 773.4360784 404 734.5 404 C 695.5639216 404 664 392.3594048 664 378 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="699.81005859375" y="376.5">«[UC0850]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="691.8818359375" y="391.5">view Summary</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 639 441 C 639 426.6405952 683.9953776 415 739.5 415 C 795.0046224 415 840 426.6405952 840 441 C 840 455.3594048 795.0046224 467 739.5 467 C 683.9953776 467 639 455.3594048 639 441 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 632 434 C 632 419.6405952 676.9953776 408 732.5 408 C 788.0046224 408 833 419.6405952 833 434 C 833 448.3594048 788.0046224 460 732.5 460 C 676.9953776 460 632 448.3594048 632 434 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 632 434 C 632 419.6405952 676.9953776 408 732.5 408 C 788.0046224 408 833 419.6405952 833 434 C 833 448.3594048 788.0046224 460 732.5 460 C 676.9953776 460 632 448.3594048 632 434 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="697.81005859375" y="432.5">«[UC0860]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="670.369140625" y="447.5">delete from Summary</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 407 865 C 407 850.6405952 451.5476624 839 506.5 839 C 561.4523376 839 606 850.6405952 606 865 C 606 879.3594048 561.4523376 891 506.5 891 C 451.5476624 891 407 879.3594048 407 865 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 400 858 C 400 843.6405952 444.5476624 832 499.5 832 C 554.4523376 832 599 843.6405952 599 858 C 599 872.3594048 554.4523376 884 499.5 884 C 444.5476624 884 400 872.3594048 400 858 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 400 858 C 400 843.6405952 444.5476624 832 499.5 832 C 554.4523376 832 599 843.6405952 599 858 C 599 872.3594048 554.4523376 884 499.5 884 C 444.5476624 884 400 872.3594048 400 858 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="464.81005859375" y="856.5">«[UC0620]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="437.721435546875" y="871.5">view assigned Pizzas</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 319 1033 C 319 1018.6405952 406.9760368 1007 515.5 1007 C 624.0239632 1007 712 1018.6405952 712 1033 C 712 1047.3594048 624.0239632 1059 515.5 1059 C 406.9760368 1059 319 1047.3594048 319 1033 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 312 1026 C 312 1011.6405952 399.9760368 1000 508.5 1000 C 617.0239632 1000 705 1011.6405952 705 1026 C 705 1040.3594048 617.0239632 1052 508.5 1052 C 399.9760368 1052 312 1040.3594048 312 1026 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 312 1026 C 312 1011.6405952 399.9760368 1000 508.5 1000 C 617.0239632 1000 705 1011.6405952 705 1026 C 705 1040.3594048 617.0239632 1052 508.5 1052 C 399.9760368 1052 312 1040.3594048 312 1026 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="473.81005859375" y="1024.5">«[UC0650]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="381.327880859375" y="1039.5">view Countdown of assigned INOVEN Pizza</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1351 1065 C 1351 1050.6405952 1434.7227424 1039 1538 1039 C 1641.2772576 1039 1725 1050.6405952 1725 1065 C 1725 1079.3594048 1641.2772576 1091 1538 1091 C 1434.7227424 1091 1351 1079.3594048 1351 1065 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1344 1058 C 1344 1043.6405952 1427.7227424 1032 1531 1032 C 1634.2772576 1032 1718 1043.6405952 1718 1058 C 1718 1072.3594048 1634.2772576 1084 1531 1084 C 1427.7227424 1084 1344 1072.3594048 1344 1058 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1344 1058 C 1344 1043.6405952 1427.7227424 1032 1531 1032 C 1634.2772576 1032 1718 1043.6405952 1718 1058 C 1718 1072.3594048 1634.2772576 1084 1531 1084 C 1427.7227424 1084 1344 1072.3594048 1344 1058 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1496.31005859375" y="1056.5">«[UC0440]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1410.69921875" y="1071.5">view AverageTimesGraph of Order States</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 895 921 C 895 906.6405952 986.1100432 895 1098.5 895 C 1210.8899568 895 1302 906.6405952 1302 921 C 1302 935.3594048 1210.8899568 947 1098.5 947 C 986.1100432 947 895 935.3594048 895 921 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 888 914 C 888 899.6405952 979.1100432 888 1091.5 888 C 1203.8899568 888 1295 899.6405952 1295 914 C 1295 928.3594048 1203.8899568 940 1091.5 940 C 979.1100432 940 888 928.3594048 888 914 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 888 914 C 888 899.6405952 979.1100432 888 1091.5 888 C 1203.8899568 888 1295 899.6405952 1295 914 C 1295 928.3594048 1203.8899568 940 1091.5 940 C 979.1100432 940 888 928.3594048 888 914 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1056.81005859375" y="912.5">«[UC0530]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="962.893310546875" y="927.5">print Invoice of Order from assigned Delivery</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 134 504 L 134 672 M 134 672 A 8 8 0 0 0 142 680 L 344 680 M 344 680 A 8 8 0 0 0 352 672 L 352 360" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 356.209517756016 370.16267485762415 L 352 360 L 347.790482243984 370.16267485762415" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 134 504 L 134 672 M 134 672 A 8 8 0 0 0 142 680 L 704 680 M 704 680 A 8 8 0 0 0 712 672 L 712 632" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 716.209517756016 642.1626748576241 L 712 632 L 707.790482243984 642.1626748576241" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 134 504 L 134 672 M 134 672 A 8 8 0 0 0 142 680 L 496 680 M 496 680 A 8 8 0 0 1 504 688 L 504 728" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 499.790482243984 717.8373251423759 L 504 728 L 508.209517756016 717.8373251423759" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 134 504 L 134 672 M 134 672 A 8 8 0 0 0 142 680 L 1132 680 M 1132 680 A 8 8 0 0 1 1140 688 L 1140 736" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1135.7904822439841 725.8373251423759 L 1140 736 L 1144.2095177560159 725.8373251423759" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 134 504 L 134 672 M 134 672 A 8 8 0 0 0 142 680 L 960 680 M 960 680 A 8 8 0 0 0 968 672 L 968 568 M 968 568 A 8 8 0 0 1 976 560 L 1031 560" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1020.8373251423759 564.209517756016 L 1031 560 L 1020.8373251423758 555.790482243984" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 134 504 L 134 672 M 134 672 A 8 8 0 0 0 142 680 L 960 680 M 960 680 A 8 8 0 0 0 968 672 L 968 272 M 968 272 A 8 8 0 0 1 976 264 L 1016 264" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1005.8373251423759 268.209517756016 L 1016 264 L 1005.8373251423758 259.790482243984" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1832 552 L 1776 552 M 1776 552 A 8 8 0 0 1 1768 544 L 1768 249 M 1768 249 A 8 8 0 0 0 1760 241 L 1712 241" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1722.162674857624 236.790482243984 L 1712 241 L 1722.162674857624 245.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1832 552 L 1720 552" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1730.162674857624 547.790482243984 L 1720 552 L 1730.162674857624 556.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1832 552 L 1776 552 M 1776 552 A 8 8 0 0 0 1768 560 L 1768 944 M 1768 944 A 8 8 0 0 1 1760 952 L 1728 952" stroke-miterlimit="10" stroke-dasharray="3"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1738.162674857624 947.790482243984 L 1728 952 L 1738.162674857624 956.209517756016" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 383 921 C 383 906.6405952 437.845112 895 505.5 895 C 573.154888 895 628 906.6405952 628 921 C 628 935.3594048 573.154888 947 505.5 947 C 437.845112 947 383 935.3594048 383 921 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 376 914 C 376 899.6405952 430.845112 888 498.5 888 C 566.154888 888 621 899.6405952 621 914 C 621 928.3594048 566.154888 940 498.5 940 C 430.845112 940 376 928.3594048 376 914 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 376 914 C 376 899.6405952 430.845112 888 498.5 888 C 566.154888 888 621 899.6405952 621 914 C 621 928.3594048 566.154888 940 498.5 940 C 430.845112 940 376 928.3594048 376 914 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="463.81005859375" y="912.5">«[UC0630]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="421.5537109375" y="927.5">view Order details of Pizza</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1439 953 C 1439 938.6405952 1483.77152 927 1539 927 C 1594.22848 927 1639 938.6405952 1639 953 C 1639 967.3594048 1594.22848 979 1539 979 C 1483.77152 979 1439 967.3594048 1439 953 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1432 946 C 1432 931.6405952 1476.77152 920 1532 920 C 1587.22848 920 1632 931.6405952 1632 946 C 1632 960.3594048 1587.22848 972 1532 972 C 1476.77152 972 1432 960.3594048 1432 946 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1432 946 C 1432 931.6405952 1476.77152 920 1532 920 C 1587.22848 920 1632 931.6405952 1632 946 C 1632 960.3594048 1587.22848 972 1532 972 C 1476.77152 972 1432 960.3594048 1432 946 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1497.31005859375" y="944.5">«[UC0420]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1471.306884765625" y="959.5">print Invoice of Order</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#C0C0C0" stroke="none" d="M 1423 377 C 1423 362.6405952 1486.3517008 351 1564.5 351 C 1642.6482992 351 1706 362.6405952 1706 377 C 1706 391.3594048 1642.6482992 403 1564.5 403 C 1486.3517008 403 1423 391.3594048 1423 377 Z" opacity="0.2"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="#ffffff" stroke="none" d="M 1416 370 C 1416 355.6405952 1479.3517008 344 1557.5 344 C 1635.6482992 344 1699 355.6405952 1699 370 C 1699 384.3594048 1635.6482992 396 1557.5 396 C 1479.3517008 396 1416 384.3594048 1416 370 Z"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<path fill="none" stroke="#000000" d="M 1416 370 C 1416 355.6405952 1479.3517008 344 1557.5 344 C 1635.6482992 344 1699 355.6405952 1699 370 C 1699 384.3594048 1635.6482992 396 1557.5 396 C 1479.3517008 396 1416 384.3594048 1416 370 Z" stroke-miterlimit="10"/>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="1522.81005859375" y="368.5">«[UC0250]»</text>
+			</g>
+		</g>
+		<g transform="translate(-30,-6) scale(1,1)">
+			<g>
+				<path fill="none" stroke="none"/>
+				<text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="1468.616943359375" y="383.5">edit Role of Employee Account</text>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Dear students, please *do not* change the following metadata. Thanks! -->
+
+	<artifactId>swt21w19</artifactId>
+	<version>1.0.0.BUILD-SNAPSHOT</version>
+
+    <name>swt21w19</name>
+	<description>ST lab project of group swt21w19</description>
+	<url>https://github.com/st-tu-dresden-praktikum/swt21w19</url>
+	<scm>
+		<url>https://github.com/st-tu-dresden-praktikum/swt21w19</url>
+	</scm>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+				</configuration>
+
+			</plugin>
+		</plugins>
+	</build>
+	<parent>
+		<groupId>de.tudresden.inf.st.lab</groupId>
+		<artifactId>st-lab-parent</artifactId>
+		<version>2.4.0</version>
+		<relativePath/>
+	</parent>
+
+	<properties>
+		<java.version>11</java.version>
+		<salespoint.version>7.4.0</salespoint.version>
+		<log4j2.version>2.17.0</log4j2.version> <!--CVE-2021-44228-->
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+		<!--
+			Additional project dependencies go here.
+
+			BUT PLEASE NOTE!
+
+			The parent pom that is referenced above already includes most libraries
+			necessary for the lab: Spring, Salespoint, Hibernate, JUnit, etc.
+
+			You can list the current dependencies and their versions using the
+			`mvn dependency:list` command.
+
+			Use Maven Central for package search (https://search.maven.org/).
+		-->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.22</version>
+			<scope>provided</scope>
+		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+        </dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>nz.net.ultraq.thymeleaf</groupId>
+			<artifactId>thymeleaf-layout-dialect</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator-core</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>Semantic-UI</artifactId>
+			<version>2.4.1</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>3.6.0</version>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.12.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.janino</groupId>
+			<artifactId>janino</artifactId>
+			<version>3.1.6</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
+		<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox</artifactId>
+			<version>2.0.24</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.github.dhorions/boxable -->
+		<dependency>
+			<groupId>com.github.dhorions</groupId>
+			<artifactId>boxable</artifactId>
+			<version>1.6</version>
+		</dependency>
+
+		<!--CVE-2021-44228-->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-bom</artifactId>
+			<version>${log4j2.version}</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-to-slf4j</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.yannrichet</groupId>
+			<artifactId>JMathPlot</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+
+		<repository>
+			<id>salespointframework</id>
+			<url>https://www.st.inf.tu-dresden.de/SalesPoint/repository</url>
+		</repository>
+
+	</repositories>
+
+</project>

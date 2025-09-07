@@ -1,0 +1,218 @@
+/* CSS RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 940px;
+    font: 13px/22px Helvetica, Arial, sans-serif;
+    background: #000000;
+    background-image: url("../img/pizza-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 3.2em;
+    text-align: center;
+}
+
+
+.blurPadding {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: auto;
+}
+
+.tableHighlightRow {
+    background-color: lightyellow;
+}
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.card {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-right: 10px;
+    padding: 2px 10px 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.resultDiv {
+    margin-top: 10px;
+}
+
+.rightByFloat {
+    float: right;
+}
+
+.notClickableOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+/* Topping Grid in Inventory */
+input.gridCheckBox {
+    transform: scale(1.5);
+    vertical-align: middle;
+    position: relative;
+    top: 5px;
+}
+
+.gridspacing {
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    gap: 10px 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* for Modals */
+
+.popupModal {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.overlayModal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlayModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.popupModal .closeModal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popupModal .contentModal {
+    max-height: 30%;
+    overflow: auto;
+    padding: 20px;
+}
+
+ /* for modals to show up correctly if div they are placed in are normally to small */
+.spacer{
+height: 150px
+}
+
+.popupModal .reassignmentModal {
+    max-height: 50%;
+    overflow: auto;
+    padding: 20px;
+}
+
+#newVehicleDropdown {
+    border-radius: 3px;
+    margin: 5px auto;
+    font-size: 14px;
+}
+
+#deliveryTypeDropdown {
+    border-radius: 5px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+#submitToggleButton {
+    margin: 5px auto;
+}
+
+#driveSection{
+    margin-left: auto;
+    margin-right: 5px;
+    border: 1px solid #2185D0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdownPapa {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownPapa-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdownPapa:hover .dropdownPapa-content {
+    display: block;
+}
+
+.appearModal:target {
+    display: block;
+    opacity: 1;
+}
+
+.appearModal {
+    display: none;
+    opacity: 0;
+}

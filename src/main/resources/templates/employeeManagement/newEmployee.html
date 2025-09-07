@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{blanklayout.html(title=#{emplyMgmt.newEmpl.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="content"><div class="blurPadding">
+<div sec:authorize="hasAnyRole('BOSS')">
+    <form method="post" class="ui form" id="form" th:action="@{/newEmployee}" th:object="${form}">
+        <h2 th:text="#{emplyMgmt.newEmpl.title}">New Employee</h2>
+
+        <div class="field">
+            <label for="name" th:text="#{emplMgmt.form.name}">Username</label>
+            <input id="name" th:field="*{name}" th:errorclass="fieldError" required="required"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">
+                <p>Name not empty</p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="lastname" th:text="#{emplMgmt.form.lastname}">Name</label>
+            <input id="lastname" th:field="*{lastname}" th:errorclass="fielderror" required="required"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}">
+                <p>Lastname not empty</p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="firstname" th:text="#{emplMgmt.form.firstname}">First Name</label>
+            <input id="firstname" th:field="*{firstname}" th:errorclass="fielderror" required="required"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}">
+                <p>Firstname not empty</p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="password" th:text="#{emplMgmt.form.password}">Password</label>
+            <input id="password" th:field="*{password}" th:errorclass="fielderror" required="required" type="password"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+        </div>
+
+        <div class="field">
+            <label for="repeatedPassword" th:text="#{emplMgmt.form.repeatedPassword}">Repeat Password</label>
+            <input id="repeatedPassword" th:field="*{repeatedPassword}" th:errorclass="fielderror" required="required" type="password"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('repeatedPassword')}" th:errors="*{repeatedPassword}"></div>
+        </div>
+
+        <div class="field">
+            <label th:text="#{emplMgmt.form.role}">Role</label>
+            <div>
+                <input type="radio" id="cashier" name="role" value="Cashier" th:field="*{role}"/>
+                <label for="cashier" th:text="#{emplMgmt.form.role.cashier}">Roll</label><br/>
+            </div>
+            <div>
+                <input type="radio" id="chef" name="role" value="Chef" th:field="*{role}"/>
+                <label for="chef" th:text="#{emplMgmt.form.role.chef}">Roll</label><br/>
+            </div>
+            <div>
+                <input type="radio" id="driver" name="role" value="Driver" th:field="*{role}"/>
+                <label for="driver" th:text="#{emplMgmt.form.role.driver}">Roll</label><br/>
+            </div>
+            <div>
+                <input type="radio" id="boss" name="role" value="Boss" th:field="*{role}"/>
+                <label for="boss" th:text="#{emplMgmt.form.role.boss}">Roll</label><br/>
+            </div>
+            <div class="ui negative message" th:if="${#fields.hasErrors('role')}" th:errors="*{role}">
+                <p>Role not empty</p>
+            </div>
+        </div>
+
+        <button class="ui button" type="submit" th:text="#{emplMgmt.form.submit}">Create</button>
+    </form>
+</div>
+</div></section>
+</body>
+</html>

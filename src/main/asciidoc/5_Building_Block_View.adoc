@@ -1,0 +1,68 @@
+Order
+
+[options="header"]
+|===
+|Class |Description
+|...|...
+|===
+
+Inventory
+
+[options="header"]
+|===
+|Class |Description
+|...|...
+|===
+
+Customer
+
+[options="header"]
+|===
+|Class |Description
+|...|...
+|===
+
+Employee
+
+[options="header"]
+|===
+|Class |Description
+|...|...
+|===
+
+Kitchen
+
+[options="header"]
+|===
+|Class |Description
+|Kitchen|This Class handles the processes for employees
+|KitchenManagement|This class handles the processes between Sping and Kitchen class
+|KitchenController|This class handles the communication to the HTML page
+|State|This class takes over the order states to update them
+|===
+
+Delivery
+
+[options="header"]
+|===
+|Class |Description
+|...|...
+|===
+
+Analysis
+
+[options="header"]
+|===
+|Class |Description
+|...|...
+|===
+
+Application
+
+[options="header"]
+|===
+|Class |Description
+|Application|The central application class to configure the Spring container and run the application
+|PapasPizzaServiceWebConfiguration|Configuration class to route /login directly to the login.html template
+|WebSecurityConfiguration|Configuration class to set up basic security and login/logout options
+|===

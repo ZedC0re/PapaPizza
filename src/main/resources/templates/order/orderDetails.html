@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{orderDetails.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="webcontent">
+    <div class="blurPadding">
+        <h2 th:text="#{orderDetails.label.orderDetails}">orderDetails</h2>
+
+        <ul style="padding-left: 20px;" class="bigger-text">
+            <li th:text="#{orderDetails.orderId} + ': ' + ${order.orderId}"></li>
+            <li th:text="#{orderDetails.lastname} + ': ' + ${order.lastname}"></li>
+            <li th:text="#{orderDetails.firstname} + ': ' + ${order.firstname}"></li>
+            <li th:text="#{orderDetails.phone} + ': ' + ${order.phone}"></li>
+            <li th:text="#{orderDetails.address} + ': ' + ${order.address}"></li>
+            <li th:text="#{orderDetails.orderState} + ': ' + ${order.orderState}"></li>
+            <li th:text="#{orderDetails.cashierName} + ': ' + ${order.cashierName}"></li>
+            <li th:text="#{orderDetails.chefNames} + ':'"></li>
+            <ul style="padding-left: 20px;" class="bigger-text" th:each="chefName : ${order.chefNames}">
+                <li th:text="${chefName}"></li>
+            </ul>
+            <li th:text="#{orderDetails.driverNames} + ':'"></li>
+            <ul style="padding-left: 20px;" class="bigger-text" th:each="driverName : ${order.driverNames}">
+                <li th:text="${driverName}"></li>
+            </ul>
+        </ul>
+
+        <div>
+            <form method="get" th:action="@{/downloadInvoice}">
+                <input type="hidden" name="orderId" th:value="${order.orderId}"/>
+                <button th:disabled="${order.invoiceFilename == null}" class="ui button" type="submit" th:text="#{order.download.invoice}"></button>
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

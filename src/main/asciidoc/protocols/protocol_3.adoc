@@ -1,0 +1,59 @@
+= Protokoll Gruppe 19
+
+Treffen am 25.10.2021
+
+Ort:      Ort des Treffens BBB +
+Beginn:   18:30 Uhr +
+Ende:     20:30 Uhr
+
+__Schriftführer:__ Christian Ziessler
+
+*Nächstes Treffen:* +
+01.11.2021, 18:30 Uhr, Online Meeting über BBB (selber Link)
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+
+== Bemerkungen
+Alle Teilnehmer haben über 8 Stunden an dem Projekt letzte Woche gearbeitet. Christian musste seine Zeit aktualisieren. 
+Desweiteren wurde festgehalten, dass alle weiteren Dokumentationen (Pflichtenheft, Diagramme & Entwicklerdoku) in englisch verfasst werden. 
+Bezüglich der Benutzung von JavaScript will der Tutor sich noch erkundigen, jedoch gilt desweiteren keine JavaScript Implementierung.
+Außerdem möchte ich anmerken, dass Florian am 27.10 Geburtstag hat :)
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|#1     |Auf StarUML geeinigt|erledigt     |Wir haben uns schnell auf das Programm geeinigt
+|#2     |Klassen, Anwendungsfall, GUI, usw. entworfen |noch nicht final    |Gab einige Ungereimtheiten, weshalb wir diese nochmal überarbeiten wollen
+|#3     |Analyseprotokolle (Max & Florian)|fertig      |Dieses Protokoll haben wir entworfen weil wir mit den Diagrammen nicht zu 100% zufrieden waren
+|#4     |Videoshop Aufgaben|4/6 sind fertig     |Tom & Christian müssen noch vorstellen, sind aber beide fast fertig
+|===
+
+
+== Aktueller Stand
+Die Aufgaben zur Woche 2 sind soweit abgeschlossen, zum Teil auch übererfüllt. Durch die enorme Ausarbeitung der Diagramme, ergaben sich viele Fragen, die 
+einen großteil der Zeit im Meeting ausmachten. Bennet, Eric, Florian, Max haben ihre Videoshop Erweiterungen abgeschlossen. Nach dem Meeting gab es ein Anschlusstreffen,
+bei dem wir das weitere Vorgehen besprochen haben. Nächstes Treffen ist am 26.10.2021 um 17 Uhr. 
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|#1     |Fertigstellung der Videoshop Aufghabe     |Aufgabe bis nächste Woche Montag            |Tom & Christian                |open
+|#2     |Ausarbeitung der finalen Diagramme    |Aufgabe bis nächste Woche Montag            |Tom, Bennet, Christian, Eric, Florian, Max                |open
+|===

@@ -1,0 +1,60 @@
+= Protokoll Gruppe 19
+
+Treffen am 08.11.2021
+
+Ort:      Discord +
+Beginn:   18:30 Uhr +
+Ende:     20:20 Uhr
+
+__Schriftführer:__ Maximilian Stäps
+
+*Nächstes Treffen:* +
+22.11.2021, 18:30 Uhr, Discord
+
+__Teilnehmer:__
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+
+== Bemerkungen
+- Tom war im ersten Teil der Woche Krankheitsbedingt verhindert +
+- Es wurde zugewiesen wer im Programm an welchen Packages arbeitet
+
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|16     |Entwicklerdokumentation     |fast fertig        |alle
+|10     |Prototype inventory component |fertig | Max
+|14     |Prototype customer component      |fertig      |Florian
+|11     |Prototype order component       |fertig      |Bennet
+|13     |Prototype kitchen component   |begonnen |Christian
+|15     |Prototype delivery component |begonnen |Tom
+|===
+
+
+== Aktueller Stand
+- Entwicklerdokumentation nicht fertig und muss umgehend fertiggestellt werden +
+- Tom und Christian müssen umgehend einen lauffähigen Prototypen nachreichen
+
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|19  |Basic functionality     |ein funktionierendes Programm mit den Basisfunktionalitäten, d.h. erstellen einer neuen "Order",
+                                zuweisen dieser "Order" zur "Kitchen" & "Delivery",
+                                Verarbeiten der "Order" in "Kitchen" und "Delivery" & Basisfunktionalitäten von "Inventory", "CustomerManagement" und "EmployeeManagement".|alle                |in Arbeit
+|===

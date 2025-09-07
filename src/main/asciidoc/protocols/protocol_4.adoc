@@ -1,0 +1,56 @@
+= Protokoll Gruppe 19
+
+Treffen am 01.11.2021
+
+Ort:      BBB +
+Beginn:   18:30 Uhr +
+Ende:     20:30 Uhr
+
+__Schriftführer:__ Eric-Ramon Kreyer
+
+*Nächstes Treffen:* +
+08.11.21, 18:30 Uhr, BBB
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+
+== Bemerkungen
+Aufgrund familiärer Vorfälle konnte Christian seine Soll-Arbeitszeit nicht erreichen, was die anderen Gruppenmitglieder aber einfach ausgleichen konnten.
+Tom hatte am 01.11.21 Geburtstag :)
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|-     |VideoshopErweiterung       |erledigt      |Christian und Tom haben ihre Aufgaben fertiggestellt
+|-     |schon ausgearbeitete Komponenten auf Englisch übersetzen      |erledigt      |-
+|-     |einzelne Komponenten des Pflichtenhefts       |erledigt      |-
+|-     |Zusammenfügen des Pflichtenhefts       |erledigt      |-
+|===
+
+
+== Aktueller Stand
+Das Pflichtenheft ist im Großen und Ganzen fertiggestellt. Kleinigkeiten in der Ausarbeitung sowie ein paar Typos müssen jedoch noch ausgebessert werden. Wolfgang inspiziert diese Woche das Pflichtenheft noch im Detail und gibt Rückmeldung.
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|-     |Einarbeitung Salespoint     |Dokumentation durchlesen            |alle                |open
+|-     |Entwicklerdokumentation anfangen     |Projektummsetzung mit Framework erarbeiten, Schreibstil Entwicklerdoku aneignen, ...            |alle                |open
+|-     |Prototyp-"Kern" programmieren     |am 02.11 festgelegten Kern umsetzen            |vorläufig Florian                |open
+|===

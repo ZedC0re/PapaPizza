@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{blanklayout.html(title=#{inventory.addPizzaProduct.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="content">
+  <div class="blurPadding">
+  <form method="post" role="form" class="ui form" id="form" th:action="@{/addPizzaPreset}" th:object="${form}">
+
+    <h3 class="ui dividing header" th:text="#{inventory.addPizzaPreset.title}">new Pizza Preset</h3>
+
+    <div class="ui negative message" th:if="${#fields.hasErrors('*')}">
+      <p th:text="#{inventory.addPizzaPreset.formErr}">inputerror!</p>
+    </div>
+
+    <div class="field">
+      <label for="name" th:text="#{inventory.table.productname}">name</label>
+      <input id="name" name="name" th:field="*{name}" th:errorclass="fieldError" type="text"
+             th:placeholder="#{inventory.table.productname}" placeholder="name" required="required" /><br/>
+      <div class="ui negative message" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">
+        <p>your product must contain a name</p>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="price" th:text="#{inventory.table.productprice}">price</label>
+      <input id="price" name="price" th:field="*{price}" th:errorclass="fieldError" type="number" step="0.01"
+             th:placeholder="#{inventory.table.productprice}" placeholder="price" required="required" /><br/>
+      <div class="ui negative message" th:if="${#fields.hasErrors('price')}" th:errors="*{price}">
+        <p>your product must contain a price</p>
+      </div>
+    </div>
+    <!--
+    <div class="field">
+      <label for="topping" th:text="#{inventory.table.producttopping}">topping</label>
+      <select  th:field = "*{topping}">
+        <option id="topping" name="topping" th:each="topping : ${#Toppings}"  th:value="${topping}" th:errorclass="fieldError"  required="required" /><br/>
+      </select>
+      <div class="ui negative message" th:if="${#fields.hasErrors('topping')}" th:errors="*{topping}">
+        <p>your product must contain a Topping</p>
+      </div>
+    </div>
+    -->
+
+
+    <div class="field">
+       <label for="topping" th:text="#{inventory.table.producttopping}">Toppings</label>
+       <div class="grid-container" id="topping" >
+         <div class="grid-item" th:each="topping, stat : *{Toppings}" >
+         <table>
+           <tr>
+             <th class = "gridspacing">
+               <div th:text="${topping.key.name}"></div>
+             </th>
+             <th>
+               <input class = "gridCheckBox" type="checkbox" name="topping" th:field = "*{toppings[__${topping.key.id}__]}" th:value = "${topping.value}"  th:checked = "${topping.value}" tabindex="0" >
+             </th>
+           </tr>
+         </table>
+         </div>
+       </div>
+    </div>
+
+    <button type="submit" class="ui button" th:text="#{inventory.addProduct.submit}">Create</button>
+  </form>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,84 @@
+= Protokoll Gruppe 19
+
+Treffen am 06.12.2021
+
+Ort:      Discord +
+Beginn:   18:30 Uhr +
+Ende:     19:35 Uhr
+
+__Schriftführer:__ Christian Ziessler
+
+*Nächstes Treffen:* +
+13.12.2021, 18:30 Uhr, Discord
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+
+
+== Bemerkungen
+Diese Woche hat jeder an seinem Component gearbeitet, Tests geschrieben und BBB-Diagramme aktualisiert.
+Für nächste Woche müssen die MUSS-Kriterien fertig sein und das Programm wird als Jar-Datei mit Anleitung zum Crosstesting weitergegeben.
+JS Timer soll fürs erste nicht implementiert werden.  
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|18 |Ensure functionality without JS | bug | Florian | offen
+|36 |dynamic capacity of vehicles | comp:delivery, feature | Tom | offen
+|41 |KitchenController (71): Product separation Method to Product-Category | bug, comp:kitchen, invalid | Christian | offen
+|42 |Order: invoice creation | comp:order, feature | | offen
+|44 |NewOrder: update Order before apply | bug, comp:order | Bennet | offen
+|45 |OrderManagement: shopOrderManagement has not to be generic | bug, comp:order, invalid | Bennet | offen
+|47 |OrderManagement:add UnitTests | comp:order, test | Bennet | offen
+|48 |OrderController:add UnitTests | comp:order, test | Bennet | offen
+|===
+
+== Aktueller Stand
+Der Prototyp beinhaltet die gesammte Verwaltung von Angestellten und Kunden, sowie die Abhandlung einer "normalen" Bestellung von Erstellung bis Vollendung.
+Desweiteren hat der Prototyp jetzt die Analytics implementiert und ein paar Probleme zum letzten Stand wurden behoben. Ebenfalls wurden Tests hinzugefügt.
+Tom und Christian müssen die Woche noch Tests schreiben. Desweiteren müssen Bugs und Issus lösen die Woche noch gelöst werden. 
+
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|17 |Form doesn't show confirmation modal on ENTER bug | bug  | Bennet |offen
+|18 |Ensure functionality without JS | bug | Florian | offen
+|21 |Employee management crucial&polish | bug | Eric | offen
+|26 |Customer Frontend sort & filter | bug | Florian | offen
+|34 |Db linked employee removal | bug | Eric | offen
+|35 |Weekly order overview in analytics | bug | Eric |offen
+|36 |dynamic capacity of vehicles | comp:delivery, feature | Tom | offen
+|41 |KitchenController (71): Product separation Method to Product-Category | bug, comp:kitchen, invalid | Christian | offen
+|42 |Order: invoice creation | comp:order, feature, comp:analytics, feature | Florian | offen
+|44 |NewOrder: update Order before apply | bug, comp:order | Bennet | offen
+|45 |OrderManagement: shopOrderManagement has not to be generic | bug, comp:order, invalid | Bennet | offen
+|46 |Order: complete Pickup Orders | bug | Bennet | offen
+|47 |OrderManagement:add UnitTests | comp:order, test | Bennet | offen
+|48 |OrderController:add UnitTests | comp:order, test | Bennet | offen
+|51 |Delivery Cleanup | clean | Tom | offen
+|52 |Kitchen revise | feature | Christian | offen
+|53 |ShopOrder: outsource calcTimeLeft() -Method in DeliveryManagement | bug | Bennet | offen
+|54 |BBD_Delivery/Order | bug | Tom | offen
+|55 |Delivery Testing | testing | Tom | offen
+|56 |PDF Invoices | feature | Florian | offen
+|57 |Analytics TODO | toDo | Eric | offen
+|58 |Analytics add Navbar | feature | Eric | offen
+|60 |CrossTesting vorbereiten | toDo | Florian | offen
+|61 |Copyright Hintergrundbild | toDo | Max | offen
+|62 |Kitchen Testing | toDo | Christian | offen
+|===

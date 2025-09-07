@@ -1,0 +1,108 @@
+Order
+
+[options="header"]
+|===
+|Class |Description
+|ShopOrderRepository
+|A repository interface to manage ShopOrder-instances.
+
+|ShopOrderManagement
+|A service-class to provide methods to operate on the ShopOrderRepository.
+
+|ShopOrder
+|An entity class representing an entire order in the system, including the associated Employees, Customers, etc.
+
+|ShopOrderState
+|An enumeration extending the Salespoint provided states.
+
+|ShopOrderController
+|A Spring MVC Controller to handle the overview of all currently not closed ShopOrders.
+
+|NewShopOrderController
+|A Spring MVC Controller to handle the creation of new orders and verification of Customers.
+|===
+
+Inventory
+
+[options="header"]
+|===
+|Class |Description
+|ShopInventoryManagement
+| A service-class to provide methods to operate on the ShopInventoryRepository
+
+|ShopInventoryController
+|A Spring MVC Controller to handle the creation of new InventoryProducts and displaying them
+
+|ShopInventoryInitializer
+|To Initialize the Products in the ShopInventoryRepository
+
+|===
+
+Customer
+
+[options="header"]
+|===
+|Class |Description
+|Customer | Class (Entity) that represents a customer
+|CustomerController | Spring MVC controller which handles requests to list, edit, filter, sort and add customers
+|CustomerDataInitializer | Implementation of the salespoint DataInitializer to create customer dummy data on startup
+|CustomerManagement | service to manage customers, junction between database and other program components
+|CustomerRepository | repository interface for JPA to edit, save and load customers
+|CustomerCreationForm | class to validate form inputs
+|===
+
+Employee
+
+[options="header"]
+|===
+|Class |Description
+|Employee |Custom class to extend Salespoint-UserAccount
+|EmployeeController |A Spring MVC Controller to handle requests to add and show employees
+|EmployeeCreationForm |An interface to validate the user input of the registration formular
+|EmployeeDataInitializer |An implementation of the DataInitializer to create dummy employees on application startup
+|EmployeeManagement |Service class to manage employees
+|EmployeeRepository |A repository interface to manage Employee-instances
+|===
+
+Kitchen
+
+[options="header"]
+|===
+|Class |Description
+|Kitchen|This Class handles the processes for employees
+|KitchenManagement|This class handles the processes between Spring and Kitchen class
+|KitchenController|This class handles the communication to the HTML page
+|State|This class takes over the order states to update them
+|===
+
+
+Delivery
+
+[options="header"]
+|===
+|Class |Description
+|Delivery| Defines the Delivery class, to be used by all other classes in the package
+|DeliveryController |A Spring MVC Controller to handle requests and show Deliveries; handles communication to the HTML page
+|DeliveryManagement |A Management class to handle most of the operations regarding the common processes required during a deliveries lifecycle
+|DeliveryRepository |A repository to store deliveries and manage search/find requests; connection to the database
+|DeliveryState |Simple Enum for the different states a delivery goes through
+|DeliveryDataInitializer |An implementation of the Salespoint DataInitializer to create dummy data for test purposes
+|===
+
+Analysis
+
+[options="header"]
+|===
+|Class |Description
+|...|...
+|===
+
+Application
+
+[options="header"]
+|===
+|Class |Description
+|Application|The central application class to configure the Spring container and run the application
+|PapasPizzaServiceWebConfiguration|Configuration class to route /login directly to the login.html template
+|WebSecurityConfiguration|Configuration class to set up basic security and login/logout options
+|===

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{blanklayout.html(title=#{newOrder.customerVerification.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="content">
+    <div class="blurPadding">
+        <h2 th:text="#{newOrder.customerVerification.label}">Orders</h2>
+
+
+        <div class="ui positive message" th:if="${verificationSuccess == 'success'}">
+            <p th:text="#{newOrder.customerVerification.message.success}"></p>
+        </div>
+        <div class="ui negative message" th:if="${verificationSuccess == 'error'}">
+            <p th:text="#{newOrder.customerVerification.message.error}"></p>
+        </div>
+        <div class="ui negative message" th:if="${verificationSuccess == 'tanError'}">
+            <p th:text="#{newOrder.customerVerification.message.tanError}"></p>
+        </div>
+        <div class="ui negative message" th:if="${verificationSuccess == 'phoneError'}">
+            <p th:text="#{newOrder.customerVerification.message.phoneError}"></p>
+        </div>
+        <div class="ui negative message" th:if="${verificationSuccess == 'failed'}">
+            <p th:text="#{newOrder.customerVerification.message.failed}"></p>
+        </div>
+        <div class="ui negative message" th:if="${verificationSuccess == 'failedAlrActiveOrder'}">
+            <p th:text="#{newOrder.customerVerification.message.failedAlrActiveOrder}"></p>
+        </div>
+
+        <form th:action="@{/customerVerification}" method="post" th:object="${customerVerificationForm}">
+            <!--- class="noNumberSpinBoxArrows" does not work --->
+            <b><label style="" th:text="#{newOrder.customerVerification.label.phone}">phone</label></b><br>
+            <div class="ui input"><input type="number" class="noNumberSpinBoxArrows" th:field="*{phone}" required="required"></div><br><br>
+
+            <b><label th:text="#{newOrder.customerVerification.label.tan}">Tan</label></b><br>
+            <div class="ui input"><input type="number" class="noNumberSpinBoxArrows" th:field="*{tan}" required="required"></div><br><br>
+
+            <button class="ui button" type="submit" th:text="#{newOrder.customerVerification.submit}">Submit</button>
+        </form>
+    </div>
+</section>
+</body>
+</html>

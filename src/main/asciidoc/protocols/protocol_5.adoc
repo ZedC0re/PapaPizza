@@ -1,0 +1,56 @@
+= Protokoll Gruppe 19
+
+Treffen am 08.11.2021
+
+Ort:      Discord +
+Beginn:   18:30 Uhr +
+Ende:     20:10 Uhr
+
+__Schriftführer:__ Florian Dolzmann
+
+*Nächstes Treffen:* +
+15.11.21, 18:30 Uhr, Discord
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+
+== Bemerkungen
+Krankheitsbedingt konnte Tom in dieser Woche nicht am Projekt arbeiten.
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|16     |Entwicklerdokumentation       |in Arbeit      |Christian, Eric
+|14     |Prototype customer component      |begonnen      |Florian
+|11     |Prototype order component       |begonnen      |Bennet
+|10     |Prototype inventory component       |begonnen      |Maximilian
+|-      |Prototyp "Kern"-bestandteile   |fertig         |Florian, Bennet
+|===
+
+
+== Aktueller Stand
+Die Entwicklerdokumentation wurde angefangen und die ersten vier Punkte bearbeitet sowie Diagramme erstellt. +
+Der Prototyp wurde begonnen.
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|16     |Entwicklerdokumentation     |Dokumentation fertigstellen            |alle                |in Arbeit
+|10-15 |Prototypkomponenten         |jeder implementiert seine Komponente   |(jeweils einzeln) alle |in Arbeit
+|===

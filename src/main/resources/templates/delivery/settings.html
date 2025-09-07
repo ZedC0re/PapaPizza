@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{delivery.reassignmentTitle})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    <section layout:fragment="webcontent">
+        <div class="blurPadding" sec:authorize="hasRole('BOSS')">
+            <h1 th:text="#{delivery.settingsTitle}">Settings</h1>
+            <div>
+                <h2 th:text="#{delivery.orderAssignment}"></h2>
+                <th:block sec:authorize="hasRole('BOSS')">
+                    <form th:object="${settingsForm}" method="post" th:action="@{/delivery/settings/switchAlg}">
+                        <th:block th:if="${settingsForm.isOrderAssign()}">
+                            <button class="ui animated button blue" tabindex="0">
+                                <div class="visible content">
+                                    <th:block th:text="#{delivery.orderToggle1}"/>
+                                </div>
+                                <div class="hidden content">
+                                    <th:block th:text="#{delivery.orderAssignConfirm}"/>
+                                </div>
+                            </button>
+                            <div class="ui basic button blue" tabindex="0" th:text="#{delivery.orderToggle2}">Toggle</div>
+                        </th:block>
+                        <th:block th:unless="${settingsForm.isOrderAssign()}">
+                            <div class="ui basic button blue" tabindex="0" th:text="#{delivery.orderToggle1}">Toggle</div>
+                            <button class="ui animated button blue" tabindex="0">
+                                <div class="visible content">
+                                    <th:block th:text="#{delivery.orderToggle2}"/>
+                                </div>
+                                <div class="hidden content">
+                                    <th:block th:text="#{delivery.orderAssignConfirm}"/>
+                                </div>
+                            </button>
+                        </th:block>
+                    </form>
+                </th:block>
+            </div>
+            <div>
+                <h2 th:text="#{delivery.reassignmentTitle}">Vehicle Reassignment</h2>
+                <th:block sec:authorize="hasRole('BOSS')">
+                    <form th:object="${settingsForm}" method="post" th:action="@{/delivery/settings/switchAssign}">
+                        <th:block th:if="${settingsForm.isManualAssign()}">
+                            <button class="ui animated button blue" tabindex="0">
+                                <div class="visible content">
+                                    <th:block th:text="#{delivery.assignToggle1}"/>
+                                </div>
+                                <div class="hidden content">
+                                    <th:block th:text="#{delivery.orderAssignConfirm}"/>
+                                </div>
+                            </button>
+                            <div class="ui basic button blue" tabindex="0" th:text="#{delivery.assignToggle2}">Toggle</div>
+                        </th:block>
+                        <th:block th:unless="${settingsForm.isManualAssign()}">
+                            <div class="ui basic button blue" tabindex="0" th:text="#{delivery.assignToggle1}">Toggle</div>
+                            <button class="ui animated button blue" tabindex="0">
+                                <div class="visible content">
+                                    <th:block th:text="#{delivery.assignToggle2}"/>
+                                </div>
+                                <div class="hidden content">
+                                    <th:block th:text="#{delivery.orderAssignConfirm}"/>
+                                </div>
+                            </button>
+                        </th:block>
+                    </form>
+                </th:block>
+                <table class="ui table" id="reassignment-table">
+                    <thead>
+                    <tr>
+                        <th scope="col" th:text="#{delivery.reassignmentInteraction}">Interaction</th>
+                        <th scope="col" th:text="#{delivery.reassignmentDriver}">Driver</th>
+                        <th scope="col" th:text="#{delivery.reassignmentVehicle}">Vehicle</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <th:block th:each="driver : ${drivers}">
+                        <tr>
+                            <td>
+                                <form method="post" th:action="@{/delivery/reassign/} + ${driver.getId()}" th:object="${settingsForm}">
+                                    <a class="ui button blue" th:href="@{'#reassignModal'} + ${driver.getId()}" th:text="#{delivery.reassignmentModalButton}"></a>
+                                    <div th:id="@{'reassignModal'} + ${driver.getId()}" class="overlayModal">
+                                        <div class="popupModal">
+                                            <a class="closeModal" href="#">&times;</a>
+                                            <div class="reassignmentModal">
+                                                <p th:text="#{delivery.modalText}"></p>
+                                                <select th:field="*{vehicleId}" name="newVehicle" id="newVehicleDropdown">
+                                                    <div class="ui dropdown">
+                                                        <th:block th:each="vehicle : ${vehicles}">
+                                                            <option th:value="${vehicle.getId().getIdentifier()}" th:text="${vehicle.getName()}">VehicleOption</option>
+                                                        </th:block>
+                                                    </div>
+
+                                                </select>
+                                                <br>
+                                                <button class="ui button" type="submit" th:text="#{delivery.reassignmentConfirm}">Confirm</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </td>
+                            <td th:text="${driver.getUsername()}"></td>
+                            <th:block th:unless="${driver.getVehicle()} == null">
+                                <td th:text="${driver.getVehicle().getName()}"></td>
+                            </th:block>
+                            <th:block th:if="${driver.getVehicle()} == null">
+                                <td th:text="#{delivery.noVehicle}"></td>
+                            </th:block>
+                        </tr>
+                    </th:block>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

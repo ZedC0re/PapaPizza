@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{cstmrMgmt.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="webcontent">
+    <div class="blurPadding">
+        <h2 th:text="#{cstmrMgmt.label.customers}">Customers</h2>
+
+        <!--new customer btn-->
+        <form sec:authorize="hasAnyRole('BOSS','CASHIER')" method="get" role="form" id="newCustomerBtnForm"
+              th:action="@{/cstmrMgmt/new}">
+            <button type="submit" class="ui button blue" th:text="#{cstmrMgmt.newBtn}"></button>
+        </form>
+
+        <!--redirect messages-->
+        <div th:if="${csModifyResult != null}" class="resultDiv">
+            <div class="ui positive message" th:if="${csModifyResult} == 'newSuccess'"
+                 th:text="#{cstmrMgmt.newCS.success}">New customer successfully created
+            </div>
+            <div class="ui positive message" th:if="${csModifyResult} == 'editSuccess'"
+                 th:text="#{cstmrMgmt.editCS.success}">Edit was successful
+            </div>
+            <div class="ui positive message yellow" th:if="${csModifyResult} == 'editUnchanged'"
+                 th:text="#{cstmrMgmt.editCS.same}">No form data has changed
+            </div>
+            <div class="ui positive message" th:if="${csModifyResult} == 'delSuccess'"
+                 th:text="#{cstmrMgmt.delCS.success}">Customer deleted successfully
+            </div>
+            <div class="ui positive message" th:if="${csModifyResult} == 'tanSuccess'"
+                 th:text="#{cstmrMgmt.tanCS.success}">Tan renewed successfully
+            </div>
+            <div class="ui positive message yellow" th:if="${csModifyResult} == 'setNotSelected'"
+                 th:text="#{cstmrMgmt.returnSet.notSelected}">No set was selected
+            </div>
+            <div class="ui positive message" th:if="${csModifyResult} == 'setRemovedSuccess'"
+                 th:text="#{cstmrMgmt.returnSet.success}">Set(s) returned successfully
+            </div>
+            <div class="ui negative message" th:if="${csModifyResult} == 'setRemovedError'"
+                 th:text="#{cstmrMgmt.returnSet.error}">Set(s) returned with error(s)
+            </div>
+            <div class="ui negative message" th:if="${csModifyResult} == 'delStillActiveOrder'"
+                 th:text="#{cstmrMgmt.delCS.stillActiveOrder}">Customer still has an active order
+            </div>
+            <!--download return invoice-->
+            <div th:if="${orderCreated != null}">
+                <form method="get" th:action="@{/downloadInvoice}">
+                    <input type="hidden" name="orderId" th:value="${orderCreated.id}"/>
+                    <button class="ui button" type="submit" th:text="#{order.download.invoice}"></button>
+                </form>
+            </div>
+        </div>
+
+        <!--table filter-->
+        <p>
+        <form style="float:left;" class="ui form" method="get" th:action="@{/cstmrMgmt/}" th:object="${searchForm}">
+            <div class="ui search">
+                <!--filterSearch-->
+                <div class="ui icon input">
+                    <input class="prompt" type="text" name="filterSearch" th:placeholder="#{main.search}"
+                           th:field="*{filterSearch}"/>
+                    <i class="search icon"></i>
+                </div>
+
+                <!--filterBy dropdown-->
+                <div class="dropdownPapa">
+                    <div class="ui icon button">
+                        <i class="filter icon"></i>
+                        <span th:text="#{cstmrMgmt.table.filterBy}"></span>
+                    </div>
+                    <div class="dropdownPapa-content">
+                        <div><input class="ui checkbox" type="checkbox" value="firstname" name="filterBys"
+                                    th:field="*{filterBys}" th:text="#{cstmrMgmt.table.firstname}"/></div>
+                        <div><input class="ui checkbox" type="checkbox" value="lastname" name="filterBys"
+                                    th:field="*{filterBys}" th:text="#{cstmrMgmt.table.lastname}"/></div>
+                        <div><input class="ui checkbox" type="checkbox" value="address" name="filterBys"
+                                    th:field="*{filterBys}" th:text="#{cstmrMgmt.table.address}"/></div>
+                        <div><input class="ui checkbox" type="checkbox" value="phone" name="filterBys"
+                                    th:field="*{filterBys}" th:text="#{cstmrMgmt.table.phone}"/></div>
+                        <div><input class="ui checkbox" type="checkbox" value="tan" name="filterBys"
+                                    th:field="*{filterBys}" th:text="#{cstmrMgmt.table.tan}"/></div>
+                        <div><input class="ui checkbox" type="checkbox" value="dishset" name="filterBys"
+                                    th:field="*{filterBys}" th:text="#{cstmrMgmt.table.dishsets}"/></div>
+                    </div>
+                </div>
+
+                <!--sortBy dropdown-->
+                <div class="dropdownPapa">
+                    <div class="ui icon button">
+                        <i class="sort icon"></i>
+                        <span th:text="#{cstmrMgmt.table.sortBy}"></span>
+                    </div>
+                    <div class="dropdownPapa-content">
+                        <div class="ui label" th:text="#{cstmrMgmt.table.sortBy}+':'"></div>
+                        <div><input th:checked="checked" class="ui radio" type="radio" value="" name="sortBy"
+                                    th:field="*{sortBy}" th:text="#{main.none}"/></div>
+                        <div><input class="ui radio" type="radio" value="firstname" name="sortBy"
+                                    th:field="*{sortBy}" th:text="#{cstmrMgmt.table.firstname}"/></div>
+                        <div><input class="ui radio" type="radio" value="lastname" name="sortBy"
+                                    th:field="*{sortBy}" th:text="#{cstmrMgmt.table.lastname}"/></div>
+                        <div><input class="ui radio" type="radio" value="address" name="sortBy"
+                                    th:field="*{sortBy}" th:text="#{cstmrMgmt.table.address}"/></div>
+                        <div><input class="ui radio" type="radio" value="phone" name="sortBy"
+                                    th:field="*{sortBy}" th:text="#{cstmrMgmt.table.phone}"/></div>
+                        <div><input class="ui radio" type="radio" value="tan" name="sortBy"
+                                    th:field="*{sortBy}" th:text="#{cstmrMgmt.table.tan}"/></div>
+                        <div><input class="ui radio" type="radio" value="dishset" name="sortBy"
+                                    th:field="*{sortBy}" th:text="#{cstmrMgmt.table.dishsets}"/></div>
+
+                        <div class="ui label" th:text="#{cstmrMgmt.table.sortDir}+':'"></div>
+                        <div><input th:checked="checked" class="ui radio" type="radio" value="" name="sortDir"
+                                    th:field="*{sortDir}" th:text="#{cstmrMgmt.table.sortDir.asc}"/></div>
+                        <div><input class="ui radio" type="radio" value="DESC" name="sortBy"
+                                    th:field="*{sortDir}" th:text="#{cstmrMgmt.table.sortDir.desc}"/></div>
+                    </div>
+                </div>
+
+                <button class="ui button" style="display:inline-block;" type="submit"
+                        th:text="#{main.search}"></button>
+            </div>
+        </form>
+
+        <form style="float:right;" class="ui form" method="get" th:action="@{/cstmrMgmt/}">
+            <input type="hidden" name="filterSearch" value=""/>
+            <button class="ui button" th:text="#{main.search.clear}">Clear search</button>
+        </form>
+        <div style="clear:both;"></div>
+        <p>
+
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th th:text="#{cstmrMgmt.table.lastname}">Last name</th>
+                <th th:text="#{cstmrMgmt.table.firstname}">First name</th>
+                <th th:text="#{cstmrMgmt.table.tan}">TAN</th>
+                <th th:text="#{cstmrMgmt.table.phone}">Phone</th>
+                <th th:text="#{cstmrMgmt.table.address}">Address</th>
+                <th th:text="#{cstmrMgmt.table.dishsets}">Dishsets</th>
+                <th sec:authorize="hasAnyRole('BOSS','CASHIER')" th:text="#{main.edit}">Edit</th>
+                <th sec:authorize="hasAnyRole('BOSS','CASHIER')" th:text="#{main.delete}">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="customer : ${customers}"
+                th:classappend="${csModifyResult!=null && customer.id==csModifyResultId} ? tableHighlightRow : '' ">
+                <td th:text="${customer.lastname}">lastname</td>
+                <td th:text="${customer.firstname}">firstname</td>
+                <td>
+                    <div>
+                        <span th:text="${customer.currentTan.tanNumber}"></span>
+                        <form sec:authorize="hasAnyRole('BOSS','CASHIER')" style="display:inline-block;" method="post"
+                              th:action="@{/cstmrMgmt/renewtan/} + ${customer.id}">
+                            <button class="ui icon button" type="submit">&#9998;</button>
+                        </form>
+                    </div>
+                </td>
+                <td th:text="${customer.phone}">phone</td>
+                <td th:text="${customer.address}">address</td>
+                <td>
+                    <a style="color: darkblue;" th:text="${customer.getValidDishsetsSize()}"
+                       th:href="@{/cstmrMgmt/returnSet/} + ${customer.id}">
+                        still valid to return dishsets
+                    </a>
+                    <a th:if="${customer.getInvalidDishsetsSize() > 0 }" style="color: darkred;"
+                       th:text="'['+ ${customer.getInvalidDishsetsSize()} + ']'"
+                       th:href="@{/cstmrMgmt/returnSet/} + ${customer.id}">
+                        invalid dishsets
+                    </a>
+                    <form th:if="${customer.getValidDishsetsSize() > 0 }"
+                          sec:authorize="hasAnyRole('BOSS','CASHIER')" style="display:inline-block;" method="get"
+                          th:action="@{/cstmrMgmt/returnSet/} + ${customer.id}">
+                        <button class="ui icon button" type="submit">&#9998;</button>
+                    </form>
+                </td>
+                <td sec:authorize="hasAnyRole('BOSS','CASHIER')">
+                    <form method="get" th:action="@{/cstmrMgmt/edit/} + ${customer.id}">
+                        <button class="ui button" type="submit" th:text="#{main.edit}">Edit</button>
+                    </form>
+                </td>
+                <td sec:authorize="hasAnyRole('BOSS','CASHIER')">
+                    <form method="post" th:action="@{/cstmrMgmt/del/} + ${customer.id}">
+                        <a class="ui button" th:href="@{'#confirmDelModal'} + ${customer.id}"
+                           th:text="#{main.delete}"></a>
+                        <div th:id="@{'confirmDelModal'} + ${customer.id}" class="overlayModal">
+                            <div class="popupModal">
+                                <a class="closeModal" href="#">&times;</a>
+                                <div class="contentModal">
+                                    <h2 th:text="#{cstmrMgmt.modal.del}">Are you sure you want to delete this
+                                        customer?</h2>
+                                    <button class="ui button red" type="submit" th:text="#{main.delete}">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            <tr th:if="${#lists.isEmpty(customers)}">
+                <td class="center aligned" colspan="42" th:text="#{main.empty}">empty</td>
+            </tr>
+            </tbody>
+        </table>
+        </p>
+    </div>
+</section>
+</body>
+</html>

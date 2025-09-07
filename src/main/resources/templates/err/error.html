@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title='ERR')}">
+<head>
+</head>
+<body>
+    <section layout:fragment="webcontent">
+        <div class="blurPadding">
+            <h1 class="ui message negative" th:text="'ERROR ' + ${errCode != null ? errCode : ''}" style="font-size: 2em">ERROR</h1>
+            <div class="ui message negative" th:text="${errMsg != null && !#strings.isEmpty(errMsg)} ? ${errMsg} : 'no err msg'">
+                ERR MSG
+            </div>
+            <div class="ui message negative">
+                <a th:href="@{'#appearModal'}"
+                   th:text="'show details'"></a>
+                |
+                <a class="closeModal" href="#"
+                   th:text="'hide details'"></a>
+                <div id="appearModal" class="appearModal" th:text="${errEx != null && !#strings.isEmpty(errEx)} ? ${errEx} : 'no err exception'">
+                    ERR EXCEPTION
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

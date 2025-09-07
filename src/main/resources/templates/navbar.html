@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+  <head>
+  </head>
+  <body>
+    <nav th:fragment="navbar">
+      <div class="ui menu">
+
+        <a th:classappend="${#httpServletRequest.getRequestURI() == '/order' ? 'active':''}" class="red item" href="order/order.html" th:href="@{/order}"
+           th:text="#{navbar.order}">ORDER</a>
+
+        <a th:classappend="${#httpServletRequest.getRequestURI() == '/cstmrMgmt' ? 'active':''}" class="red item" href="cstmrMgmt/cstmrMgmt.html" th:href="@{/cstmrMgmt}"
+           th:text="#{navbar.cstmrMgmt}">Customers</a>
+
+        <a th:classappend="${#httpServletRequest.getRequestURI() == '/inventory' ? 'active':''}" class="red item" href="inventory/inventory.html" th:href="@{/inventory}"
+           th:text="#{navbar.inventory}" sec:authorize="hasAnyRole('BOSS')">Inventory</a>
+
+        <a th:classappend="${#httpServletRequest.getRequestURI() == '/employeeManagement' ? 'active':''}" class="red item" href="employeeManagement/employeeManagement.html" th:href="@{/employeeManagement}"
+           th:text="#{navbar.employee}" sec:authorize="hasRole('BOSS')">Employees</a>
+
+        <a th:classappend="${#httpServletRequest.getRequestURI() == '/kitchen' ? 'active':''}" class="red item" href="kitchen/kitchen.html" th:href="@{/kitchen}"
+           th:text="#{navbar.kitchen}" sec:authorize="hasAnyRole('BOSS', 'CHEF')">Kitchen</a>
+
+        <a th:classappend="${#httpServletRequest.getRequestURI() == '/delivery' ? 'active':''}" class="red item" href="delivery/delivery.html" th:href="@{/delivery}"
+           th:text="#{navbar.delivery}" sec:authorize="hasAnyRole('BOSS', 'DRIVER')">Delivery</a>
+
+        <a th:classappend="${#strings.contains(#httpServletRequest.getRequestURI(), 'analytics') ? 'active':''}" class="red item" href="analytics/analytics.html" th:href="@{/analytics}"
+           th:text="#{navbar.analytics}" sec:authorize="hasAnyRole('BOSS')">Analytics</a>
+
+        <div class="right menu">
+          <form class="item" sec:authorize="isAuthenticated()" th:action="@{/logout}" method="post">
+            <button type="submit" class="ui button blue" th:text="#{navbar.logout}">Logout</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

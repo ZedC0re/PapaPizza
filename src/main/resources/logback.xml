@@ -1,0 +1,43 @@
+<configuration>
+    <appender name="CONSOLE-DEF-COL" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{YYYY-MM-DD HH:mm:ss.SSS} %highlight(%-5level) %-60logger{50} : %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CONSOLE-DEF-NOCOL" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{YYYY-MM-DD HH:mm:ss.SSS} %-5level %-60logger{50} : %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="CONSOLE-PAPA" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{YYYY-MM-DD HH:mm:ss.SSS} %highlight(%-5level) %-60logger{50} : %cyan(%msg) %n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <if condition='isDefined("color")'>
+            <then>
+                <appender-ref ref="CONSOLE-DEF-COL" />
+            </then>
+            <else>
+                <appender-ref ref="CONSOLE-DEF-NOCOL" />
+            </else>
+        </if>
+    </root>
+
+    <logger name="org.javamoney.moneta.Money" level="OFF"/>
+
+    <logger name="papapizza" level="debug" additivity="false">
+        <if condition='isDefined("color")'>
+            <then>
+                <appender-ref ref="CONSOLE-PAPA"/>
+            </then>
+            <else>
+                <appender-ref ref="CONSOLE-DEF-NOCOL"/>
+            </else>
+        </if>
+    </logger>
+</configuration>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{blanklayout.html}">
+  <head>
+  </head>
+  <body>
+      <section layout:fragment="content">
+          <div class="blurPadding">
+              <header>
+                  <h2 th:text="#{main.title}">Papa Pizza</h2>
+              </header>
+              <nav th:include="navbar :: navbar"></nav>
+          </div>
+          <section layout:fragment="webcontent"></section>
+      </section>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{blanklayout.html(title=#{emplMgmt.edit.header})}">
+<head>
+</head>
+<body>
+<section layout:fragment="content"><div class="blurPadding">
+<div th:if="${employeeFound}">
+    <form method="post" class="ui form" id="form" th:action="@{/emplMgmt/edit/} + ${employeeId}" th:object="${form}">
+
+        <h2 th:text="#{emplMgmt.edit.header}">Edit Employee</h2>
+
+        <div th:if="${editRedirect != null}" class="resultDiv">
+            <p class="ui negative message" th:if="${editRedirect} == 'unassignOvenInUse'" th:text="#{emplMgmt.oven.ovenInUse}"></p>
+        </div>
+
+        <div class="field">
+            <label for="name" th:text="#{emplMgmt.form.name}">Username</label>
+            <input id="name" th:field="*{name}" th:errorclass="fieldError" required="required"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">
+                <p>Name not empty</p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="lastname" th:text="#{emplMgmt.form.lastname}">Name</label>
+            <input id="lastname" th:field="*{lastname}" th:errorclass="fielderror" required="required"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('lastname')}" th:errors="*{lastname}">
+                <p>Lastname not empty</p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="firstname" th:text="#{emplMgmt.form.firstname}">First Name</label>
+            <input id="firstname" th:field="*{firstname}" th:errorclass="fielderror" required="required"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('firstname')}" th:errors="*{firstname}">
+                <p>Firstname not empty</p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="password" th:text="#{emplMgmt.form.password}">Password</label>
+            <input id="password" th:field="*{password}" th:errorclass="fielderror" type="password"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"></div>
+        </div>
+
+        <div class="field">
+            <label for="repeatedPassword" th:text="#{emplMgmt.form.repeatedPassword}">Repeat Password</label>
+            <input id="repeatedPassword" th:field="*{repeatedPassword}" th:errorclass="fielderror" type="password"/>
+            <div class="ui negative message" th:if="${#fields.hasErrors('repeatedPassword')}" th:errors="*{repeatedPassword}"></div>
+        </div>
+
+        <div class="field">
+            <label th:text="#{emplMgmt.form.role}">Role</label>
+            <div>
+                <input type="radio" id="cashier" name="role" value="Cashier" th:field="*{role}"/>
+                <label for="cashier" th:text="#{emplMgmt.form.role.cashier}">Roll</label><br/>
+            </div>
+            <div>
+                <input type="radio" id="chef" name="role" value="Chef" th:field="*{role}"/>
+                <label for="chef" th:text="#{emplMgmt.form.role.chef}">Roll</label><br/>
+            </div>
+            <div>
+                <input type="radio" id="driver" name="role" value="Driver" th:field="*{role}"/>
+                <label for="driver" th:text="#{emplMgmt.form.role.driver}">Roll</label><br/>
+            </div>
+            <div>
+                <input type="radio" id="boss" name="role" value="Boss" th:field="*{role}"/>
+                <label for="boss" th:text="#{emplMgmt.form.role.boss}">Roll</label><br/>
+            </div>
+            <div th:if="${#fields.hasErrors('role')}" th:errors="*{role}">
+                <p>Role not empty</p>
+            </div>
+        </div>
+
+
+
+        <div>
+            <a class="ui button" th:href="@{'#confirmEditModal'} + ${employeeId}" th:text="#{emplMgmt.edit.submit}"></a>
+            <div th:id="@{'confirmEditModal'} + ${employeeId}" class="overlayModal">
+                <div class="popupModal">
+                    <a class="closeModal" href="#">&times;</a>
+                    <div class="contentModal">
+                        <h2 th:text="#{emplyMgmt.modal.edit}">Are you sure you want to edit this employee?</h2>
+                        <button class="ui button" type="submit" th:text="#{emplMgmt.table.cedit}">Edit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <br/>
+    <div th:if="${form.role} eq 'Chef'">
+        <h3 th:text="#{emplMgmt.oven.select}">Select Oven</h3>
+        <th:block th:if = "${myOven.isPresent()}">
+        <p th:text="#{emplMgmt.oven.current} + ${myOven.get().name}"></p>
+        </th:block>
+        <th:block th:if = "${myOven.isEmpty()}">
+            <p th:text="#{emplMgmt.oven.current} +  #{emplMgmt.oven.none}"></p>
+        </th:block>
+        <div th:each="oven : ${ovens}">
+            <form method="get" th:action="@{/emplMgmt/} + ${oven.getId()} + '/' + ${employeeId}">
+                <button type="submit" class="ui button" th:text="${oven.name}"></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<h1 class="ui header negative message" th:unless="${employeeFound}" th:text="#{emplMgmt.edit.404}">
+    Employee doesn't exist
+</h1>
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,81 @@
+= Protokoll Gruppe 19
+
+Treffen am 13.12.2021
+
+Ort:      Discord +
+Beginn:   18:30 Uhr +
+Ende:     20:00 Uhr
+
+__Schriftführer:__ Eric-Ramon Kreyer
+
+*Nächstes Treffen:* +
+20.12.2021, 18:30 Uhr, Discord
+
+__Teilnehmer:__
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Florian Dolzmann
+- Maximilian Stäps
+
+== Bemerkungen
+Diese Woche wurden die Tests weitergeführt, sodass wir die 40% Hürde knacken konnten.
+Weiterhin wurde weitere Funktionalität hinzugefügt, indem weitere Github Issues erstellt/behandelt wurden.
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+| -      |Unit testing       |in progress      |~70%
+| -     |Db linked employee removal       |completed      |deleting Employees who were set in Orders resulted in a crash
+| -     |Preparation of Crosstesting Build       |completed      |-
+| -  |consistent language in application   |always in progress   |needs to be done everytime something is added
+|18     |Ensure functionality without JS       |completed      |-
+|46     |Pickup Orders       |completed      |-
+|51     |Delivery Cleanup       |completed      |-
+|52     |Kitchen revise      |completed      |-
+|56     |PDF Invoices       |completed      |-
+|58     |add Analytics to Navbar       |completed      |-
+|63     |Redo auto assign when employee is deleted       |completed      |-
+|64     |new tan on successful order creation       |completed      |-
+|66     |Order: make frontend persistent towards DeliveryType       |completed      |-
+|67/76     |advanced order splitting       |almost completed      |-
+|70     |one order per customer at a time       |completed      |-
+|72     |cancelled orders are not to be deleted       |completed      |now permanently set to CANCELLED -> shown in Analytics
+|74     |applying dynamic Discount while creating order       |completed      |-
+|77    |Invoice program integration       |completed      |needs to be accessible from Analytics
+|80     |Clone OrderLine pizza for Kitchen      |completed      |-
+|81     |Sync cancel order with kitchen (ovens)       |completed      |-
+|83     |Cancelling order reverts customers tan       |completed     |-
+
+|===
+
+
+== Aktueller Stand
+Applikation beinhaltet alle Muss-Kriterien bis auf time-estimation. Tests werden weiterhin hinzugefügt (67.4%).
+
+== Planung des nächsten Sprints
+
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|-   |Durchführung Crosstesting |-     |alle   |in progress
+|-   |Fortführung der Tests |-   |alle   |in progress
+|57     |Analytics TODO     |Component needs polishing, a few more tests and functionality            |Eric                |in progress
+|68     |Order not found Window on wrong entered id     |-            |Bennet                |in progress
+|78     |Invoice overflow & in action tests     |-            |Florian                |in progress
+|79/91     |Assign employees to ovens     |functionality needs to be polished            |Eric                |in progress
+|88     |Zeitvorschau bis zur Auslieferung     |-            |group project                |in progress
+|89     |Kitchen: only use ovens with chef for auto assign     |-            |Christian                |in progress
+|90     |Assign Employees vehicles (frontend)     |-            |Tom                |in progress
+
+|===

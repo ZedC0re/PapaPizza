@@ -1,0 +1,55 @@
+= Protokoll Gruppe 19
+
+Treffen am 12.10.2021
+
+Ort:      Online Meeting über BBB
+Beginn:   16:40 Uhr 
+Ende:     18:00 Uhr
+
+__Schriftführer:__ Tom-Erik Günther
+
+*Nächstes Treffen:* +
+18.10.2021, 18:00 Uhr, Online Meeting über BBB
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Tom-Erik Günther
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Maximilian Stäps
+
+== Bemerkungen
+Anschließend zum BBB Meeting führten wir mit den gleichen Teilnehmern eine weitere Besprechung via Discord durch, um die grundlegende Organisation festzulegen und die Gruppenteilnehmer kennenzulernen.
+Beginn: 18:00, Ende: 19:30
+Als vorläufiger Scrum-Master wurde ich, Tom-Erik Günther, festgehalten.
+Florian Dolzmann war krankheitsbedingt nicht anwesend.
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|…     |…       |…      |…
+|===
+
+
+== Aktueller Stand
+Die Guestbook Erweiterung wurde abgeschlossen, Sämtliche Tools wurden festgesetzt, Außerdem wurde ein Wechsel auf IntelliJ als IDE statt Eclipse festgelegt. 
+Zwei Discord Meetings wurden, separat zum wöchentlichen Meeting am Montag, abgehalten. Diese dauerten jeweils 90 und 30 Minuten.
+Zur Organisation wurde eine Notion Seite erstellt, welche für To-Do Listen, Arbeitsverteilungen und zum notieren der aufgewendeten Zeit verwendet wird.
+
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |…     |…            |…                |…
+|===

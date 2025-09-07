@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{emplMgmt.title})}">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+
+    <script th:src="@{/webjars/jquery/jquery.min.js}"
+            src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script th:src="@{/webjars/Semantic-UI/semantic.min.js}"
+            src="http://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+
+    <link th:href="@{/webjars/Semantic-UI/semantic.min.css}" rel="stylesheet"
+          href="http://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css" type="text/css"/>
+    <link th:href="@{/resources/css/style.css}" rel="stylesheet"
+          href="../static/resources/css/style.css" type="text/css"/>
+
+    <title th:text="${#strings.isEmpty(title)} ? #{main.title} : ${title}">Papa Pizza</title>
+  </head>
+  <body>
+    <section layout:fragment="webcontent">
+        <div class="blurPadding">
+          <h2 th:text="#{analytics.heads.bigHead}">Analytics</h2>
+
+          <button th:text="#{analytics.uglyButtons.weekly}" class="ui button" onclick="window.location.href='/analytics'">Weekly</button>
+          <button th:text="#{analytics.uglyButtons.monthly}" class="ui button" onclick="window.location.href='/analytics/month'">Monthly</button>
+          <button th:text="#{analytics.uglyButtons.yearly}" class="ui button" onclick="window.location.href='/analytics/year'">Yearly</button>
+
+          <h3 th:text="#{analytics.heads.monthlySalesHeading}">Monthly Sales</h3>
+          <table class="ui celled table">
+
+            <thead>
+            <tr>
+              <th th:text="#{analytics.table.hCompleted}">Completed Orders</th>
+              <th th:text="#{analytics.table.hCancelled}">Cancelled Orders</th>
+              <th th:text="#{analytics.table.hSales}">Sales</th>
+            </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td th:text="${numberOfCompletedOrders}"></td>
+                <td th:text="${numberOfCancelledOrders}"></td>
+                <td th:text="${sales}"></td>
+              </tr>
+            </tbody>
+
+          </table>
+
+          <h3 th:text="#{analytics.heads.completedHeading}">Completed Orders</h3>
+          <table class="ui celled table">
+
+            <thead>
+            <tr>
+              <th th:text="#{order.table.lastname}">lastname</th>
+              <th th:text="#{order.table.firstname}">firstname</th>
+              <th th:text="#{order.table.phoneNr}">phoneNr</th>
+              <th th:text="#{order.table.details}">details</th>
+              <th th:text="#{order.table.state}">state</th>
+              <th th:text="#{order.table.deliveryType}">deliveryType</th>
+              <th th:text="#{order.table.total}">total</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="order : ${completedOrders}">
+              <td th:text="${order.lastname}">lastname</td>
+              <td th:text="${order.firstname}">firstname</td>
+              <td th:text="${order.phone}">phone</td>
+              <td><form method="get" th:action="@{/order/details/} + ${order.orderId}">
+                <button class="ui button" type="submit" th:text="#{main.details}">Details</button>
+              </form></td>
+              <td th:text="${order.orderState}">orderState</td>
+              <td th:text="${order.deliveryType}">deliveryType</td>
+              <td th:text="${order.total}">total</td>
+            </tr>
+            </tbody>
+
+          </table>
+
+          <h3 th:text="#{analytics.heads.cancelledHeading}">Cancelled Orders</h3>
+          <table class="ui celled table">
+
+            <thead>
+            <tr>
+              <th th:text="#{order.table.lastname}">lastname</th>
+              <th th:text="#{order.table.firstname}">firstname</th>
+              <th th:text="#{order.table.phoneNr}">phoneNr</th>
+              <th th:text="#{order.table.details}">details</th>
+              <th th:text="#{order.table.state}">state</th>
+              <th th:text="#{order.table.deliveryType}">deliveryType</th>
+              <th th:text="#{order.table.total}">total</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="order : ${cancelledOrders}">
+              <td th:text="${order.lastname}">lastname</td>
+              <td th:text="${order.firstname}">firstname</td>
+              <td th:text="${order.phone}">phone</td>
+              <td><form method="get" th:action="@{/order/details/} + ${order.orderId}">
+                <button class="ui button" type="submit" th:text="#{main.details}">Details</button>
+              </form></td>
+              <td th:text="${order.orderState}">orderState</td>
+              <td th:text="${order.deliveryType}">deliveryType</td>
+              <td th:text="${order.total}">total</td>
+            </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+    </section>
+    <button style="position: absolute; top: 0; left: 0;" onclick="window.location.href='/dev'">DEV</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+  </body>
+</html>

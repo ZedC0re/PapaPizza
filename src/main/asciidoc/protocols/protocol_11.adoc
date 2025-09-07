@@ -1,0 +1,146 @@
+= Protokoll Gruppe 19
+
+Treffen am 20.12.2021
+
+Ort:      Discord +
+Beginn:   18:30 Uhr +
+Ende:     19:50 Uhr
+
+__Schriftführer:__ Maximilian Stäps
+
+*Nächstes Treffen:* +
+10.01.2022, 18:30 Uhr, Discord
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Tom-Erik Günther (Scrum Master)
+- Carl Bennet Kuhlmann
+- Christian Ziessler
+- Eric-Ramon Kreyer
+- Maximilian Stäps
+
+
+== Bemerkungen
+
+Christian war diese Woche aufgrund seiner Coronaerkrankung verhindert. 
+Florian konnte aufgrund seiner Zugfahrt nicht am Meeting teilnehmen, weswegen Eric seinen Fortschritt erklärte.
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|89 |Kitchen:only use ovens with chef for auto assign | bug, comp:kitchen, comp:employee |Florian |fertig
+|91 |Employee oven assignment: check if oven in use |comp:employee |Eric |fertig
+|79 |Assign employees to ovens |Tasks: +
+functionality [front- & backend], +
+deleting assigned chef, +
+test, +
+show assigned chef in frontend, +
+cleanup +
+
+urgent, comp:employee|Florian|fertig
+|76 |Finishing Delivery Features and further cleanup, Testing Goals | comp:delivery, comp:order, enhancement +
+Features: +
+
+ Capacity assessment; +
+ Implementing Parent ID; +
+ Correct Cloneorder to work with Parent ID, possibly merge cloneorder and splitorder into one method; +
+ Correct splitOrder; +
+ rejoinOrder; +
+ Remove DriverList; +
+ assign Vehicles; +
+
+Cleanup: +
+
+ move calcTimeLeft to Del. Management; +
+ Add MAX_TIME as static global variable; +
+ Move cloneOrder to deliveryManagement; +
+
+Testing: +
+
+ DisplayableDelivery; +
+ DeliveryController; +
+ viewDelivery; +
+ complete Delivery; +
+ DeliveryManagement; +
+ splitOrder; +
+ rejoinOrder; +
+ unassignDriver; +
+ vehicleIsAlreadyAssigned; +
+ calcTimeLeft; +
+ cloneOrder; +
+ getOrderSize; +
+ assignDriver; +
+ assignVehicle |Tom |fertig
+|69 |NewOrder: on new Order without Pizza set Ready-State |comp:order, feature |Bennet |fertig
+|98 |Validation for Inventory| check for doubling names; +
+ check if something changes when editing something; +
+ check for maximum length of names; +
+ check if form is empty; +
+ fix Validation for PizzaPresets +
+ comp:Inventory, enhancement |Max |fast fertig 
+|57 |Analytics TODO |Functionality: +
+
+ generate Graphs; +
+ condense to one page (@PathVariable);+
+ search; +
+ seperate table for return orders +
+ 
+Polish: +
+
+ fix peak performance;+
+ display most relevant information +
+ feature |Eric |begonnen
+|===
+
+== Aktueller Stand
+- Zeitberechnung von Tom, Bennet, Max implementiert 
+- Delivery erweitert von Tom
+- Inventory hat jetzt weitesgehend Validation (Max)
+- Analytics auf sehr fortgeschrittenem Stand (Eric)
+- Florian hat Grundstein für filtering & searching gelegt, indem er es in das Customermanagement integiert hat
+
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status 
+|99 |Test for Validation in Inventory |comp: Inventory, Test |Max |offen
+|100 |fix css modal not showing smoothly |bug |Max |offen
+|109 |fix small things in Inventory mentioned in Cross-testing |comp:inventory |Max |offen
+|108 |inventory edit forms won't show point numbers anymore |comp:inventory, bug |Max |offen
+|106 |Order: apply or auto-delete or edit orders if they are not applyed in the session | when entered and exited new order page: new order is kinda dead and not accessible -> apply or auto-delete or edit +
+comp:order, heavy, invalid |Bennet |offen
+|105 |Invoice: Invoice should be accessible in analytics | enhancement, feature, comp:analytics | Eric, Florian |offen
+|104 |New Delivery TODO |comp:delivery |Tom |offen
+|103 |OrderDetails: should show content|feature, comp:order |Bennet |offen
+|102 |NewOrder: upper limit in Slot size |bug, invalid, feature, comp:order |Bennet |offen
+|101 |Analytics show all Drivers on split orders |Orders are not designed to have more than one Driver -> order split creates two or more orders with one driver each
+If there's a parent id in order -> order split has taken place -> look for orders with same parent id +
+bug |Eric |offen
+|98 |Validation for Inventory|check for doubling names; +
+ check if something changes when editing something; +
+ check for maximum length of names; +
+ check if form is empty; +
+ fix Validation for PizzaPresets +
+ comp:Inventory, enhancement |Max |fast fertig 
+|57 |Analytics TODO |Functionality: +
+ generate Graphs; +
+ condense to one page (@PathVariable); +
+ search; +
+ seperate table for return orders +
+ 
+Polish: +
+
+ fix peak performance; +
+ display most relevant information +
+ feature |Eric |begonnen
+
+
+|===

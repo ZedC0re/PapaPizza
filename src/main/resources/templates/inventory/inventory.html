@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html(title=#{inventory.title})}">
+<head>
+</head>
+<body>
+<section layout:fragment="webcontent">
+    <div class="blurPadding">
+
+        <h2 th:text="#{inventory.title}">Inventory</h2>
+
+        <!-- display results for adding, editing and deleting-->
+        <div th:if="${InventoryActionResult != null && ProductNameResult != null}" class="resultDiv">
+            <div class="ui positive message" th:if="${InventoryActionResult} == 'newSuccess'"
+                 th:text="#{inventory.addProduct.success} + ${ProductNameResult}">Product Successfully created
+            </div>
+            <div class="ui positive message" th:if="${InventoryActionResult} == 'editSuccess'"
+                 th:text="#{inventory.editProduct.success} + ${ProductNameResult}">Edit was successful
+            </div>
+            <div class="ui positive message yellow" th:if="${InventoryActionResult} == 'editUnchanged'"
+                 th:text="#{inventory.editProduct.unchanged} + ${ProductNameResult}">No form data has changed
+            </div>
+            <div class="ui negative message" th:if="${InventoryActionResult} == 'editFailed'"
+                 th:text="#{inventory.editProduct.failed} + ${ProductNameResult}">Edit failed
+            </div>
+            <div class="ui negative message" th:if="${InventoryActionResult} == 'deleteSuccess'"
+                 th:text="#{inventory.deleteProduct.success} + ${ProductNameResult}">Product deleted
+            </div>
+            <div class = "ui negative message" th:if="${InventoryActionResult} == 'deleteFailed'"  th:text="#{inventory.deleteProduct.failed} + ${ProductNameResult}"> Product delete failed</div>
+        </div>
+
+        <!-- Search -->
+
+        <form class="ui form" style="float:left;" method="get" th:action="@{/inventory/}">
+            <div class="ui icon input">
+                <input class="prompt" type="text" name="searchText" th:placeholder="#{inventory.search.placeholder}" th:value = "${searchText}"/>
+                <i class="search icon"></i>
+            </div>
+            <button class="ui button inlineBlock" type="Submit" th:text="#{main.search}"></button>
+        </form>
+        <!-- clear Search -->
+        <form style="float:right;" class="ui form" method="get" th:action="@{/inventory/}">
+            <input  type="hidden" name="searchText" value=""/>
+            <button class="ui button" th:text="#{main.search.clear}">Clear search</button>
+        </form>
+        <div style="clear:both;"></div>
+       <p></p>
+        <!--If no product found by search -->
+        <h1 class="ui header negative message" th:if="${searchEmpty}" th:text="#{inventory.search.nonExisting}">
+            No item found
+        </h1>
+
+        <!-- Pizza Presets-->
+        <div th:if=${!pizzaPresets.isEmpty()}>
+            <div>
+                <h2 class="inline" th:text="#{inventory.label.pizzapresets}">Pizza Presets</h2>
+                <form class="inline" method="get" role="form" id="addPizzaPresetBtnForm" th:action="@{/addPizzaPreset}">
+                    <button type="submit" style="float: right;" class="ui button"
+                            th:text="#{inventory.addBtn}"></button>
+                </form>
+            </div>
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{inventory.table.productname}">name</th>
+                    <th th:text="#{inventory.table.productprice}">price</th>
+                    <th th:text="#{inventory.table.producttoppings}">Toppings</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.edit}">Edit</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.delete}">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${pizzaPresets}">
+                    <td th:text="${product.name}">name</td>
+                    <td th:text="${product.price}">price</td>
+                    <td>
+                        <div th:each="topping: ${product.toppings}">
+                            <div th:text="${topping.name}"></div> <!--th:unless = "${stat.count} < ${stat.size}" -->
+                        </div>
+                    </td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="get" th:action="@{/inventory/editPizzaPreset/} + ${product.id}">
+                            <button class="ui button" type="submit" th:text="#{main.edit}">Edit</button>
+                        </form>
+                    </td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="post" th:action="@{/inventory/del/} + ${product.id}">
+                            <a class="ui button" th:href="@{'#modal1'+ ${product.id}}"
+                               th:text="#{main.delete}">delete</a>
+                            <div th:id="@{'modal1'+ ${product.id}}" class="overlayModal">
+
+                                <div class="popupModal">
+                                    <a class="closeModal" href="#">&times;</a>
+                                    <!-- change to button (in content div) or th-text-->
+                                    <div class="contentModal">
+                                        <h2 th:text="#{inventory.modal.delete}">Are you sure you want to delete this
+                                            product?</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.delete}">Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Consumables -->
+        <div th:if=${!Consumables.isEmpty()}>
+            <div>
+                <h2 class="inline" th:text="#{inventory.label.Consumables}">Consumables</h2>
+                <form class="inline" method="get" role="form" id="addConsumableBtnForm" th:action="@{/addConsumable}">
+                    <button type="submit" style="float: right;" class="ui button"
+                            th:text="#{inventory.addBtn}"></button>
+                </form>
+            </div>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{inventory.table.productname}">name</th>
+                    <th th:text="#{inventory.table.productprice}">price</th>
+                    <th th:text="#{inventory.table.productingredients}">Ingredients</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.edit}">Edit</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.delete}">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${Consumables}">
+                    <td th:text="${product.name}">name</td>
+                    <td th:text="${product.price}">price</td>
+                    <td th:text="${product.ingredients}">ingredients</td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="get" th:action="@{/inventory/editConsumable/} + ${product.id}">
+                            <button class="ui button" type="submit" th:text="#{main.edit}">Edit</button>
+                        </form>
+                    </td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="post" th:action="@{/inventory/del/} + ${product.id}">
+                            <a class="ui button" th:href="@{'#modal1'+ ${product.id}}"
+                               th:text="#{main.delete}">delete</a>
+                            <div th:id="@{'modal1'+ ${product.id}}" class="overlayModal">
+
+                                <div class="popupModal">
+                                    <a class="closeModal" href="#">&times;</a>
+                                    <!-- change to button (in content div) or th-text-->
+                                    <div class="contentModal">
+                                        <h2 th:text="#{inventory.modal.delete}">Are you sure you want to delete this
+                                            product?</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.delete}">Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Drinks -->
+        <div th:if=${!Drinks.isEmpty()}>
+            <div>
+                <h2 class="inline" th:text="#{inventory.label.Drinks}">Drinks</h2>
+                <form class="inline" method="get" role="form" id="addDrinkBtnForm" th:action="@{/addDrink}">
+                    <button type="submit" style="float: right;" class="ui button"
+                            th:text="#{inventory.addBtn}"></button>
+                </form>
+            </div>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{inventory.table.productname}">name</th>
+                    <th th:text="#{inventory.table.productprice}">price</th>
+                    <th th:text="#{inventory.table.productingredients}">Ingredients</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.edit}">Edit</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.delete}">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${Drinks}">
+                    <td th:text="${product.name}">name</td>
+                    <td th:text="${product.price}">price</td>
+                    <td th:text="${product.ingredients}">ingredients</td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="get" th:action="@{/inventory/editDrink/} + ${product.id}">
+                            <button class="ui button" type="submit" th:text="#{main.edit}">Edit</button>
+                        </form>
+                    </td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="post" th:action="@{/inventory/del/} + ${product.id}">
+                            <a class="ui button" th:href="@{'#modal1'+ ${product.id}}"
+                               th:text="#{main.delete}">delete</a>
+                            <div th:id="@{'modal1'+ ${product.id}}" class="overlayModal">
+
+                                <div class="popupModal">
+                                    <a class="closeModal" href="#">&times;</a>
+                                    <!-- change to button (in content div) or th-text-->
+                                    <div class="contentModal">
+                                        <h2 th:text="#{inventory.modal.delete}">Are you sure you want to delete this
+                                            product?</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.delete}">Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Toppings -->
+        <div th:if=${!Toppings.isEmpty()}>
+            <div>
+                <h2 class="inline" th:text="#{inventory.label.Toppings}">Toppings</h2>
+                <form class="inline" method="get" role="form" id="addToppingBtnForm" th:action="@{/addTopping}">
+                    <button type="submit" style="float: right;" class="ui button"
+                            th:text="#{inventory.addBtn}"></button>
+                </form>
+            </div>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{inventory.table.productname}">name</th>
+                    <th th:text="#{inventory.table.productprice}">price</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.edit}">Edit</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.delete}">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${Toppings}">
+                    <td th:text="${product.name}">name</td>
+                    <td th:text="${product.price}">price</td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="get" th:action="@{/inventory/editTopping/} + ${product.id}">
+                            <button class="ui button" type="submit" th:text="#{main.edit}">Edit</button>
+                        </form>
+                    </td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="post" th:action="@{/inventory/del/} + ${product.id}">
+                            <a class="ui button" th:href="@{'#modal1'+ ${product.id}}"
+                               th:text="#{main.delete}">delete</a>
+                            <div th:id="@{'modal1'+ ${product.id}}" class="overlayModal">
+
+                                <div class="popupModal">
+                                    <a class="closeModal" href="#">&times;</a>
+                                    <!-- change to button (in content div) or th-text-->
+                                    <div class="contentModal">
+                                        <h2 th:text="#{inventory.modal.deleteTopping}">Are you sure you want to delete
+                                            this
+                                            product?</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.delete}">Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Dishsets -->
+        <div th:if=${!Dishsets.isEmpty()}>
+            <div>
+                <h2 class="inline" th:text="#{inventory.label.Dishsets}">Dish Sets</h2>
+                <form class="inline" method="get" role="form" id="addDishsetBtnForm" th:action="@{/addDishset}">
+                    <button type="submit" style="float: right;" class="ui button"
+                            th:text="#{inventory.addBtn}"></button>
+                </form>
+            </div>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{inventory.table.productname}">name</th>
+                    <th th:text="#{inventory.table.productprice}">price</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.edit}">Edit</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.delete}">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${Dishsets}">
+                    <td th:text="${product.name}">name</td>
+                    <td th:text="${product.price}">price</td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="get" th:action="@{/inventory/editDishset/} + ${product.id}">
+                            <button class="ui button" type="submit" th:text="#{main.edit}">Edit</button>
+                        </form>
+                    </td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="post" th:action="@{/inventory/del/} + ${product.id}">
+                            <a class="ui button" th:href="@{'#modal1'+ ${product.id}}"
+                               th:text="#{main.delete}">delete</a>
+                            <div th:id="@{'modal1'+ ${product.id}}" class="overlayModal">
+
+                                <div class="popupModal">
+                                    <a class="closeModal" href="#">&times;</a>
+                                    <!-- change to button (in content div) or th-text-->
+                                    <div class="contentModal">
+                                        <h2 th:text="#{inventory.modal.delete}">Are you sure you want to delete this
+                                            product?</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.delete}">Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Vehicles -->
+        <div th:if=${!Vehicles.isEmpty()}>
+            <div>
+                <h2 class="inline" th:text="#{inventory.label.Vehicles}">Ovens</h2>
+                <form class="inline" method="get" role="form" id="addVehicleBtnForm" th:action="@{/addVehicle}">
+                    <button type="submit" style="float: right;" class="ui button"
+                            th:text="#{inventory.addBtn}"></button>
+                </form>
+            </div>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{inventory.table.productname}">name</th>
+                    <th th:text="#{inventory.table.productprice}">price</th>
+                    <th th:text="#{inventory.table.productslots}">slots</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.edit}">Edit</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.delete}">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${Vehicles}">
+                    <td th:text="${product.name}">name</td>
+                    <td th:text="${product.price}">price</td>
+                    <td th:text="${product.slots}">slots</td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="get" th:action="@{/inventory/editVehicle/} + ${product.id}">
+                            <button class="ui button" type="submit" th:text="#{main.edit}">Edit</button>
+                        </form>
+                    </td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="post" th:action="@{/inventory/del/} + ${product.id}">
+                            <a class="ui button" th:href="@{'#modal1'+ ${product.id}}"
+                               th:text="#{main.delete}">delete</a>
+                            <div th:id="@{'modal1'+ ${product.id}}" class="overlayModal">
+
+                                <div class="popupModal">
+                                    <a class="closeModal" href="#">&times;</a>
+                                    <!-- change to button (in content div) or th-text-->
+                                    <div class="contentModal">
+                                        <h2 th:text="#{inventory.modal.delete}">Are you sure you want to delete this
+                                            product?</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.delete}">Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--Ovens -->
+        <div th:if=${!Ovens.isEmpty()}>
+            <div>
+                <h2 class="inline" th:text="#{inventory.label.Ovens}">Ovens</h2>
+                <form class="inline" method="get" role="form" id="addOvenBtnForm" th:action="@{/addOven}">
+                    <button type="submit" style="float: right;" class="ui button"
+                            th:text="#{inventory.addBtn}"></button>
+                </form>
+            </div>
+
+            <table class="ui celled table">
+                <thead>
+                <tr>
+                    <th th:text="#{inventory.table.productname}">name</th>
+                    <th th:text="#{inventory.table.productprice}">price</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.edit}">Edit</th>
+                    <th sec:authorize="hasAnyRole('BOSS')" th:text="#{main.delete}">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="product : ${Ovens}">
+                    <td th:text="${product.name}">name</td>
+                    <td th:text="${product.price}">price</td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="get" th:action="@{/inventory/editOven/} + ${product.id}">
+                            <button class="ui button" type="submit" th:text="#{main.edit}">Edit</button>
+                        </form>
+                    </td>
+                    <td sec:authorize="hasAnyRole('BOSS')">
+                        <form method="post" th:action="@{/inventory/del/} + ${product.id}">
+                            <a class="ui button" th:href="@{'#modal1'+ ${product.id}}"
+                               th:text="#{main.delete}">delete</a>
+                            <div th:id="@{'modal1'+ ${product.id}}" class="overlayModal">
+
+                                <div class="popupModal">
+                                    <a class="closeModal" href="#">&times;</a>
+                                    <!-- change to button (in content div) or th-text-->
+                                    <div class="contentModal">
+                                        <h2 th:text="#{inventory.modal.delete}">Are you sure you want to delete this
+                                            product?</h2>
+                                        <button class="ui button red" type="submit" th:text="#{main.delete}">Delete
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+</body>
+</html>
